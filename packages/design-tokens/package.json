@@ -1,0 +1,39 @@
+{
+    "name": "@nivoda/design-tokens",
+    "version": "0.1.0",
+    "description": "",
+    "type": "module",
+    "license": "ISC",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/tokens/js/cjs/index.js",
+    "module": "dist/tokens/js/index.mjs",
+    "types": "dist/tokens/js/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "default": "./dist/tokens/js/index.mjs",
+                "types": "./dist/tokens/js/index.d.ts"
+            },
+            "require": {
+                "default": "./dist/tokens/js/cjs/index.js",
+                "types": "./dist/tokens/js/cjs/index.d.ts"
+            }
+        },
+        "./package.json": "./package.json",
+        "./tokens/*": "./dist/tokens/*"
+    },
+    "scripts": {
+        "build": "pnpm build:clean && style-dictionary build",
+        "build:clean": "rm -rf ./dist",
+        "lint": "eslint . --max-warnings=0",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+        "prepublishOnly": "pnpm build"
+    },
+    "devDependencies": {
+        "@nivoda/typescript-config": "workspace:*",
+        "style-dictionary": "^4.0.1",
+        "typescript": "^5.5.3"
+    }
+}

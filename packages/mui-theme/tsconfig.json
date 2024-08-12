@@ -1,0 +1,5 @@
+{
+    "extends": "@nivoda/typescript-config/base.json",
+    "include": ["index.ts", "*.d.ts"],
+    "exclude": ["node_modules", "dist"]
+}
