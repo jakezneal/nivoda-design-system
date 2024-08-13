@@ -14,7 +14,7 @@
         },
         {
             "name": "storybook",
-            "path": "packages/storybook",
+            "path": "apps/storybook",
         },
     ],
 }
