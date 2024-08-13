@@ -13,6 +13,10 @@
             "path": "packages/mui-theme",
         },
         {
+            "name": "ui",
+            "path": "packages/ui",
+        },
+        {
             "name": "storybook",
             "path": "apps/storybook",
         },
