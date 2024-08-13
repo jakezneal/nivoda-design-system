@@ -29,10 +29,12 @@
         "build:clean": "rm -rf ./dist",
         "lint": "eslint . --max-warnings=0",
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-        "prepublishOnly": "pnpm build"
+        "prepublishOnly": "pnpm build",
+        "dev": "pnpm build && chokidar \"tokens/**/*.json\" -c \"pnpm build\""
     },
     "devDependencies": {
         "@nivoda/typescript-config": "workspace:*",
+        "chokidar-cli": "^3.0.0",
         "style-dictionary": "^4.0.1",
         "typescript": "^5.5.3"
     }
