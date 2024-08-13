@@ -16,5 +16,9 @@
             "name": "storybook",
             "path": "apps/storybook",
         },
+        {
+            "name": "react",
+            "path": "apps/react",
+        },
     ],
 }
