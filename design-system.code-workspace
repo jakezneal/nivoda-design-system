@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "./",
+        },
+        {
+            "name": "design-tokens",
+            "path": "packages/design-tokens",
+        },
+        {
+            "name": "mui-theme",
+            "path": "packages/mui-theme",
+        },
+        {
+            "name": "storybook",
+            "path": "packages/storybook",
+        },
+    ],
+}
