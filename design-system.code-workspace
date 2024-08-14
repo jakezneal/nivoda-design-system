@@ -1,27 +1,27 @@
 {
     "folders": [
         {
-            "name": "root",
+            "name": "🌱 Root",
             "path": "./",
         },
         {
-            "name": "design-tokens",
+            "name": "💲 Design Tokens (Package)",
             "path": "packages/design-tokens",
         },
         {
-            "name": "mui-theme",
+            "name": "💅 MUI Theme (Package)",
             "path": "packages/mui-theme",
         },
         {
-            "name": "ui",
+            "name": "💀 UI (Package)",
             "path": "packages/ui",
         },
         {
-            "name": "storybook",
+            "name": "📖 Storybook (App)",
             "path": "apps/storybook",
         },
         {
-            "name": "react",
+            "name": "⚛️ React (App)",
             "path": "apps/react",
         },
     ],
