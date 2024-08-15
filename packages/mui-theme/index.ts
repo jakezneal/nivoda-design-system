@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import * as tokens from '@nivoda/design-tokens';
+import tokens from '@nivoda/design-tokens';
 
 const nivodaTheme = createTheme({
     palette: {
@@ -32,6 +32,9 @@ const nivodaTheme = createTheme({
             lg: 1200,
             xl: 1536,
         },
+    },
+    typography: {
+        fontFamily: 'Inter',
     },
 });
 
