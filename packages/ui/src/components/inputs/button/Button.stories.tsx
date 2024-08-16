@@ -11,7 +11,13 @@ const meta: Meta<typeof Button> = {
 
 type Story = StoryObj<typeof Button>;
 
-export const PrimaryContainedLarge: Story = {
+/**
+ * Contained
+ */
+
+// Primary
+export const ContainedPrimaryLarge: Story = {
+    name: 'Contained/Primary/Large/Default',
     args: {
         label: 'Hello World',
         color: 'primary',
@@ -20,42 +26,49 @@ export const PrimaryContainedLarge: Story = {
     },
 };
 
-export const PrimaryContainedLargeDisabled: Story = {
+export const ContainedPrimaryDisabled: Story = {
+    name: 'Contained/Primary/Large/Disabled',
     args: {
-        ...PrimaryContainedLarge.args,
+        ...ContainedPrimaryLarge.args,
         disabled: true,
     },
 };
 
-export const PrimaryContainedMedium: Story = {
+export const ContainedPrimaryMedium: Story = {
+    name: 'Contained/Primary/Medium',
     args: {
-        ...PrimaryContainedLarge.args,
+        ...ContainedPrimaryLarge.args,
         size: 'medium',
     },
 };
 
-export const PrimaryContainedMediumDisabled: Story = {
+export const ContainedPrimaryMediumDisabled: Story = {
+    name: 'Contained/Primary/Medium/Disabled',
     args: {
-        ...PrimaryContainedMedium.args,
+        ...ContainedPrimaryMedium.args,
         disabled: true,
     },
 };
 
-export const PrimaryContainedSmall: Story = {
+export const ContainedPrimarySmall: Story = {
+    name: 'Contained/Primary/Small',
     args: {
-        ...PrimaryContainedLarge.args,
+        ...ContainedPrimaryLarge.args,
         size: 'small',
     },
 };
 
-export const PrimaryContainedSmallDisabled: Story = {
+export const ContainedPrimarySmallDisabled: Story = {
+    name: 'Contained/Primary/Small/Disabled',
     args: {
-        ...PrimaryContainedSmall.args,
+        ...ContainedPrimarySmall.args,
         disabled: true,
     },
 };
 
-export const SecondaryContainedLarge: Story = {
+// Secondary
+export const ContainedSecondaryLarge: Story = {
+    name: 'Contained/Secondary/Large',
     args: {
         label: 'Hello World',
         color: 'secondary',
@@ -64,37 +77,144 @@ export const SecondaryContainedLarge: Story = {
     },
 };
 
-export const SecondaryContainedLargeDisabled: Story = {
+export const ContainedSecondaryLargeDisabled: Story = {
+    name: 'Contained/Secondary/Large/Disabled',
     args: {
-        ...SecondaryContainedLarge.args,
+        ...ContainedSecondaryLarge.args,
         disabled: true,
     },
 };
 
-export const SecondaryContainedMedium: Story = {
+export const ContainedSecondaryMedium: Story = {
+    name: 'Contained/Secondary/Medium',
     args: {
-        ...SecondaryContainedLarge.args,
+        ...ContainedSecondaryLarge.args,
         size: 'medium',
     },
 };
 
-export const SecondaryContainedMediumDisabled: Story = {
+export const ContainedSecondaryMediumDisabled: Story = {
+    name: 'Contained/Secondary/Medium/Disabled',
     args: {
-        ...SecondaryContainedMedium.args,
+        ...ContainedSecondaryMedium.args,
         disabled: true,
     },
 };
 
-export const SecondaryContainedSmall: Story = {
+export const ContainedSecondarySmall: Story = {
+    name: 'Contained/Secondary/Small',
     args: {
-        ...SecondaryContainedLarge.args,
+        ...ContainedSecondaryLarge.args,
         size: 'small',
     },
 };
 
-export const SecondaryContainedSmallDisabled: Story = {
+export const ContainedSecondarySmallDisabled: Story = {
+    name: 'Contained/Secondary/Small/Disabled',
     args: {
-        ...SecondaryContainedSmall.args,
+        ...ContainedSecondarySmall.args,
+        disabled: true,
+    },
+};
+
+// Error
+export const ContainedErrorLarge: Story = {
+    name: 'Contained/Error/Large/Default',
+    args: {
+        label: 'Hello World',
+        color: 'error',
+        variant: 'contained',
+        size: 'large',
+    },
+};
+
+export const ContainedErrorDisabled: Story = {
+    name: 'Contained/Error/Large/Disabled',
+    args: {
+        ...ContainedErrorLarge.args,
+        disabled: true,
+    },
+};
+
+export const ContainedErrorMedium: Story = {
+    name: 'Contained/Error/Medium',
+    args: {
+        ...ContainedErrorLarge.args,
+        size: 'medium',
+    },
+};
+
+export const ContainedErrorMediumDisabled: Story = {
+    name: 'Contained/Error/Medium/Disabled',
+    args: {
+        ...ContainedErrorMedium.args,
+        disabled: true,
+    },
+};
+
+export const ContainedErrorSmall: Story = {
+    name: 'Contained/Error/Small',
+    args: {
+        ...ContainedErrorLarge.args,
+        size: 'small',
+    },
+};
+
+export const ContainedErrorSmallDisabled: Story = {
+    name: 'Contained/Error/Small/Disabled',
+    args: {
+        ...ContainedErrorSmall.args,
+        disabled: true,
+    },
+};
+
+// Success
+export const ContainedSuccessLarge: Story = {
+    name: 'Contained/Success/Large/Default',
+    args: {
+        label: 'Hello World',
+        color: 'success',
+        variant: 'contained',
+        size: 'large',
+    },
+};
+
+export const ContainedSuccessDisabled: Story = {
+    name: 'Contained/Success/Large/Disabled',
+    args: {
+        ...ContainedSuccessLarge.args,
+        disabled: true,
+    },
+};
+
+export const ContainedSuccessMedium: Story = {
+    name: 'Contained/Success/Medium',
+    args: {
+        ...ContainedSuccessLarge.args,
+        size: 'medium',
+    },
+};
+
+export const ContainedSuccessMediumDisabled: Story = {
+    name: 'Contained/Success/Medium/Disabled',
+    args: {
+        ...ContainedSuccessMedium.args,
+        disabled: true,
+    },
+};
+
+export const ContainedSuccessSmall: Story = {
+    name: 'Contained/Success/Small',
+    args: {
+        ...ContainedSuccessLarge.args,
+        size: 'small',
+    },
+};
+
+export const ContainedSuccessSmallDisabled: Story = {
+    name: 'Contained/Success/Small/Disabled',
+    args: {
+        ...ContainedSuccessSmall.args,
         disabled: true,
     },
 };
