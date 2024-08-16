@@ -1,5 +1,5 @@
 {
-    "source": ["./tokens/tokens.json"],
+    "source": ["./tokens/**/*.json"],
     "platforms": {
         "css": {
             "transformGroup": "css",
@@ -26,20 +26,15 @@
             "buildPath": "dist/tokens/js/",
             "files": [
                 {
-                    "format": "javascript/es6",
-                    "destination": "index.mjs"
-                },
-                {
-                    "format": "typescript/es6-declarations",
-                    "destination": "index.d.ts"
-                },
-                {
-                    "format": "javascript/module-flat",
-                    "destination": "cjs/index.js"
+                    "format": "javascript/object",
+                    "destination": "index.mjs",
+                    "options": {
+                        "name": "nivoda"
+                    }
                 },
                 {
                     "format": "typescript/module-declarations",
-                    "destination": "cjs/index.d.ts"
+                    "destination": "index.d.ts"
                 }
             ]
         }

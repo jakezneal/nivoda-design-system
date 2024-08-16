@@ -7,18 +7,13 @@
     "files": [
         "dist"
     ],
-    "main": "dist/tokens/js/cjs/index.js",
-    "module": "dist/tokens/js/index.mjs",
+    "main": "dist/tokens/js/index.mjs",
     "types": "dist/tokens/js/index.d.ts",
     "exports": {
         ".": {
             "import": {
                 "default": "./dist/tokens/js/index.mjs",
                 "types": "./dist/tokens/js/index.d.ts"
-            },
-            "require": {
-                "default": "./dist/tokens/js/cjs/index.js",
-                "types": "./dist/tokens/js/cjs/index.d.ts"
             }
         },
         "./package.json": "./package.json",
@@ -33,9 +28,7 @@
         "dev": "pnpm build && chokidar \"tokens/**/*.json\" -c \"pnpm build\""
     },
     "devDependencies": {
-        "@nivoda/typescript-config": "workspace:*",
         "chokidar-cli": "^3.0.0",
-        "style-dictionary": "^4.0.1",
-        "typescript": "^5.5.3"
+        "style-dictionary": "^4.0.1"
     }
 }
