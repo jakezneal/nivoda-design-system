@@ -23,6 +23,17 @@ const config: StorybookConfig = {
         name: getAbsolutePath('@storybook/react-vite'),
         options: {},
     },
+    viteFinal: async (config) => {
+        return {
+            ...config,
+            resolve: {
+                ...config.resolve,
+                alias: {
+                    '@': join(__dirname, '../../../packages/ui/src'),
+                },
+            },
+        };
+    },
 };
 
 export default config;
