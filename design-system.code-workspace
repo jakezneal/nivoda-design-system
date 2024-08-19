@@ -13,6 +13,10 @@
             "path": "packages/mui-theme",
         },
         {
+            "name": "💅🏾 Styled Components (Package)",
+            "path": "packages/styled-components",
+        },
+        {
             "name": "💀 UI (Package)",
             "path": "packages/ui",
         },

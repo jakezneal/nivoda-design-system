@@ -1,0 +1,31 @@
+{
+    "name": "@nivoda/styled-components",
+    "version": "0.1.0",
+    "description": "",
+    "license": "ISC",
+    "exports": {
+        "./button": {
+            "types": "./dist/button.d.ts",
+            "import": "./dist/button.mjs",
+            "require": "./dist/button.js"
+        }
+    },
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "lint": "eslint . --max-warnings=0",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    },
+    "devDependencies": {
+        "@nivoda/design-tokens": "workspace:*",
+        "@nivoda/eslint-config": "workspace:*",
+        "@nivoda/typescript-config": "workspace:*",
+        "eslint": "^9.8.0",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "@types/react": "^18.3.3",
+        "styled-components": "^6.1.12"
+    }
+}
