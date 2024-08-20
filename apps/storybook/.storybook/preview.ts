@@ -14,6 +14,9 @@ const preview: Preview = {
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {
             expanded: true,
+            // Once Storybook merges this from the `next` branch this will work.
+            // https://github.com/storybookjs/storybook/pull/28734
+            disableSave: true,
             matchers: {
                 color: /(background|color)$/i,
                 date: /Date$/i,
