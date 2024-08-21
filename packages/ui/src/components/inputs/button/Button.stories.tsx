@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 import { Button } from './Button';
 
@@ -17,6 +18,12 @@ const meta: Meta<typeof Button> = {
             control: { type: 'select' },
             options: ['small', 'medium', 'large'],
         },
+        startIcon: {
+            control: { type: 'boolean' },
+        },
+        endIcon: {
+            control: { type: 'boolean' },
+        },
     },
     parameters: {
         layout: 'centered',
@@ -31,8 +38,22 @@ export const button: Story = {
         variant: 'contained',
         size: 'large',
         disabled: false,
+        startIcon: false,
+        endIcon: false,
     },
-    render: (args) => <Button {...args}>Hello, World</Button>,
+    render: (args) => {
+        const { startIcon, endIcon } = args;
+
+        return (
+            <Button
+                {...args}
+                startIcon={startIcon ? <DeleteIcon /> : undefined}
+                endIcon={endIcon ? <DeleteIcon /> : undefined}
+            >
+                Button
+            </Button>
+        );
+    },
 };
 
 export default meta;
