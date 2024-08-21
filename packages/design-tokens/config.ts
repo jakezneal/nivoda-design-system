@@ -6,7 +6,7 @@ const config = new StyleDictionary({
     source: ['./src/tokens/**/*.json'],
     platforms: {
         js: {
-            transformGroup: 'js',
+            transforms: ['name/camel', 'size/px', 'color/hex'],
             buildPath: 'dist/tokens/js/',
             files: [
                 {
