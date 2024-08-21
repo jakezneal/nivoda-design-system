@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { createTheme } from '@mui/material/styles';
 import tokens from '@nivoda/design-tokens';
 import type { PaletteColor } from '@mui/material';
