@@ -11,8 +11,7 @@ const meta: Meta<typeof Button> = {
         },
         color: {
             control: { type: 'select' },
-            options: ['primary', 'secondary', 'error', 'success'],
-            // TODO: Add 'warning' and 'info' once we have a design for them
+            options: ['primary', 'error', 'success'],
         },
         size: {
             control: { type: 'select' },

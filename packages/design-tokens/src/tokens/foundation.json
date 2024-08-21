@@ -1,570 +1,281 @@
-[
-    {
+{
+    "color": {
         "base": {
-            "modes": {
-                "Default": {
-                    "color": {
-                        "base": {
-                            "neutral": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fafaf9" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f1f1f1" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e7e5e4" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6d3d1" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#a8a29e" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78716c" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#57534e" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#44403c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#292524" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1c1917" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#0c0a09" },
-                                "white": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffffff" },
-                                "black": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#000000" }
-                            },
-                            "orange": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fff7ed" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffedd5" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fed7aa" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fdba74" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fb923c" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f97316" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ea580c" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#c2410c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9a3412" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7c2d12" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#431407" }
-                            },
-                            "amber": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fffbeb" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef3c7" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fde68a" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fcd34d" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fbbf24" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f59e0b" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d97706" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b45309" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#92400e" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78350f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#451a03" }
-                            },
-                            "green": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f3faf6" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6f2e3" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b4e4cb" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#93d5b3" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#74c49c" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#59b186" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#479570" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d745c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#315345" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#25362f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e2724" }
-                            },
-                            "red": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef2f2" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fee2e2" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fecaca" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fca5a5" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f87171" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ef4444" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#dc2626" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b91c1c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#991b1b" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7f1d1d" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#450a0a" }
-                            },
-                            "violet": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f4f2ff" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e9e8ff" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d7d4ff" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bab2ff" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9886ff" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7655fd" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#6330f5" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5620e1" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#481abd" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d189a" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#230c69" }
-                            },
-                            "blue": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#eef4ff" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d9e6ff" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bcd4ff" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#8ebaff" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5893ff" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#326cff" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e4cf5" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1436e1" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#172cb6" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#192b8f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#141c57" }
-                            }
-                        },
-                        "text": {
-                            "strong": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.950}"
-                            },
-                            "default": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.700}"
-                            },
-                            "subdued": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.500}"
-                            },
-                            "express": { "$scopes": ["TEXT_FILL"], "$type": "color", "$value": "#df2b50" }
-                        },
-                        "semantic": {
-                            "primary": {
-                                "100": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.50}"
-                                },
-                                "200": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.100}"
-                                },
-                                "300": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.400}"
-                                },
-                                "400": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.700}"
-                                },
-                                "500": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.800}"
-                                },
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.950}"
-                                },
-                                "hover": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.violet.700}"
-                                }
-                            },
-                            "success": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.green.600}"
-                            },
-                            "warning": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.amber.700}"
-                            },
-                            "danger": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.red.700}"
-                            },
-                            "info": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.blue.700}"
-                            }
-                        },
-                        "surface": {
-                            "border": {
-                                "default": {
-                                    "$scopes": ["STROKE_COLOR"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.200}"
-                                },
-                                "subdued": {
-                                    "$scopes": ["STROKE_COLOR"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.100}"
-                                }
-                            },
-                            "background": {
-                                "depressed": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.100}"
-                                },
-                                "default": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.50}"
-                                },
-                                "elevated": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.white}"
-                                }
-                            }
-                        }
-                    },
-                    "spacing": {
-                        "0": { "$scopes": ["GAP"], "$type": "float", "$value": 0 },
-                        "1": { "$scopes": ["GAP"], "$type": "float", "$value": 4 },
-                        "2": { "$scopes": ["GAP"], "$type": "float", "$value": 8 },
-                        "3": { "$scopes": ["GAP"], "$type": "float", "$value": 12 },
-                        "4": { "$scopes": ["GAP"], "$type": "float", "$value": 16 },
-                        "5": { "$scopes": ["GAP"], "$type": "float", "$value": 20 },
-                        "6": { "$scopes": ["GAP"], "$type": "float", "$value": 24 },
-                        "7": { "$scopes": ["GAP"], "$type": "float", "$value": 28 },
-                        "8": { "$scopes": ["GAP"], "$type": "float", "$value": 32 },
-                        "9": { "$scopes": ["GAP"], "$type": "float", "$value": 36 },
-                        "10": { "$scopes": ["GAP"], "$type": "float", "$value": 40 },
-                        "12": { "$scopes": ["GAP"], "$type": "float", "$value": 48 },
-                        "14": { "$scopes": ["GAP"], "$type": "float", "$value": 56 },
-                        "16": { "$scopes": ["GAP"], "$type": "float", "$value": 64 },
-                        "18": { "$scopes": ["GAP"], "$type": "float", "$value": 72 },
-                        "20": { "$scopes": ["GAP"], "$type": "float", "$value": 80 }
-                    },
-                    "radius": {
-                        "none": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 0 },
-                        "sm": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 2 },
-                        "base": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 4 },
-                        "md": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 6 },
-                        "lg": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 8 },
-                        "xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 12 },
-                        "2xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 16 },
-                        "3xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 24 },
-                        "full": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 9999 }
-                    },
-                    "border": {
-                        "none": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 0 },
-                        "base": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 1 },
-                        "md": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 2 },
-                        "lg": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 4 },
-                        "xl": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 8 }
-                    }
+            "neutral": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fafaf9" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f1f1f1" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e7e5e4" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6d3d1" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#a8a29e" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78716c" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#57534e" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#44403c" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#292524" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1c1917" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#0c0a09" },
+                "white": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffffff" },
+                "black": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#000000" }
+            },
+            "orange": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fff7ed" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffedd5" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fed7aa" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fdba74" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fb923c" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f97316" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ea580c" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#c2410c" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9a3412" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7c2d12" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#431407" }
+            },
+            "amber": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fffbeb" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef3c7" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fde68a" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fcd34d" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fbbf24" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f59e0b" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d97706" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b45309" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#92400e" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78350f" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#451a03" }
+            },
+            "green": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f3faf6" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6f2e3" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b4e4cb" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#93d5b3" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#74c49c" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#59b186" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#479570" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d745c" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#315345" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#25362f" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e2724" }
+            },
+            "red": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef2f2" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fee2e2" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fecaca" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fca5a5" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f87171" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ef4444" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#dc2626" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b91c1c" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#991b1b" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7f1d1d" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#450a0a" }
+            },
+            "violet": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f4f2ff" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e9e8ff" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d7d4ff" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bab2ff" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9886ff" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7655fd" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#6330f5" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5620e1" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#481abd" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d189a" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#230c69" }
+            },
+            "blue": {
+                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#eef4ff" },
+                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d9e6ff" },
+                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bcd4ff" },
+                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#8ebaff" },
+                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5893ff" },
+                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#326cff" },
+                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e4cf5" },
+                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1436e1" },
+                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#172cb6" },
+                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#192b8f" },
+                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#141c57" }
+            }
+        },
+        "text": {
+            "strong": {
+                "$scopes": ["TEXT_FILL"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.neutral.950}"
+            },
+            "default": {
+                "$scopes": ["TEXT_FILL"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.neutral.700}"
+            },
+            "subdued": {
+                "$scopes": ["TEXT_FILL"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.neutral.500}"
+            },
+            "express": { "$scopes": ["TEXT_FILL"], "$type": "color", "$value": "#df2b50" }
+        },
+        "semantic": {
+            "primary": {
+                "100": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.50}"
                 },
-                "Memo": {
-                    "color": {
-                        "base": {
-                            "neutral": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fafaf9" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f1f1f1" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e7e5e4" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6d3d1" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#a8a29e" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78716c" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#57534e" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#44403c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#292524" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1c1917" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#0c0a09" },
-                                "white": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffffff" },
-                                "black": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#000000" }
-                            },
-                            "orange": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fff7ed" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ffedd5" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fed7aa" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fdba74" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fb923c" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f97316" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ea580c" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#c2410c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9a3412" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7c2d12" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#431407" }
-                            },
-                            "amber": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fffbeb" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef3c7" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fde68a" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fcd34d" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fbbf24" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f59e0b" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d97706" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b45309" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#92400e" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#78350f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#451a03" }
-                            },
-                            "green": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f3faf6" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d6f2e3" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b4e4cb" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#93d5b3" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#74c49c" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#59b186" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#479570" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d745c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#315345" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#25362f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e2724" }
-                            },
-                            "red": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fef2f2" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fee2e2" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fecaca" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#fca5a5" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f87171" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#ef4444" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#dc2626" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#b91c1c" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#991b1b" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7f1d1d" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#450a0a" }
-                            },
-                            "violet": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#f4f2ff" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#e9e8ff" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d7d4ff" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bab2ff" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#9886ff" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#7655fd" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#6330f5" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5620e1" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#481abd" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#3d189a" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#230c69" }
-                            },
-                            "blue": {
-                                "50": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#eef4ff" },
-                                "100": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#d9e6ff" },
-                                "200": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#bcd4ff" },
-                                "300": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#8ebaff" },
-                                "400": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#5893ff" },
-                                "500": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#326cff" },
-                                "600": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1e4cf5" },
-                                "700": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#1436e1" },
-                                "800": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#172cb6" },
-                                "900": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#192b8f" },
-                                "950": { "$scopes": ["ALL_SCOPES"], "$type": "color", "$value": "#141c57" }
-                            }
-                        },
-                        "text": {
-                            "strong": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.950}"
-                            },
-                            "default": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.700}"
-                            },
-                            "subdued": {
-                                "$scopes": ["TEXT_FILL"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.500}"
-                            },
-                            "express": { "$scopes": ["TEXT_FILL"], "$type": "color", "$value": "#df2b50" }
-                        },
-                        "semantic": {
-                            "primary": {
-                                "100": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.50}"
-                                },
-                                "200": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.100}"
-                                },
-                                "300": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.400}"
-                                },
-                                "400": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.500}"
-                                },
-                                "500": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.600}"
-                                },
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.500}"
-                                },
-                                "hover": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.400}"
-                                }
-                            },
-                            "success": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.green.600}"
-                            },
-                            "warning": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.amber.700}"
-                            },
-                            "danger": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.red.700}"
-                            },
-                            "info": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "",
-                                "$collectionName": "base",
-                                "$value": "{color.base.blue.700}"
-                            }
-                        },
-                        "surface": {
-                            "border": {
-                                "default": {
-                                    "$scopes": ["STROKE_COLOR"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.200}"
-                                },
-                                "subdued": {
-                                    "$scopes": ["STROKE_COLOR"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.100}"
-                                }
-                            },
-                            "background": {
-                                "depressed": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.100}"
-                                },
-                                "default": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.50}"
-                                },
-                                "elevated": {
-                                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
-                                    "$type": "color",
-                                    "$libraryName": "",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.white}"
-                                }
-                            }
-                        }
-                    },
-                    "spacing": {
-                        "0": { "$scopes": ["GAP"], "$type": "float", "$value": 0 },
-                        "1": { "$scopes": ["GAP"], "$type": "float", "$value": 4 },
-                        "2": { "$scopes": ["GAP"], "$type": "float", "$value": 8 },
-                        "3": { "$scopes": ["GAP"], "$type": "float", "$value": 12 },
-                        "4": { "$scopes": ["GAP"], "$type": "float", "$value": 16 },
-                        "5": { "$scopes": ["GAP"], "$type": "float", "$value": 20 },
-                        "6": { "$scopes": ["GAP"], "$type": "float", "$value": 24 },
-                        "7": { "$scopes": ["GAP"], "$type": "float", "$value": 28 },
-                        "8": { "$scopes": ["GAP"], "$type": "float", "$value": 32 },
-                        "9": { "$scopes": ["GAP"], "$type": "float", "$value": 36 },
-                        "10": { "$scopes": ["GAP"], "$type": "float", "$value": 40 },
-                        "12": { "$scopes": ["GAP"], "$type": "float", "$value": 48 },
-                        "14": { "$scopes": ["GAP"], "$type": "float", "$value": 56 },
-                        "16": { "$scopes": ["GAP"], "$type": "float", "$value": 64 },
-                        "18": { "$scopes": ["GAP"], "$type": "float", "$value": 72 },
-                        "20": { "$scopes": ["GAP"], "$type": "float", "$value": 80 }
-                    },
-                    "radius": {
-                        "none": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 0 },
-                        "sm": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 2 },
-                        "base": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 4 },
-                        "md": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 6 },
-                        "lg": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 8 },
-                        "xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 12 },
-                        "2xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 16 },
-                        "3xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 24 },
-                        "full": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 9999 }
-                    },
-                    "border": {
-                        "none": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 0 },
-                        "base": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 1 },
-                        "md": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 2 },
-                        "lg": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 4 },
-                        "xl": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 8 }
-                    }
+                "200": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.100}"
+                },
+                "300": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.400}"
+                },
+                "400": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.700}"
+                },
+                "500": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.800}"
+                },
+                "default": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.950}"
+                },
+                "hover": {
+                    "$scopes": ["ALL_SCOPES"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.violet.700}"
+                }
+            },
+            "success": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.green.600}"
+            },
+            "warning": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.amber.700}"
+            },
+            "danger": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.red.700}"
+            },
+            "info": {
+                "$scopes": ["ALL_SCOPES"],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "base",
+                "$value": "{color.base.blue.700}"
+            }
+        },
+        "surface": {
+            "border": {
+                "default": {
+                    "$scopes": ["STROKE_COLOR"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.200}"
+                },
+                "subdued": {
+                    "$scopes": ["STROKE_COLOR"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.100}"
+                }
+            },
+            "background": {
+                "depressed": {
+                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.100}"
+                },
+                "default": {
+                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.50}"
+                },
+                "elevated": {
+                    "$scopes": ["FRAME_FILL", "SHAPE_FILL"],
+                    "$type": "color",
+                    "$libraryName": "",
+                    "$collectionName": "base",
+                    "$value": "{color.base.neutral.white}"
                 }
             }
         }
+    },
+    "spacing": {
+        "0": { "$scopes": ["GAP"], "$type": "float", "$value": 0 },
+        "1": { "$scopes": ["GAP"], "$type": "float", "$value": 4 },
+        "2": { "$scopes": ["GAP"], "$type": "float", "$value": 8 },
+        "3": { "$scopes": ["GAP"], "$type": "float", "$value": 12 },
+        "4": { "$scopes": ["GAP"], "$type": "float", "$value": 16 },
+        "5": { "$scopes": ["GAP"], "$type": "float", "$value": 20 },
+        "6": { "$scopes": ["GAP"], "$type": "float", "$value": 24 },
+        "7": { "$scopes": ["GAP"], "$type": "float", "$value": 28 },
+        "8": { "$scopes": ["GAP"], "$type": "float", "$value": 32 },
+        "9": { "$scopes": ["GAP"], "$type": "float", "$value": 36 },
+        "10": { "$scopes": ["GAP"], "$type": "float", "$value": 40 },
+        "12": { "$scopes": ["GAP"], "$type": "float", "$value": 48 },
+        "14": { "$scopes": ["GAP"], "$type": "float", "$value": 56 },
+        "16": { "$scopes": ["GAP"], "$type": "float", "$value": 64 },
+        "18": { "$scopes": ["GAP"], "$type": "float", "$value": 72 },
+        "20": { "$scopes": ["GAP"], "$type": "float", "$value": 80 }
+    },
+    "radius": {
+        "none": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 0 },
+        "sm": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 2 },
+        "base": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 4 },
+        "md": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 6 },
+        "lg": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 8 },
+        "xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 12 },
+        "2xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 16 },
+        "3xl": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 24 },
+        "full": { "$scopes": ["CORNER_RADIUS"], "$type": "float", "$value": 9999 }
+    },
+    "border": {
+        "none": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 0 },
+        "base": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 1 },
+        "md": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 2 },
+        "lg": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 4 },
+        "xl": { "$scopes": ["STROKE_FLOAT"], "$type": "float", "$value": 8 }
     }
-]
+}

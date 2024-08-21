@@ -1,548 +1,588 @@
-[
-    {
-        "components": {
-            "modes": {
-                "Default": {
-                    "Button": {
-                        "contained": {
-                            "primary": {
-                                "background": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.default}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.hover}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.500}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            },
-                            "secondary": {
-                                "background": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.100}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.50}"
-                                    }
-                                },
-                                "border": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.300}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.300}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.300}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.200}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.700}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            },
-                            "error": {
-                                "background": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.red.600}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.red.500}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.red.600}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            },
-                            "success": {
-                                "background": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.green.600}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.green.500}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.green.600}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.white}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            },
-                            "tertiary": {
-                                "background": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.200}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.100}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.700}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            },
-                            "ghost": {
-                                "background": {
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.200}"
-                                    }
-                                },
-                                "text": {
-                                    "default": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.700}"
-                                    },
-                                    "hover": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "active": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.semantic.primary.400}"
-                                    },
-                                    "disabled": {
-                                        "$scopes": ["ALL_SCOPES"],
-                                        "$type": "color",
-                                        "$libraryName": "DS Foundation",
-                                        "$collectionName": "base",
-                                        "$value": "{color.base.neutral.400}"
-                                    }
-                                }
-                            }
-                        },
-                        "small": {
-                            "paddingHorizontal": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "float",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{spacing.2}"
-                            },
-                            "paddingVertical": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 6 }
-                        },
-                        "medium": {
-                            "paddingHorizontal": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "float",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{spacing.3}"
-                            },
-                            "paddingVertical": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "float",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{spacing.3}"
-                            }
-                        },
-                        "borderRadius": {
-                            "$scopes": ["ALL_SCOPES"],
-                            "$type": "float",
-                            "$libraryName": "DS Foundation",
-                            "$collectionName": "base",
-                            "$value": "{radius.lg}"
-                        },
-                        "large": {
-                            "paddingHorizontal": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "float",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{spacing.5}"
-                            },
-                            "paddingVertical": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "float",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{spacing.5}"
-                            }
-                        }
-                    },
-                    "Pill": {
-                        "default": {
-                            "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.200}"
-                            },
-                            "text": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.neutral.700}"
-                            }
-                        },
+{
+    "components": {
+        "modes": {
+            "Default": {
+                "Button": {
+                    "contained": {
                         "primary": {
                             "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.semantic.primary.100}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.default}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.hover}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.500}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                }
                             },
                             "text": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.semantic.primary.400}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
+                            }
+                        },
+                        "secondary": {
+                            "background": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.100}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.50}"
+                                }
+                            },
+                            "border": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.300}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.300}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.300}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.200}"
+                                }
+                            },
+                            "text": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.700}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
+                            }
+                        },
+                        "error": {
+                            "background": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.red.600}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.red.500}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.red.600}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                }
+                            },
+                            "text": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
                             }
                         },
                         "success": {
                             "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.green.100}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.green.600}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.green.500}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.green.600}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                }
                             },
                             "text": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.green.800}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.white}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
                             }
                         },
-                        "warning": {
+                        "tertiary": {
                             "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.amber.100}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.200}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.100}"
+                                }
                             },
                             "text": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.amber.800}"
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.700}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
                             }
                         },
-                        "danger": {
+                        "ghost": {
                             "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.red.100}"
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.200}"
+                                }
                             },
                             "text": {
+                                "default": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.700}"
+                                },
+                                "hover": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "active": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.semantic.primary.400}"
+                                },
+                                "disabled": {
+                                    "$scopes": ["ALL_SCOPES"],
+                                    "$type": "color",
+                                    "$libraryName": "DS Foundation",
+                                    "$collectionName": "base",
+                                    "$value": "{color.base.neutral.400}"
+                                }
+                            }
+                        }
+                    },
+                    "small": {
+                        "paddingHorizontal": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "float",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{spacing.2}"
+                        },
+                        "paddingVertical": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 6 }
+                    },
+                    "medium": {
+                        "paddingHorizontal": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "float",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{spacing.3}"
+                        },
+                        "paddingVertical": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "float",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{spacing.3}"
+                        }
+                    },
+                    "borderRadius": {
+                        "$scopes": ["ALL_SCOPES"],
+                        "$type": "float",
+                        "$libraryName": "DS Foundation",
+                        "$collectionName": "base",
+                        "$value": "{radius.lg}"
+                    },
+                    "large": {
+                        "paddingHorizontal": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "float",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{spacing.5}"
+                        },
+                        "paddingVertical": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "float",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{spacing.5}"
+                        }
+                    }
+                },
+                "Pill": {
+                    "default": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.neutral.200}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.neutral.700}"
+                        }
+                    },
+                    "primary": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.semantic.primary.100}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.semantic.primary.400}"
+                        }
+                    },
+                    "success": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.green.100}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.green.800}"
+                        }
+                    },
+                    "warning": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.amber.100}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.amber.800}"
+                        }
+                    },
+                    "danger": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.red.100}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.red.800}"
+                        }
+                    },
+                    "info": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.blue.50}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.blue.700}"
+                        }
+                    },
+                    "inverted": {
+                        "background": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.neutral.950}"
+                        },
+                        "text": {
+                            "$scopes": ["ALL_SCOPES"],
+                            "$type": "color",
+                            "$libraryName": "DS Foundation",
+                            "$collectionName": "base",
+                            "$value": "{color.base.neutral.white}"
+                        }
+                    }
+                },
+                "Badge": {
+                    "lab": {
+                        "background": {
+                            "default": {
                                 "$scopes": ["ALL_SCOPES"],
                                 "$type": "color",
                                 "$libraryName": "DS Foundation",
                                 "$collectionName": "base",
-                                "$value": "{color.base.red.800}"
+                                "$value": "{color.base.amber.400}"
                             }
                         },
-                        "info": {
-                            "background": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.blue.50}"
-                            },
-                            "text": {
-                                "$scopes": ["ALL_SCOPES"],
-                                "$type": "color",
-                                "$libraryName": "DS Foundation",
-                                "$collectionName": "base",
-                                "$value": "{color.base.blue.700}"
-                            }
-                        },
-                        "inverted": {
-                            "background": {
+                        "text": {
+                            "default": {
                                 "$scopes": ["ALL_SCOPES"],
                                 "$type": "color",
                                 "$libraryName": "DS Foundation",
                                 "$collectionName": "base",
                                 "$value": "{color.base.neutral.950}"
-                            },
-                            "text": {
+                            }
+                        }
+                    },
+                    "memo": {
+                        "background": {
+                            "default": {
+                                "$scopes": ["ALL_SCOPES"],
+                                "$type": "color",
+                                "$libraryName": "DS Foundation",
+                                "$collectionName": "base",
+                                "$value": "{color.base.blue.500}"
+                            }
+                        },
+                        "text": {
+                            "default": {
                                 "$scopes": ["ALL_SCOPES"],
                                 "$type": "color",
                                 "$libraryName": "DS Foundation",
@@ -551,65 +591,23 @@
                             }
                         }
                     },
-                    "Badge": {
-                        "lab": {
-                            "background": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.amber.400}"
-                                }
-                            },
-                            "text": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.950}"
-                                }
+                    "natural": {
+                        "background": {
+                            "default": {
+                                "$scopes": ["ALL_SCOPES"],
+                                "$type": "color",
+                                "$libraryName": "DS Foundation",
+                                "$collectionName": "base",
+                                "$value": "{color.base.green.600}"
                             }
                         },
-                        "memo": {
-                            "background": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.blue.500}"
-                                }
-                            },
-                            "text": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.white}"
-                                }
-                            }
-                        },
-                        "natural": {
-                            "background": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.green.600}"
-                                }
-                            },
-                            "text": {
-                                "default": {
-                                    "$scopes": ["ALL_SCOPES"],
-                                    "$type": "color",
-                                    "$libraryName": "DS Foundation",
-                                    "$collectionName": "base",
-                                    "$value": "{color.base.neutral.white}"
-                                }
+                        "text": {
+                            "default": {
+                                "$scopes": ["ALL_SCOPES"],
+                                "$type": "color",
+                                "$libraryName": "DS Foundation",
+                                "$collectionName": "base",
+                                "$value": "{color.base.neutral.white}"
                             }
                         }
                     }
@@ -617,4 +615,4 @@
             }
         }
     }
-]
+}
