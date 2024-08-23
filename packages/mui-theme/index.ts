@@ -203,6 +203,71 @@ const nivodaTheme = createTheme({
                 disableTouchRipple: true,
             },
         },
+        MuiInputBase: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: tokens.components.textfield.background.default,
+                    border: `1px solid ${tokens.components.textfield.border.default}`,
+                    borderRadius: tokens.components.textfield.borderradius,
+                    color: tokens.components.textfield.text.input,
+                    fontSize: '14px',
+                    fontWeight: 500,
+                    lineHeight: '20px',
+                    padding: `${tokens.components.textfield.paddingvertical} ${tokens.components.textfield.paddinghorizontal}`,
+                    width: '100%',
+                    gap: tokens.components.textfield.gap,
+                    input: {
+                        padding: '0px',
+                    },
+                    ':hover': {
+                        backgroundColor: tokens.components.textfield.background.hover,
+                        borderColor: tokens.components.textfield.border.hover,
+                    },
+                    ':focus': {
+                        backgroundColor: tokens.components.textfield.background.active,
+                        borderColor: tokens.components.textfield.border.active,
+                        borderSize: '1px',
+                        borderStyle: 'solid',
+                    },
+                    '&.Mui-disabled': {
+                        backgroundColor: tokens.components.textfield.background.disabled,
+                        borderColor: tokens.components.textfield.border.disabled,
+                        color: tokens.components.textfield.text.input,
+                    },
+                    'input[aria-invalid="true"]': {
+                        // backgroundColor: tokens.components.textfield.background.error,
+                        borderColor: tokens.components.textfield.border.error,
+                    },
+                },
+                sizeSmall: {
+                    fontSize: '12px',
+                    padding: `${tokens.components.textfield.small.paddingvertical} ${tokens.components.textfield.small.paddinghorizontal}`,
+                },
+            },
+        },
+        MuiFormHelperText: {
+            styleOverrides: {
+                root: {
+                    marginTop: tokens.base.default.spacing['2'],
+                    fontSize: '12px',
+                    lineHeight: '18px',
+                },
+                error: {
+                    color: tokens.components.textfield.text.error.text,
+                },
+            },
+        },
+        MuiInputLabel: {
+            styleOverrides: {
+                root: {
+                    color: tokens.components.textfield.text.label,
+                    fontSize: '14px',
+                    lineHeight: '20px',
+                    fontWeight: 500,
+                    marginBottom: tokens.base.default.spacing['2'],
+                },
+            },
+        },
     },
     typography: {
         fontFamily: 'Inter',
