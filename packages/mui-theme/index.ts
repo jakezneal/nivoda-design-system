@@ -2,21 +2,19 @@
 
 import { createTheme } from '@mui/material/styles';
 import tokens from '@nivoda/design-tokens';
-import type { PaletteColor } from '@mui/material';
 
-const disabledPalette: PaletteColor = {
-    main: '#FFFFFF',
-    light: '#FFFFFF',
-    dark: '#FFFFFF',
-    contrastText: '#FFFFFF',
+const unusedButtonVariant = {
+    backgroundColor: 'pink',
+    border: '2px dashed purple',
+    color: 'green',
+    ':hover': {
+        backgroundColor: 'pink',
+        border: '2px dashed purple',
+        color: 'green',
+    },
 };
 
 const nivodaTheme = createTheme({
-    palette: {
-        secondary: disabledPalette,
-        warning: disabledPalette,
-        info: disabledPalette,
-    },
     breakpoints: {
         values: {
             xs: 0,
@@ -64,6 +62,7 @@ const nivodaTheme = createTheme({
                         color: tokens.components.button.contained.primary.text.disabled,
                     },
                 },
+                containedSecondary: unusedButtonVariant,
                 containedError: {
                     backgroundColor: tokens.components.button.contained.error.background.default,
                     color: tokens.components.button.contained.error.text.default,
@@ -96,7 +95,8 @@ const nivodaTheme = createTheme({
                         color: tokens.components.button.contained.success.text.disabled,
                     },
                 },
-                outlinedPrimary: {
+                outlinedPrimary: unusedButtonVariant,
+                outlinedSecondary: {
                     backgroundColor: tokens.components.button.outlined.primary.background.default,
                     borderColor: tokens.components.button.outlined.primary.border.default,
                     color: tokens.components.button.outlined.primary.text.default,
