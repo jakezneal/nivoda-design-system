@@ -30,6 +30,7 @@ const nivodaTheme = createTheme({
                 root: {
                     borderRadius: tokens.components.button.borderradius,
                     textTransform: 'none',
+                    transition: 'none',
                 },
                 sizeLarge: {
                     padding: `${tokens.components.button.large.paddingvertical} ${tokens.components.button.large.paddinghorizontal}`,
