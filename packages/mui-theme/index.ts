@@ -215,7 +215,7 @@ const nivodaTheme = createTheme({
                         backgroundColor: tokens.components.textfield.background.hover,
                         borderColor: tokens.components.textfield.border.hover,
                     },
-                    ':focus': {
+                    ':focus-within': {
                         backgroundColor: tokens.components.textfield.background.active,
                         borderColor: tokens.components.textfield.border.active,
                         borderSize: '1px',
@@ -226,13 +226,16 @@ const nivodaTheme = createTheme({
                         borderColor: tokens.components.textfield.border.disabled,
                         color: tokens.components.textfield.text.input,
                     },
-                    'input[aria-invalid="true"]': {
-                        // backgroundColor: tokens.components.textfield.background.error,
+                    '&.Mui-error': {
+                        backgroundColor: tokens.components.textfield.background.error,
                         borderColor: tokens.components.textfield.border.error,
                     },
                 },
                 sizeSmall: {
                     padding: `${tokens.components.textfield.small.paddingvertical} ${tokens.components.textfield.small.paddinghorizontal}`,
+                },
+                inputMultiline: {
+                    minHeight: '120px',
                 },
             },
         },

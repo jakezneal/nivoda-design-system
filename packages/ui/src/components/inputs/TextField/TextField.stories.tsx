@@ -3,9 +3,13 @@ import Search from '@mui/icons-material/Search';
 
 import { TextField } from './TextField';
 import type { TextFieldProps } from './TextField';
-import { InputAdornment } from '@mui/material';
 
-const meta: Meta<typeof TextField> = {
+interface TextFieldPropsAndCustomArgs extends TextFieldProps {
+    startIcon?: boolean;
+    endIcon?: boolean;
+}
+
+const meta: Meta<TextFieldPropsAndCustomArgs> = {
     component: TextField,
     decorators: [
         (Story) => (
@@ -23,7 +27,6 @@ const meta: Meta<typeof TextField> = {
             control: { type: 'select' },
             options: ['small', 'medium'],
         },
-        // @ts-ignore
         startIcon: {
             control: { type: 'boolean' },
         },
@@ -36,9 +39,9 @@ const meta: Meta<typeof TextField> = {
     },
 };
 
-type Story = StoryObj<typeof TextField>;
+type Story = StoryObj<typeof meta>;
 
-const defaultArgs: TextFieldProps = {
+const defaultArgs: TextFieldPropsAndCustomArgs = {
     id: 'text-field',
     type: 'text',
     name: 'text-field',
@@ -47,7 +50,6 @@ const defaultArgs: TextFieldProps = {
     errorText: 'Incorrect value',
     disabled: false,
     size: 'medium',
-    // @ts-ignore
     startIcon: false,
     endIcon: false,
     multiline: false,
@@ -58,7 +60,6 @@ export const textField: Story = {
         ...defaultArgs,
     },
     render: (args) => {
-        // @ts-ignore
         const { startIcon, endIcon } = args;
 
         return (
