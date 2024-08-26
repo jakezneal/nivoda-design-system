@@ -33,18 +33,12 @@ const nivodaTheme = createTheme({
                 },
                 sizeLarge: {
                     padding: `${tokens.components.button.large.paddingvertical} ${tokens.components.button.large.paddinghorizontal}`,
-                    fontSize: '16px',
-                    lineHeight: '16px',
                 },
                 sizeMedium: {
                     padding: `${tokens.components.button.medium.paddingvertical} ${tokens.components.button.medium.paddinghorizontal}`,
-                    fontSize: '14px',
-                    lineHeight: '20px',
                 },
                 sizeSmall: {
                     padding: `${tokens.components.button.small.paddingvertical} ${tokens.components.button.small.paddinghorizontal}`,
-                    fontSize: '14px',
-                    lineHeight: '20px',
                 },
                 containedPrimary: {
                     backgroundColor: tokens.components.button.contained.primary.background.default,
@@ -210,9 +204,6 @@ const nivodaTheme = createTheme({
                     border: `1px solid ${tokens.components.textfield.border.default}`,
                     borderRadius: tokens.components.textfield.borderradius,
                     color: tokens.components.textfield.text.input,
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    lineHeight: '20px',
                     padding: `${tokens.components.textfield.paddingvertical} ${tokens.components.textfield.paddinghorizontal}`,
                     width: '100%',
                     gap: tokens.components.textfield.gap,
@@ -240,7 +231,6 @@ const nivodaTheme = createTheme({
                     },
                 },
                 sizeSmall: {
-                    fontSize: '12px',
                     padding: `${tokens.components.textfield.small.paddingvertical} ${tokens.components.textfield.small.paddinghorizontal}`,
                 },
             },
@@ -249,8 +239,6 @@ const nivodaTheme = createTheme({
             styleOverrides: {
                 root: {
                     marginTop: tokens.base.default.spacing['2'],
-                    fontSize: '12px',
-                    lineHeight: '18px',
                 },
                 error: {
                     color: tokens.components.textfield.text.error.text,
@@ -261,9 +249,6 @@ const nivodaTheme = createTheme({
             styleOverrides: {
                 root: {
                     color: tokens.components.textfield.text.label,
-                    fontSize: '14px',
-                    lineHeight: '20px',
-                    fontWeight: 500,
                     marginBottom: tokens.base.default.spacing['2'],
                 },
             },
