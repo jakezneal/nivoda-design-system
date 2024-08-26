@@ -209,6 +209,7 @@ const nivodaTheme = createTheme({
                     gap: tokens.components.textfield.gap,
                     input: {
                         padding: '0px',
+                        height: '1.5rem',
                     },
                     ':hover': {
                         backgroundColor: tokens.components.textfield.background.hover,
