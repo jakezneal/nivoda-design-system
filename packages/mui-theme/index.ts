@@ -237,6 +237,9 @@ const nivodaTheme = createTheme({
                 inputMultiline: {
                     minHeight: '120px',
                 },
+                multiline: {
+                    alignItems: 'flex-start',
+                },
             },
         },
         MuiFormHelperText: {
