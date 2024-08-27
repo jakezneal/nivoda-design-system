@@ -279,7 +279,7 @@ const nivodaTheme = createTheme({
                                 opacity: 1,
                             },
                             '&.Mui-disabled + .MuiSwitch-track': {
-                                color: tokens.components.switch.track.colour.checkeddisabled,
+                                backgroundColor: tokens.components.switch.track.colour.checkeddisabled,
                                 // Opacity isn't exporting incorrectly.
                                 // opacity: tokens.components.switch.track.opacity.checkeddisabled,
                                 opacity: 0.5,
