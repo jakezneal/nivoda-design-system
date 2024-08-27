@@ -238,9 +238,9 @@ const nivodaTheme = createTheme({
             styleOverrides: {
                 root: {
                     marginTop: tokens.base.default.spacing['2'],
-                },
-                error: {
-                    color: tokens.components.textfield.text.error.text,
+                    '&.Mui-error': {
+                        color: tokens.components.textfield.text.error.text,
+                    },
                 },
             },
         },
