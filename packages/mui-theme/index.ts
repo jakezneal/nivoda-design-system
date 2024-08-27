@@ -289,7 +289,8 @@ const nivodaTheme = createTheme({
                             color: tokens.components.switch.thumb.colour.disabled,
                         },
                         '&.Mui-disabled + .MuiSwitch-track': {
-                            color: tokens.components.switch.track.colour.disabled,
+                            backgroundColor: tokens.components.switch.track.colour.disabled,
+                            opacity: 1,
                         },
                     },
                     '& .MuiSwitch-thumb': {
@@ -297,6 +298,7 @@ const nivodaTheme = createTheme({
                         width: tokens.components.switch.thumb.size,
                         height: tokens.components.switch.thumb.size,
                         boxShadow: 'none',
+                        color: tokens.components.switch.thumb.colour.default,
                     },
                     '& .MuiSwitch-track': {
                         borderRadius: tokens.components.switch.track.borderradius,
