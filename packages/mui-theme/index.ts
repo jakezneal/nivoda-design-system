@@ -255,7 +255,6 @@ const nivodaTheme = createTheme({
         },
         MuiSwitch: {
             defaultProps: {
-                disableElevation: true,
                 disableFocusRipple: true,
                 disableRipple: true,
                 disableTouchRipple: true,
