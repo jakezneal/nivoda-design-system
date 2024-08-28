@@ -9,7 +9,8 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "storybook": "storybook dev -p 6006 --ci",
-        "build:storybook": "storybook build"
+        "build:storybook": "storybook build",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
     },
     "dependencies": {
         "@emotion/react": "^11.13.0",
