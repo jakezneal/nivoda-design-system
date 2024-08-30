@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+import tokens from '@nivoda/design-tokens';
 import { alertClasses } from '@mui/material/Alert';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 
@@ -5,10 +8,10 @@ const MuiAlertStyles = {
     styleOverrides: {
         root: {
             borderStyle: 'solid',
-            borderWidth: '1px',
-            borderRadius: '8px',
-            padding: '16px',
-            gap: '12px',
+            borderWidth: tokens.components.alert.border.width,
+            borderRadius: tokens.components.alert.border.radius,
+            padding: `${tokens.components.alert.paddingvertical} ${tokens.components.alert.paddinghorizontal}`,
+            gap: tokens.components.alert.gap,
 
             [`& .${alertClasses.icon}`]: {
                 marginRight: 0,
@@ -20,6 +23,10 @@ const MuiAlertStyles = {
 
             [`& .${alertClasses.action}`]: {
                 marginRight: 0,
+
+                svg: {
+                    fontSize: `calc(${tokens.components.alert.icon.size} * 2)`,
+                },
             },
 
             [`& .${buttonBaseClasses.root}`]: {
@@ -32,27 +39,43 @@ const MuiAlertStyles = {
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorSuccess}`]: {
-                backgroundColor: '#f3faf6',
-                borderColor: '#b4e4cb',
-                color: '#315345',
+                backgroundColor: tokens.components.alert.background.success,
+                borderColor: tokens.components.alert.border.colour.success,
+                color: tokens.components.alert.text.success,
+
+                [`& .${alertClasses.action}`]: {
+                    color: tokens.components.alert.icon.success,
+                },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorInfo}`]: {
-                backgroundColor: '#eef4ff',
-                borderColor: '#bcd4ff',
-                color: '#1436e1',
+                backgroundColor: tokens.components.alert.background.info,
+                borderColor: tokens.components.alert.border.colour.info,
+                color: tokens.components.alert.text.info,
+
+                [`& .${alertClasses.action}`]: {
+                    color: tokens.components.alert.icon.info,
+                },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorWarning}`]: {
-                backgroundColor: '#fffbeb',
-                borderColor: '#fde68a',
-                color: '#78350f',
+                backgroundColor: tokens.components.alert.background.warning,
+                borderColor: tokens.components.alert.border.colour.warning,
+                color: tokens.components.alert.text.warning,
+
+                [`& .${alertClasses.action}`]: {
+                    color: tokens.components.alert.icon.warning,
+                },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorError}`]: {
-                backgroundColor: '#fef2f2',
-                borderColor: '#fecaca',
-                color: '#991b1b',
+                backgroundColor: tokens.components.alert.background.error,
+                borderColor: tokens.components.alert.border.colour.error,
+                color: tokens.components.alert.text.error,
+
+                [`& .${alertClasses.action}`]: {
+                    color: tokens.components.alert.icon.error,
+                },
             },
         },
     },
