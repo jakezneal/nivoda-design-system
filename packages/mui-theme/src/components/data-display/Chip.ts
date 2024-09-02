@@ -10,6 +10,7 @@ const MuiChipStyles = {
         root: {
             backgroundColor: tokens.components.chip.background.default,
             color: tokens.components.chip.text.default,
+            transition: 'none',
 
             [`.${buttonBaseClasses.root}&`]: {
                 [`&.${chipClasses.clickable}`]: {
@@ -27,6 +28,8 @@ const MuiChipStyles = {
             [`& .${svgIconClasses.root}`]: {
                 '&, &:hover': {
                     fill: tokens.components.chip.icon.default,
+                    // TODO: Needs hooking up to design tokens
+                    opacity: 0.2,
                 },
             },
         },

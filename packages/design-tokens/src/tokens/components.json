@@ -3462,7 +3462,7 @@
       "icon": {
         "default": {
           "type": "color",
-          "value": "{base.default.color.base.neutral.700}",
+          "value": "{base.default.color.base.neutral.black}",
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "mode": "Default",
@@ -3471,6 +3471,21 @@
                 "ALL_SCOPES"
               ],
               "variableId": "VariableID:12803:241",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "opacity": {
+          "type": "dimension",
+          "value": 0.2,
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12804:3087",
               "exportKey": "variables"
             }
           }
