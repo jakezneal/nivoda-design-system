@@ -12,7 +12,7 @@ const MuiChipStyles = {
             color: tokens.components.chip.text.default,
 
             [`.${buttonBaseClasses.root}&`]: {
-                [`&.${chipClasses.root}`]: {
+                [`&.${chipClasses.clickable}`]: {
                     '&:hover': {
                         backgroundColor: tokens.components.chip.background.hover,
                     },
