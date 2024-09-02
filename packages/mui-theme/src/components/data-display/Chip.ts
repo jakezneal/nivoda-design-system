@@ -13,7 +13,7 @@ const MuiChipStyles = {
             transition: 'none',
 
             [`.${buttonBaseClasses.root}&`]: {
-                [`&.${chipClasses.clickable}`]: {
+                [`&.${chipClasses.clickable}, &.${chipClasses.deletable}`]: {
                     '&:hover': {
                         backgroundColor: tokens.components.chip.background.hover,
                     },
