@@ -3410,6 +3410,89 @@
           }
         }
       }
+    },
+    "chip": {
+      "background": {
+        "default": {
+          "type": "color",
+          "value": "{base.default.color.base.neutral.100}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12800:2312",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "hover": {
+          "type": "color",
+          "value": "{base.default.color.base.neutral.200}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12800:2313",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "active": {
+          "type": "color",
+          "value": "{base.default.color.base.neutral.300}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12800:2314",
+              "exportKey": "variables"
+            }
+          }
+        }
+      },
+      "icon": {
+        "default": {
+          "type": "color",
+          "value": "{base.default.color.base.neutral.700}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12803:241",
+              "exportKey": "variables"
+            }
+          }
+        }
+      },
+      "text": {
+        "default": {
+          "type": "color",
+          "value": "{base.default.color.text.default}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12803:1066",
+              "exportKey": "variables"
+            }
+          }
+        }
+      }
     }
   }
 }

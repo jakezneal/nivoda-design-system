@@ -14,6 +14,8 @@ import MuiAutocomplete from './src/components/inputs/Autocomplete';
 
 import MuiAlert from './src/components/feedback/Alert';
 
+import MuiChip from './src/components/data-display/Chip';
+
 const nivodaTheme = createTheme({
     components: {
         MuiButton,
@@ -27,6 +29,7 @@ const nivodaTheme = createTheme({
         MuiAutocomplete,
         MuiButtonBase,
         MuiAlert,
+        MuiChip,
     },
     typography: {
         fontFamily: 'Inter',
