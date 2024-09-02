@@ -5,6 +5,7 @@ import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { autocompleteClasses } from '@mui/material/Autocomplete';
+import { chipClasses } from '@mui/material/Chip';
 
 const MuiAutocompleteStyles = {
     styleOverrides: {
@@ -69,6 +70,16 @@ const MuiAutocompleteStyles = {
             },
             [`& .${autocompleteClasses.endAdornment}`]: {
                 zIndex: 1,
+            },
+            [`& .${chipClasses.root}`]: {
+                '&:hover': {
+                    backgroundColor: tokens.components.chip.background.hover,
+                },
+
+                '&:active': {
+                    backgroundColor: tokens.components.chip.background.active,
+                    boxShadow: 'none',
+                },
             },
         },
     },
