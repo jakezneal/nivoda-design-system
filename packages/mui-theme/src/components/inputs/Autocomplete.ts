@@ -1,6 +1,7 @@
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
+import { autocompleteClasses } from '@mui/material/Autocomplete';
 
 const MuiAutocompleteStyles = {
     styleOverrides: {
@@ -61,7 +62,7 @@ const MuiAutocompleteStyles = {
             [`& .${outlinedInputClasses.notchedOutline}`]: {
                 borderColor: '#d6d3d1',
             },
-            [`& .${buttonBaseClasses.root}`]: {
+            [`& .${autocompleteClasses.popupIndicator}`]: {
                 transition: 'none',
 
                 '&:hover': {
