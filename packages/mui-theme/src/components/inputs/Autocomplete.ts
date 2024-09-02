@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
@@ -7,60 +10,55 @@ const MuiAutocompleteStyles = {
     styleOverrides: {
         root: {
             [`& .${inputBaseClasses.root}`]: {
-                borderRadius: '8px',
-                paddingTop: '12px',
-                paddingBottom: '12px',
-                paddingLeft: '12px',
+                borderRadius: tokens.components.autocomplete.borderradius,
+                color: tokens.components.autocomplete.text.input,
+                paddingTop: tokens.components.autocomplete.paddingVertical,
+                paddingBottom: tokens.components.autocomplete.paddingVertical,
+                paddingLeft: tokens.components.autocomplete.paddingHorizontal,
 
                 [`& .${inputBaseClasses.input}`]: {
+                    height: '30px',
                     padding: 0,
                 },
 
                 [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
-                    borderColor: '#9886ff',
+                    borderColor: tokens.components.autocomplete.border.hover,
                 },
 
                 [`&:focus-within .${outlinedInputClasses.notchedOutline}`]: {
-                    borderColor: '#5620e1',
+                    borderColor: tokens.components.autocomplete.border.active,
                     borderWidth: '1px',
                 },
 
                 [`&.${inputBaseClasses.sizeSmall}`]: {
-                    paddingTop: '6px',
-                    paddingBottom: '6px',
-                    paddingLeft: '8px',
+                    paddingTop: tokens.components.autocomplete.small.paddingVertical,
+                    paddingBottom: tokens.components.autocomplete.small.paddingVertical,
+                    paddingLeft: tokens.components.autocomplete.small.paddingHorizontal,
 
                     [`& .${inputBaseClasses.input}`]: {
                         padding: 0,
                     },
                 },
 
+                [`& .${buttonBaseClasses.root} svg path`]: {
+                    stroke: tokens.components.autocomplete.text.input,
+                },
+
                 '&.Mui-disabled': {
                     [`& .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: '#e7e5e4',
-                    },
-
-                    [`& .${buttonBaseClasses.root} svg path`]: {
-                        stroke: '#e7e5e4',
+                        backgroundColor: tokens.components.autocomplete.background.disabled,
+                        borderColor: tokens.components.autocomplete.border.disabled,
                     },
                 },
 
                 '&.Mui-error': {
                     [`& .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: '#f87171',
-                    },
-
-                    [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: '#ef4444',
-                    },
-
-                    [`&:focus-within .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: '#dc2626',
+                        borderColor: tokens.components.autocomplete.border.error,
                     },
                 },
             },
             [`& .${outlinedInputClasses.notchedOutline}`]: {
-                borderColor: '#d6d3d1',
+                borderColor: tokens.components.autocomplete.border.default,
             },
             [`& .${autocompleteClasses.popupIndicator}`]: {
                 transition: 'none',
@@ -68,6 +66,9 @@ const MuiAutocompleteStyles = {
                 '&:hover': {
                     backgroundColor: 'transparent',
                 },
+            },
+            [`& .${autocompleteClasses.endAdornment}`]: {
+                zIndex: 1,
             },
         },
     },

@@ -6,7 +6,7 @@ const meta: Meta<typeof Autocomplete> = {
     component: Autocomplete,
     decorators: [
         (Story) => (
-            <div style={{ width: '200px' }}>
+            <div style={{ width: '500px' }}>
                 <Story />
             </div>
         ),

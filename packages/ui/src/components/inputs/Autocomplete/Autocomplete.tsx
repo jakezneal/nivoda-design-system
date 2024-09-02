@@ -88,6 +88,9 @@ export const Autocomplete = ({
                 renderInput={(params) => (
                     <MuiTextField {...params} size={size} error={error} placeholder={placeholder} />
                 )}
+                ChipProps={{
+                    size: 'small',
+                }}
                 popupIcon={<DropdownIcon />}
                 disabled={disabled}
             />
