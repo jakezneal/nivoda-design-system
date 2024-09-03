@@ -143,6 +143,7 @@ const MuiButtonStyles = {
         textPrimary: {
             color: tokens.components.button.text.primary.text.default,
             ':hover': {
+                backgroundColor: tokens.components.button.text.primary.background.hover,
                 color: tokens.components.button.text.primary.text.hover,
             },
             ':active': {
@@ -153,9 +154,11 @@ const MuiButtonStyles = {
                 color: tokens.components.button.text.primary.text.disabled,
             },
         },
+        textSecondary: unusedButtonVariant,
         textError: {
             color: tokens.components.button.text.error.text.default,
             ':hover': {
+                backgroundColor: tokens.components.button.text.error.background.hover,
                 color: tokens.components.button.text.error.text.hover,
             },
             ':active': {
@@ -169,6 +172,7 @@ const MuiButtonStyles = {
         textSuccess: {
             color: tokens.components.button.text.success.text.default,
             ':hover': {
+                backgroundColor: tokens.components.button.text.success.background.hover,
                 color: tokens.components.button.text.success.text.hover,
             },
             ':active': {
