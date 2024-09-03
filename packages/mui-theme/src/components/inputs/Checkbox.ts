@@ -16,11 +16,12 @@ const MuiCheckboxStyles = {
                 height: tokens.components.checkbox.size,
 
                 rect: {
-                    stroke: tokens.components.checkbox.border.default,
+                    stroke: tokens.components.checkbox.border.colour.default,
+                    rx: tokens.components.checkbox.border.radius,
                 },
             },
             'input:hover ~ svg > rect': {
-                stroke: tokens.components.checkbox.border.hover,
+                stroke: tokens.components.checkbox.border.colour.hover,
             },
             '&.Mui-disabled': {
                 '& ~ .MuiTypography-root': {
@@ -29,30 +30,30 @@ const MuiCheckboxStyles = {
 
                 'svg > rect': {
                     fill: tokens.components.checkbox.background.disabled,
-                    stroke: tokens.components.checkbox.border.disabled,
+                    stroke: tokens.components.checkbox.border.colour.disabled,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.checkbox.border.disabled,
+                    stroke: tokens.components.checkbox.border.colour.disabled,
                 },
             },
             '&.Mui-checked, &.MuiCheckbox-indeterminate': {
                 'svg > rect': {
-                    stroke: tokens.components.checkbox.border.checked,
+                    stroke: tokens.components.checkbox.border.colour.checked,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.checkbox.border.checked,
+                    stroke: tokens.components.checkbox.border.colour.checked,
                 },
 
                 '&.Mui-disabled': {
                     'svg > rect': {
-                        stroke: tokens.components.checkbox.border.checkeddisabled,
+                        stroke: tokens.components.checkbox.border.colour.checkeddisabled,
                         fill: tokens.components.checkbox.background.checkeddisabled,
                     },
 
                     'input:hover ~ svg > rect': {
-                        stroke: tokens.components.checkbox.border.checkeddisabled,
+                        stroke: tokens.components.checkbox.border.colour.checkeddisabled,
                     },
                 },
             },
