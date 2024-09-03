@@ -7,6 +7,7 @@ interface AlertPropsAndCustomArgs extends AlertProps {
     showIcon?: boolean;
     chosenIcon?: string;
     showClose?: boolean;
+    text: string;
 }
 
 const meta: Meta<AlertPropsAndCustomArgs> = {
@@ -29,7 +30,7 @@ const meta: Meta<AlertPropsAndCustomArgs> = {
         layout: 'centered',
     },
     render: (args) => {
-        const { showIcon, chosenIcon, showClose } = args;
+        const { showIcon, chosenIcon, showClose, text } = args;
 
         const AlertIcon = ({ icon }: { icon: string }) => {
             let iconToShow: React.ReactNode = <IconAlertTriangle />;
@@ -58,7 +59,7 @@ const meta: Meta<AlertPropsAndCustomArgs> = {
                 onClose={showClose ? () => {} : undefined}
                 {...args}
             >
-                Alert body should go here.
+                {text}
             </Alert>
         );
     },
@@ -72,6 +73,7 @@ export const alert: Story = {
         title: '',
         showIcon: false,
         showClose: false,
+        text: 'Alert body should go here.',
     },
 };
 
