@@ -23,7 +23,6 @@ export interface AutocompleteProps {
     errorText?: string;
     multiple?: boolean;
     helpText?: string;
-    size?: 'small' | 'medium';
     disabled?: boolean;
 }
 
@@ -38,7 +37,6 @@ export const Autocomplete = ({
     errorText = 'Incorrect value',
     multiple = false,
     helpText,
-    size,
     disabled,
     ...rest
 }: AutocompleteProps) => {
@@ -86,7 +84,7 @@ export const Autocomplete = ({
                     originalOptionsArrayValue.id === valueSelectedByUser.id
                 }
                 renderInput={(params) => (
-                    <MuiTextField {...params} size={size} error={error} placeholder={placeholder} />
+                    <MuiTextField {...params} size="medium" error={error} placeholder={placeholder} />
                 )}
                 ChipProps={{
                     size: 'small',

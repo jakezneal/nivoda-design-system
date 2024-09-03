@@ -11,12 +11,6 @@ const meta: Meta<typeof Autocomplete> = {
             </div>
         ),
     ],
-    argTypes: {
-        size: {
-            control: { type: 'select' },
-            options: ['small', 'medium'],
-        },
-    },
     parameters: {
         layout: 'centered',
     },
@@ -36,7 +30,6 @@ const defaultArgs: AutocompleteProps = {
     errorText: 'Incorrect value',
     helpText: '',
     placeholder: '',
-    size: 'medium',
     disabled: false,
 };
 
