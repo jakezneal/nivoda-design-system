@@ -6,6 +6,7 @@ import { Alert, AlertProps } from './Alert';
 interface AlertPropsAndCustomArgs extends AlertProps {
     showIcon?: boolean;
     chosenIcon?: string;
+    showClose?: boolean;
 }
 
 const meta: Meta<AlertPropsAndCustomArgs> = {
@@ -28,7 +29,7 @@ const meta: Meta<AlertPropsAndCustomArgs> = {
         layout: 'centered',
     },
     render: (args) => {
-        const { showIcon, chosenIcon } = args;
+        const { showIcon, chosenIcon, showClose } = args;
 
         const AlertIcon = ({ icon }: { icon: string }) => {
             let iconToShow: React.ReactNode = <IconAlertTriangle />;
@@ -52,7 +53,11 @@ const meta: Meta<AlertPropsAndCustomArgs> = {
         };
 
         return (
-            <Alert icon={showIcon ? <AlertIcon icon={chosenIcon ?? 'alert-triangle'} /> : false} {...args}>
+            <Alert
+                icon={showIcon ? <AlertIcon icon={chosenIcon ?? 'alert-triangle'} /> : false}
+                onClose={showClose ? () => {} : undefined}
+                {...args}
+            >
                 Alert body should go here.
             </Alert>
         );
@@ -66,6 +71,7 @@ export const alert: Story = {
         severity: 'success',
         title: '',
         showIcon: false,
+        showClose: false,
     },
 };
 

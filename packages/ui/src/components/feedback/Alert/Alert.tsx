@@ -5,7 +5,7 @@ export interface AlertProps extends MuiAlertProps {
 }
 
 export const Alert = ({ title, children, ...rest }: AlertProps) => (
-    <MuiAlert onClose={() => {}} {...rest}>
+    <MuiAlert {...rest}>
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
         {children}
     </MuiAlert>
