@@ -3760,6 +3760,55 @@
           }
         }
       }
+    },
+    "paper": {
+      "border": {
+        "colour": {
+          "type": "color",
+          "value": "{base.default.color.surface.border.default}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12830:3493",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "radius": {
+          "type": "dimension",
+          "value": "{base.default.radius.xl}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:12830:3494",
+              "exportKey": "variables"
+            }
+          }
+        }
+      },
+      "background": {
+        "type": "color",
+        "value": "{base.default.color.surface.background.elevated}",
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "mode": "Default",
+            "collection": "components",
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "variableId": "VariableID:12830:3495",
+            "exportKey": "variables"
+          }
+        }
+      }
     }
   }
 }
