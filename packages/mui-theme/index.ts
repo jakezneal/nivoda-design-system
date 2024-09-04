@@ -13,6 +13,7 @@ import MuiToggleButton from './src/components/inputs/ToggleButton';
 import MuiAutocomplete from './src/components/inputs/Autocomplete';
 
 import MuiAlert from './src/components/feedback/Alert';
+import MuiDialog from './src/components/feedback/Dialog';
 
 import MuiChip from './src/components/data-display/Chip';
 
@@ -33,6 +34,7 @@ const nivodaTheme = createTheme({
         MuiAlert,
         MuiChip,
         MuiPaper,
+        MuiDialog,
     },
     typography: {
         fontFamily: 'Inter',
