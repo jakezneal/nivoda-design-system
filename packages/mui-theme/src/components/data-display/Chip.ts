@@ -22,15 +22,20 @@ const MuiChipStyles = {
                         backgroundColor: tokens.components.chip.background.active,
                         boxShadow: 'none',
                     },
+
+                    [`& .${svgIconClasses.root}`]: {
+                        '&:hover': {
+                            // TODO: Needs hooking up to design tokens
+                            opacity: 0.5,
+                        },
+                    },
                 },
             },
 
             [`& .${svgIconClasses.root}`]: {
-                '&, &:hover': {
-                    fill: tokens.components.chip.icon.default,
-                    // TODO: Needs hooking up to design tokens
-                    opacity: 0.2,
-                },
+                fill: tokens.components.chip.icon.default,
+                // TODO: Needs hooking up to design tokens
+                opacity: 0.2,
             },
         },
     },
