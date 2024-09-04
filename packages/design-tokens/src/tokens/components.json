@@ -3871,12 +3871,10 @@
               "exportKey": "variables"
             }
           }
-        }
-      },
-      "padding": {
-        "horizontal": {
-          "type": "dimension",
-          "value": "{base.default.spacing.7}",
+        },
+        "colour": {
+          "type": "color",
+          "value": "{base.default.color.surface.border.subdued}",
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "mode": "Default",
@@ -3884,23 +3882,74 @@
               "scopes": [
                 "ALL_SCOPES"
               ],
-              "variableId": "VariableID:12837:3656",
+              "variableId": "VariableID:12859:3758",
               "exportKey": "variables"
             }
           }
+        }
+      },
+      "padding": {
+        "root": {
+          "horizontal": {
+            "type": "dimension",
+            "value": "{base.default.spacing.7}",
+            "extensions": {
+              "org.lukasoppermann.figmaDesignTokens": {
+                "mode": "Default",
+                "collection": "components",
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "variableId": "VariableID:12837:3656",
+                "exportKey": "variables"
+              }
+            }
+          },
+          "vertical": {
+            "type": "dimension",
+            "value": "{base.default.spacing.7}",
+            "extensions": {
+              "org.lukasoppermann.figmaDesignTokens": {
+                "mode": "Default",
+                "collection": "components",
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "variableId": "VariableID:12837:3657",
+                "exportKey": "variables"
+              }
+            }
+          }
         },
-        "vertical": {
-          "type": "dimension",
-          "value": "{base.default.spacing.7}",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "mode": "Default",
-              "collection": "components",
-              "scopes": [
-                "ALL_SCOPES"
-              ],
-              "variableId": "VariableID:12837:3657",
-              "exportKey": "variables"
+        "content": {
+          "horizontal": {
+            "type": "dimension",
+            "value": "{base.default.spacing.7}",
+            "extensions": {
+              "org.lukasoppermann.figmaDesignTokens": {
+                "mode": "Default",
+                "collection": "components",
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "variableId": "VariableID:12859:3759",
+                "exportKey": "variables"
+              }
+            }
+          },
+          "vertical": {
+            "type": "dimension",
+            "value": "{base.default.spacing.4}",
+            "extensions": {
+              "org.lukasoppermann.figmaDesignTokens": {
+                "mode": "Default",
+                "collection": "components",
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "variableId": "VariableID:12859:3760",
+                "exportKey": "variables"
+              }
             }
           }
         }

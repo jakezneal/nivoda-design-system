@@ -13,7 +13,6 @@ const MuiDialogStyles = {
         root: {
             [`& .${dialogClasses.paper}`]: {
                 borderRadius: tokens.components.dialog.border.radius,
-                padding: `${tokens.components.dialog.padding.vertical} ${tokens.components.dialog.padding.horizontal}`,
                 gap: tokens.components.dialog.spacing.root,
 
                 '& .tabler-icon': {
@@ -28,6 +27,12 @@ const MuiDialogStyles = {
                 padding: '0',
             },
 
+            [`& .${dialogContentClasses.root}`]: {
+                borderBottom: `1px solid ${tokens.components.dialog.border.colour}`,
+                borderTop: `1px solid ${tokens.components.dialog.border.colour}`,
+                padding: `${tokens.components.dialog.padding.content.vertical} ${tokens.components.dialog.padding.content.horizontal}`,
+            },
+
             [`& .${dialogTitleClasses.root}`]: {
                 padding: '0',
             },
@@ -36,10 +41,16 @@ const MuiDialogStyles = {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: tokens.components.dialog.spacing.title,
+                paddingTop: tokens.components.dialog.padding.root.vertical,
+                paddingRight: tokens.components.dialog.padding.root.horizontal,
+                paddingLeft: tokens.components.dialog.padding.root.horizontal,
             },
 
             [`& .${dialogActionsClasses.root}`]: {
                 gap: tokens.components.dialog.spacing.actions,
+                paddingBottom: tokens.components.dialog.padding.root.vertical,
+                paddingRight: tokens.components.dialog.padding.root.horizontal,
+                paddingLeft: tokens.components.dialog.padding.root.horizontal,
 
                 [`& .${buttonBaseClasses.root}`]: {
                     margin: 0,
