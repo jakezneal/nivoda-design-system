@@ -31,7 +31,13 @@ export const Dialog = ({
     const [isOpen, setIsOpen] = useState(open);
 
     return (
-        <MuiDialog {...rest} open={isOpen} scroll="paper" onClose={() => setIsOpen(false)}>
+        <MuiDialog
+            {...rest}
+            open={isOpen}
+            scroll="paper"
+            onClose={() => setIsOpen(false)}
+            PaperProps={{ elevation: 0 }}
+        >
             <IconX onClick={() => setIsOpen(false)} />
             <MuiBox>
                 {title && <MuiDialogTitle>{title}</MuiDialogTitle>}
