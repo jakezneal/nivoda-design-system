@@ -16,6 +16,7 @@ import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
 
 import MuiChip from './src/components/data-display/Chip';
+import MuiList from './src/components/data-display/List';
 
 import MuiPaper from './src/components/surfaces/Paper';
 
@@ -35,6 +36,7 @@ const nivodaTheme = createTheme({
         MuiChip,
         MuiPaper,
         MuiDialog,
+        MuiList,
     },
     typography: {
         fontFamily: 'Inter',
