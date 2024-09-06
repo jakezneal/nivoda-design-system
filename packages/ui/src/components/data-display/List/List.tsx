@@ -13,7 +13,7 @@ import Divider from '@mui/material/Divider';
 import { useState } from 'react';
 import { IconCheck } from '@tabler/icons-react';
 
-interface MenuItemProps {
+interface ListItemProps {
     id: string;
     primary: string;
     secondary?: string;
@@ -23,14 +23,14 @@ interface MenuItemProps {
     secondaryAction?: React.ReactNode;
 }
 
-export interface MenuGroupProps {
+export interface ListGroupProps {
     id: string;
     subheader?: string;
-    items: MenuItemProps[];
+    items: ListItemProps[];
 }
 
 export interface ListProps extends MuiListProps {
-    items: MenuGroupProps[];
+    items: ListGroupProps[];
 }
 
 export const List = ({ items, ...rest }: ListProps) => {

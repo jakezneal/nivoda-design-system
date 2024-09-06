@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { List, MenuGroupProps } from './List';
+import { List, ListGroupProps } from './List';
 import Switch from '@/components/inputs/Switch/Switch';
 import { IconChevronRight, IconExternalLink } from '@tabler/icons-react';
 
@@ -134,7 +134,7 @@ export const listWithSubheader: Story = {
 const groupLength = 5;
 const itemLength = 3;
 
-const kitchenSinkItems: MenuGroupProps[] = Array.from({ length: groupLength }).map((_, groupIndex) => ({
+const kitchenSinkItems: ListGroupProps[] = Array.from({ length: groupLength }).map((_, groupIndex) => ({
     id: `group-${groupIndex}`,
     subheader: 'Menu Group Label',
     items: Array.from({ length: itemLength }).map((_, itemIndex) => ({
