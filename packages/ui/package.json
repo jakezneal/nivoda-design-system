@@ -16,6 +16,7 @@
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
     },
     "devDependencies": {
+        "@microsoft/api-extractor": "^7.47.7",
         "@nivoda/eslint-config": "workspace:*",
         "@nivoda/typescript-config": "workspace:*",
         "@storybook/react": "^8.2.9",
