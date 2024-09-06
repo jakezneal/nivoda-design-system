@@ -10,7 +10,7 @@
         }
     },
     "scripts": {
-        "build": "tsup --experimental-dts",
+        "build": "tsup",
         "dev": "tsup --watch",
         "lint": "eslint . --max-warnings=0",
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
