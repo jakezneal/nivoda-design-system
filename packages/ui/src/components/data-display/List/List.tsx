@@ -13,7 +13,7 @@ import Divider from '@mui/material/Divider';
 import { useState } from 'react';
 import { IconCheck } from '@tabler/icons-react';
 
-interface ListItemProps {
+export interface ListItemProps {
     id: string;
     primary: string;
     secondary?: string;
