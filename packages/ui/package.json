@@ -10,7 +10,7 @@
         }
     },
     "scripts": {
-        "build": "node --max_old_space_size=4096 && tsup",
+        "build": "tsup --experimental-dts",
         "dev": "tsup --watch",
         "lint": "eslint . --max-warnings=0",
         "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
