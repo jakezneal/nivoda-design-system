@@ -1,4 +1,3 @@
-import { listClasses } from '@mui/material/List';
 import { listSubheaderClasses } from '@mui/material/ListSubheader';
 import { listItemClasses } from '@mui/material/ListItem';
 import { listItemButtonClasses } from '@mui/material/ListItemButton';
