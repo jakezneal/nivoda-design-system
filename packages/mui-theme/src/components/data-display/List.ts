@@ -15,12 +15,12 @@ const MuiListStyles = {
             [`& .${listSubheaderClasses.root}`]: {
                 color: tokens.components.list.subheader.default,
                 lineHeight: 1,
-                padding: `${tokens.components.list.subheader.padding.vertical} ${tokens.components.list.subheader.padding.horizontal}`,
+                padding: `${tokens.components.list.padding.subheader.vertical} ${tokens.components.list.padding.subheader.horizontal}`,
                 textTransform: 'uppercase',
             },
 
             [`&. ${listItemButtonClasses.root}`]: {
-                padding: `${tokens.components.list.item.padding.vertical} ${tokens.components.list.item.padding.horizontal}`,
+                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
             },
 
             [`& .${listItemClasses.root}`]: {
@@ -32,7 +32,7 @@ const MuiListStyles = {
             },
 
             [`& .${boxClasses.root}`]: {
-                padding: `${tokens.components.list.group.padding.vertical} ${tokens.components.list.group.padding.horizontal}`,
+                padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
             },
 
             [`& .${buttonBaseClasses.root}.${listItemButtonClasses.root}`]: {
