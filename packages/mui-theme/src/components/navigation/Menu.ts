@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+import tokens from '@nivoda/design-tokens';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { listItemIconClasses } from '@mui/material/ListItemIcon';
 import { listItemTextClasses } from '@mui/material/ListItemText';
@@ -12,48 +15,64 @@ const MuiMenuStyles = {
             },
 
             [`& .${buttonBaseClasses.root}.${menuItemClasses.root}`]: {
-                borderRadius: '6px',
-                padding: '12px',
+                borderRadius: tokens.components.list.border.radius.item,
+                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
+
+                svg: {
+                    color: tokens.components.list.icon.end.default,
+                },
 
                 ':hover': {
-                    backgroundColor: '#f4f2ff',
+                    backgroundColor: tokens.components.list.background.hover,
 
-                    [`& .${listItemTextClasses.primary}, & .${listItemIconClasses.root} svg`]: {
-                        color: '#5620e1',
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.hover,
+                    },
+
+                    [`& .${listItemIconClasses.root} svg`]: {
+                        color: tokens.components.list.icon.start.hover,
                     },
                 },
 
                 ':active': {
-                    backgroundColor: '#e9e8ff',
-                },
-
-                svg: {
-                    color: '#a8a29e',
+                    backgroundColor: tokens.components.list.background.active,
                 },
 
                 '&.Mui-disabled': {
                     opacity: 1,
 
-                    [`& .${listItemTextClasses.primary}, & .${listItemTextClasses.secondary}, & svg`]: {
-                        color: '#a8a29e',
+                    svg: {
+                        color: tokens.components.list.icon.end.disabled,
+                    },
+
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.disabled,
+                    },
+
+                    [`& .${listItemTextClasses.secondary}`]: {
+                        color: tokens.components.list.description.disabled,
                     },
                 },
 
                 '&.Mui-selected': {
                     backgroundColor: 'transparent',
 
-                    [`& .${listItemTextClasses.primary}, & svg`]: {
-                        color: '#5620e1',
+                    svg: {
+                        color: tokens.components.list.icon.end.selected,
+                    },
+
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.selected,
                     },
                 },
             },
 
             [`& .${listItemTextClasses.primary}`]: {
-                color: '#0c0a09',
+                color: tokens.components.list.title.default,
             },
 
             [`& .${listItemTextClasses.secondary}`]: {
-                color: '#44403c',
+                color: tokens.components.list.description.default,
             },
         },
     },

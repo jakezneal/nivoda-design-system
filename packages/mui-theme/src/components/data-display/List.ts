@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+import tokens from '@nivoda/design-tokens';
 import { listSubheaderClasses } from '@mui/material/ListSubheader';
 import { listItemClasses } from '@mui/material/ListItem';
 import { listItemButtonClasses } from '@mui/material/ListItemButton';
@@ -10,14 +13,14 @@ const MuiListStyles = {
     styleOverrides: {
         root: {
             [`& .${listSubheaderClasses.root}`]: {
-                color: '#78716C',
+                color: tokens.components.list.subheader.default,
                 lineHeight: 1,
-                padding: '8px 12px',
+                padding: `${tokens.components.list.subheader.padding.vertical} ${tokens.components.list.subheader.padding.horizontal}`,
                 textTransform: 'uppercase',
             },
 
             [`&. ${listItemButtonClasses.root}`]: {
-                padding: '12px',
+                padding: `${tokens.components.list.item.padding.vertical} ${tokens.components.list.item.padding.horizontal}`,
             },
 
             [`& .${listItemClasses.root}`]: {
@@ -29,59 +32,83 @@ const MuiListStyles = {
             },
 
             [`& .${boxClasses.root}`]: {
-                padding: '8px',
+                padding: `${tokens.components.list.group.padding.vertical} ${tokens.components.list.group.padding.horizontal}`,
             },
 
             [`& .${buttonBaseClasses.root}.${listItemButtonClasses.root}`]: {
-                borderRadius: '6px',
+                borderRadius: tokens.components.list.border.radius.item,
+
+                svg: {
+                    color: tokens.components.list.icon.end.default,
+                },
 
                 ':hover': {
-                    backgroundColor: '#f4f2ff',
+                    backgroundColor: tokens.components.list.background.hover,
 
-                    [`& .${listItemTextClasses.primary}, & .${listItemIconClasses.root} svg`]: {
-                        color: '#5620e1',
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.hover,
+                    },
+
+                    [`& .${listItemIconClasses.root} svg`]: {
+                        color: tokens.components.list.icon.start.hover,
                     },
                 },
 
                 ':active': {
-                    backgroundColor: '#e9e8ff',
-                },
+                    backgroundColor: tokens.components.list.background.active,
 
-                svg: {
-                    color: '#a8a29e',
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.active,
+                    },
+
+                    [`& .${listItemIconClasses.root} svg`]: {
+                        color: tokens.components.list.icon.start.active,
+                    },
                 },
 
                 '&.Mui-disabled': {
                     opacity: 1,
 
-                    [`& .${listItemTextClasses.primary}, & .${listItemTextClasses.secondary}, & svg`]: {
-                        color: '#a8a29e',
+                    svg: {
+                        color: tokens.components.list.icon.end.disabled,
+                    },
+
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.disabled,
+                    },
+
+                    [`& .${listItemTextClasses.secondary}`]: {
+                        color: tokens.components.list.description.disabled,
                     },
                 },
 
                 '&.Mui-selected': {
                     backgroundColor: 'transparent',
 
-                    [`& .${listItemTextClasses.primary}, & svg`]: {
-                        color: '#5620e1',
+                    svg: {
+                        color: tokens.components.list.icon.end.selected,
+                    },
+
+                    [`& .${listItemTextClasses.primary}`]: {
+                        color: tokens.components.list.title.selected,
                     },
 
                     ':hover': {
-                        backgroundColor: '#f4f2ff',
+                        backgroundColor: tokens.components.list.background.hover,
                     },
 
                     '&:active': {
-                        backgroundColor: '#e9e8ff',
+                        backgroundColor: tokens.components.list.background.active,
                     },
                 },
             },
 
             [`& .${listItemTextClasses.primary}`]: {
-                color: '#0c0a09',
+                color: tokens.components.list.title.default,
             },
 
             [`& .${listItemTextClasses.secondary}`]: {
-                color: '#44403c',
+                color: tokens.components.list.description.default,
             },
         },
     },
