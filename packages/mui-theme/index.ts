@@ -22,6 +22,7 @@ import MuiList from './src/components/data-display/List';
 import MuiPaper from './src/components/surfaces/Paper';
 
 import MuiMenu from './src/components/navigation/Menu';
+import MuiTabs from './src/components/navigation/Tabs';
 
 const nivodaTheme = createTheme({
     components: {
@@ -42,6 +43,7 @@ const nivodaTheme = createTheme({
         MuiList,
         MuiMenu,
         MuiSnackbar,
+        MuiTabs,
     },
     typography: {
         fontFamily: 'Inter',
