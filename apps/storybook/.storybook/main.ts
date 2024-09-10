@@ -18,6 +18,7 @@ const config: StorybookConfig = {
         getAbsolutePath('@chromatic-com/storybook'),
         getAbsolutePath('@storybook/addon-interactions'),
         getAbsolutePath('@storybook/addon-themes'),
+        getAbsolutePath('storybook-addon-remix-react-router'),
     ],
     framework: {
         name: getAbsolutePath('@storybook/react-vite'),
