@@ -59,51 +59,6 @@ export const Menu = ({ items, ...rest }: MenuProps) => {
                     {index !== items.length - 1 && <Divider key={`divider-${groupId}-${index}`} />}
                 </>
             ))}
-            {/* <MuiBox>
-                <MuiListSubheader>MENU GROUP LABEL</MuiListSubheader>
-                <MuiMenuItem>
-                    <MuiListItemText primary="Menu item label" />
-                </MuiMenuItem>
-                <MuiMenuItem>
-                    <MuiListItemText primary="Menu item label" secondary="Short description about this menu item" />
-                </MuiMenuItem>
-            </MuiBox>
-            <Divider />
-            <MuiBox>
-                <MuiListSubheader>MENU GROUP LABEL</MuiListSubheader>
-                <MuiMenuItem>
-                    <MuiListItemText primary="Menu item label" />
-                    <IconChevronRight />
-                </MuiMenuItem>
-                <MuiMenuItem>
-                    <MuiListItemText primary="Menu item label" secondary="Short description about this menu item" />
-                    <IconChevronRight />
-                </MuiMenuItem>
-                <MuiMenuItem selected>
-                    <MuiListItemText primary="Menu item label" secondary="Short description about this menu item" />
-                    <IconCheck />
-                </MuiMenuItem>
-                <MuiMenuItem disabled>
-                    <MuiListItemText primary="Menu item label" secondary="Short description about this menu item" />
-                </MuiMenuItem>
-            </MuiBox>
-            <Divider />
-            <MuiBox>
-                <MuiListSubheader>MENU GROUP LABEL</MuiListSubheader>
-                <MuiMenuItem>
-                    <MuiListItemIcon>
-                        <IconExternalLink />
-                    </MuiListItemIcon>
-                    <MuiListItemText primary="Menu item label" />
-                    <IconChevronRight />
-                </MuiMenuItem>
-                <MuiMenuItem>
-                    <MuiListItemIcon>
-                        <IconExternalLink />
-                    </MuiListItemIcon>
-                    <MuiListItemText primary="Menu item label" />
-                </MuiMenuItem>
-            </MuiBox> */}
         </MuiMenu>
     );
 };
