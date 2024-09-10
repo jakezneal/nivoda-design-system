@@ -14,6 +14,7 @@ import MuiAutocomplete from './src/components/inputs/Autocomplete';
 
 import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
+import MuiSnackbar from './src/components/feedback/Snackbar';
 
 import MuiChip from './src/components/data-display/Chip';
 import MuiList from './src/components/data-display/List';
@@ -40,6 +41,7 @@ const nivodaTheme = createTheme({
         MuiDialog,
         MuiList,
         MuiMenu,
+        MuiSnackbar,
     },
     typography: {
         fontFamily: 'Inter',
