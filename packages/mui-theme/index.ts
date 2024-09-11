@@ -24,6 +24,7 @@ import MuiPaper from './src/components/surfaces/Paper';
 
 import MuiMenu from './src/components/navigation/Menu';
 import MuiTabs from './src/components/navigation/Tabs';
+import MuiLink from './src/components/navigation/Link';
 
 const nivodaTheme = createTheme({
     components: {
@@ -46,6 +47,7 @@ const nivodaTheme = createTheme({
         MuiSnackbar,
         MuiTabs,
         MuiTooltip,
+        MuiLink,
     },
     typography: {
         fontFamily: 'Inter',
