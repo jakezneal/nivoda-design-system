@@ -28,18 +28,17 @@ const items = [
     {
         label: 'Pending',
         route: '/tabs/pending',
+        badgeState: 'active',
     },
     {
         label: 'Active',
         route: '/tabs/active',
+        badgeState: 'viewed',
     },
     {
         label: 'Rejected',
         route: '/tabs/rejected',
-    },
-    {
-        label: 'Expired',
-        route: '/tabs/expired',
+        badgeState: 'unread',
     },
 ] satisfies Tab[];
 

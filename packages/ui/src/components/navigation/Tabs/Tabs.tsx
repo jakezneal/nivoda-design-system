@@ -4,16 +4,18 @@ import {
     Box as MuiBox,
     Badge as MuiBadge,
     type TabsProps as MuiTabsProps,
-    type TabProps as MuiTabProps,
+    type BadgeProps as MuiBadgeProps,
     Badge,
 } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
+
+type CustomBadgeState = 'active' | 'viewed' | 'unread';
 
 export interface Tab {
     label: string;
     route: string;
     badgeCount?: number;
-    badgeState?: 'viewed' | 'unread';
+    badgeState?: CustomBadgeState;
 }
 
 export interface TabsProps extends MuiTabsProps {
@@ -21,10 +23,50 @@ export interface TabsProps extends MuiTabsProps {
     tabs: Tab[];
 }
 
-const LabelWithBadge = ({ badgeCount, label }: { badgeCount?: number; label: string }) => {
+interface LabelWithBadgeProps extends Omit<Tab, 'route'> {}
+
+interface CustomBadgeProps extends MuiBadgeProps {
+    badgeState?: CustomBadgeState;
+}
+
+const CustomBadge = ({ badgeState, ...rest }: CustomBadgeProps): JSX.Element => {
+    let badgeBackgroundColor: string;
+    let badgeColor: string;
+
+    switch (badgeState) {
+        case 'viewed':
+            badgeBackgroundColor = '#e7e5e4';
+            badgeColor = '#44403c';
+            break;
+        case 'unread':
+            badgeBackgroundColor = '#dc2626';
+            badgeColor = '#FFFFFF';
+            break;
+        default:
+            badgeBackgroundColor = '#e9e8ff';
+            badgeColor = '#5620e1';
+            break;
+    }
+
+    return (
+        <MuiBadge
+            slotProps={{
+                badge: {
+                    style: {
+                        backgroundColor: badgeBackgroundColor,
+                        color: badgeColor,
+                    },
+                },
+            }}
+            {...rest}
+        />
+    );
+};
+
+const LabelWithBadge = ({ badgeCount, label, badgeState }: LabelWithBadgeProps): JSX.Element => {
     return (
         <>
-            {label} {badgeCount && <MuiBadge badgeContent={badgeCount} max={999} />}
+            {label} {badgeCount && <CustomBadge badgeContent={badgeCount} max={999} badgeState={badgeState} />}
         </>
     );
 };
@@ -43,13 +85,13 @@ export const Tabs = ({ label, tabs, children, ...rest }: TabsProps) => {
                 value={pathname}
                 {...rest}
             >
-                {tabs.map(({ badgeCount, route, label }) => (
+                {tabs.map(({ badgeCount, badgeState, route, label }) => (
                     <MuiTab
                         aria-label={route}
                         component={Link}
                         to={route}
                         key={route}
-                        label={<LabelWithBadge badgeCount={badgeCount} label={label} />}
+                        label={<LabelWithBadge badgeCount={badgeCount} badgeState={badgeState} label={label} />}
                         value={route}
                     />
                 ))}

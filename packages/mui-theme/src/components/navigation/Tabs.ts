@@ -35,8 +35,6 @@ const MuiTabsStyles = {
             },
 
             [`& .${badgeClasses.badge}`]: {
-                backgroundColor: '#dc2626',
-                color: '#ffffff',
                 position: 'relative',
                 transform: 'none',
             },
