@@ -8,10 +8,15 @@ import { listItemTextClasses } from '@mui/material/ListItemText';
 import { listItemIconClasses } from '@mui/material/ListItemIcon';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { boxClasses } from '@mui/material/Box';
+import { paperClasses } from '@mui/material/Paper';
 
 const MuiListStyles = {
     styleOverrides: {
         root: {
+            [`& .${paperClasses.root}`]: {
+                padding: 0,
+            },
+
             [`& .${listSubheaderClasses.root}`]: {
                 color: tokens.components.list.subheader.default,
                 lineHeight: 1,

@@ -45,7 +45,7 @@ export const List = ({ items, ...rest }: ListProps) => {
     };
 
     return (
-        <MuiPaper>
+        <MuiBox sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <MuiList {...rest}>
                 {items.map(({ id: groupId, subheader, items: menuItems }, index) => (
                     <>
@@ -72,7 +72,7 @@ export const List = ({ items, ...rest }: ListProps) => {
                     </>
                 ))}
             </MuiList>
-        </MuiPaper>
+        </MuiBox>
     );
 };
 

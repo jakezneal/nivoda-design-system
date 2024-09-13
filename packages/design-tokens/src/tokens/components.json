@@ -3853,6 +3853,38 @@
             "exportKey": "variables"
           }
         }
+      },
+      "padding": {
+        "horizontal": {
+          "type": "dimension",
+          "value": "{base.default.spacing.4}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:13035:163",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "vertical": {
+          "type": "dimension",
+          "value": "{base.default.spacing.4}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Default",
+              "collection": "components",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:13035:164",
+              "exportKey": "variables"
+            }
+          }
+        }
       }
     },
     "dialog": {

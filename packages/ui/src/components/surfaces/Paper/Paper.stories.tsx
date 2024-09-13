@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Typography as MuiTypography } from '@mui/material';
 
 import { Paper } from './Paper';
 
@@ -10,8 +11,12 @@ const meta: Meta<typeof Paper> = {
     render: (args) => (
         <Paper {...args}>
             <>
-                <h1>Paper</h1>
-                <p>Paper body goes here</p>
+                <MuiTypography variant="h4" gutterBottom>
+                    Paper title goes here
+                </MuiTypography>
+                <MuiTypography variant="body1" gutterBottom>
+                    Paper content goes here
+                </MuiTypography>
             </>
         </Paper>
     ),

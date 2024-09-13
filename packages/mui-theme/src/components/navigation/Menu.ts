@@ -12,6 +12,7 @@ const MuiMenuStyles = {
         root: {
             [`& .${menuClasses.paper}`]: {
                 boxShadow: 'none',
+                padding: 0,
             },
 
             [`& .${buttonBaseClasses.root}.${menuItemClasses.root}`]: {

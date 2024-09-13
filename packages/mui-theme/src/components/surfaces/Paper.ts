@@ -13,6 +13,7 @@ const MuiPaperStyles = {
             borderColor: tokens.components.paper.border.colour,
             borderStyle: 'solid',
             borderWidth: '1px',
+            padding: `${tokens.components.paper.padding.vertical} ${tokens.components.paper.padding.horizontal}`,
         },
     },
 };
