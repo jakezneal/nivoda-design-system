@@ -1,12 +1,12 @@
 import { Alert as MuiAlert, AlertTitle as MuiAlertTitle, type AlertProps as MuiAlertProps } from '@mui/material';
 
 export interface AlertProps extends MuiAlertProps {
-    title?: string;
+    title: string;
 }
 
 export const Alert = ({ title, children, ...rest }: AlertProps) => (
     <MuiAlert {...rest}>
-        {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
+        <MuiAlertTitle>{title}</MuiAlertTitle>
         {children}
     </MuiAlert>
 );

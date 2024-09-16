@@ -70,7 +70,7 @@ type Story = StoryObj<AlertPropsAndCustomArgs>;
 export const alert: Story = {
     args: {
         severity: 'success',
-        title: '',
+        title: 'Alert heading',
         showIcon: false,
         showClose: false,
         text: 'Alert body should go here.',
