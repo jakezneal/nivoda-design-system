@@ -36,7 +36,7 @@ export const Dialog = ({
             open={isOpen}
             scroll="paper"
             onClose={() => setIsOpen(false)}
-            PaperProps={{ elevation: 0 }}
+            PaperProps={{ elevation: 0, variant: 'tight' }}
         >
             <IconX onClick={() => setIsOpen(false)} />
             <MuiBox>
