@@ -13,9 +13,31 @@ const MuiPaperStyles = {
             borderColor: tokens.components.paper.border.colour,
             borderStyle: 'solid',
             borderWidth: '1px',
-            padding: `${tokens.components.paper.padding.vertical} ${tokens.components.paper.padding.horizontal}`,
+            padding: '8px',
+
+            variants: [
+                {
+                    props: { variant: 'tight' },
+                    style: {
+                        padding: 0,
+                    },
+                },
+                {
+                    props: { variant: 'loose' },
+                    style: {
+                        padding: '16px',
+                    },
+                },
+            ],
         },
     },
 };
+
+declare module '@mui/material/Paper' {
+    interface PaperPropsVariantOverrides {
+        tight: true;
+        loose: true;
+    }
+}
 
 export default MuiPaperStyles;
