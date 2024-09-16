@@ -36,8 +36,8 @@ export const Menu = ({ items, ...rest }: MenuProps) => {
     return (
         <MuiMenu {...rest}>
             {items.map(({ id: groupId, subheader, items: menuItems }, index) => (
-                <>
-                    <MuiBox key={groupId}>
+                <MuiBox key={groupId} sx={{ padding: 0 }}>
+                    <MuiBox>
                         {subheader && <MuiListSubheader>{subheader}</MuiListSubheader>}
                         {menuItems.map(
                             ({ id: itemId, primary, secondary, startIcon, endIcon, disabled, secondaryAction }) => (
@@ -57,7 +57,7 @@ export const Menu = ({ items, ...rest }: MenuProps) => {
                         )}
                     </MuiBox>
                     {index !== items.length - 1 && <Divider key={`divider-${groupId}-${index}`} />}
-                </>
+                </MuiBox>
             ))}
         </MuiMenu>
     );

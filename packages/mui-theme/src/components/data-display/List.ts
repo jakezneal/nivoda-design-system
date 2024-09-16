@@ -9,6 +9,7 @@ import { listItemIconClasses } from '@mui/material/ListItemIcon';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { boxClasses } from '@mui/material/Box';
 import { paperClasses } from '@mui/material/Paper';
+import { menuClasses } from '@mui/material/Menu';
 
 const MuiListStyles = {
     styleOverrides: {
@@ -36,8 +37,10 @@ const MuiListStyles = {
                 margin: 0,
             },
 
-            [`& .${boxClasses.root}`]: {
-                padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
+            [`&:not(.${menuClasses.list})`]: {
+                [`& .${boxClasses.root}`]: {
+                    padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
+                },
             },
 
             [`& .${buttonBaseClasses.root}.${listItemButtonClasses.root}`]: {

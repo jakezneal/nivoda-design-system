@@ -6,9 +6,13 @@ import { listItemIconClasses } from '@mui/material/ListItemIcon';
 import { listItemTextClasses } from '@mui/material/ListItemText';
 import { menuClasses } from '@mui/material/Menu';
 import { menuItemClasses } from '@mui/material/MenuItem';
+import { boxClasses } from '@mui/material/Box';
 
 const MuiMenuStyles = {
     styleOverrides: {
+        defaultProps: {
+            variant: 'tight',
+        },
         root: {
             [`& .${menuClasses.paper}`]: {
                 boxShadow: 'none',
@@ -74,6 +78,10 @@ const MuiMenuStyles = {
 
             [`& .${listItemTextClasses.secondary}`]: {
                 color: tokens.components.list.description.default,
+            },
+
+            [`& .${boxClasses.root} > .${boxClasses.root}`]: {
+                padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
             },
         },
     },
