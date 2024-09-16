@@ -18,7 +18,7 @@ export interface Tab {
     badgeState?: CustomBadgeState;
 }
 
-export interface TabsProps extends MuiTabsProps {
+export interface TabsProps extends Omit<MuiTabsProps, 'badgeState'> {
     label: string;
     tabs: Tab[];
 }
@@ -85,13 +85,19 @@ export const Tabs = ({ label, tabs, children, ...rest }: TabsProps) => {
                 value={pathname}
                 {...rest}
             >
-                {tabs.map(({ badgeCount, badgeState, route, label }) => (
+                {tabs.map(({ badgeCount, route, label }, index) => (
                     <MuiTab
                         aria-label={route}
                         component={Link}
                         to={route}
                         key={route}
-                        label={<LabelWithBadge badgeCount={badgeCount} badgeState={badgeState} label={label} />}
+                        label={
+                            <LabelWithBadge
+                                badgeCount={badgeCount}
+                                badgeState={pathname === route ? 'active' : index % 2 === 0 ? 'unread' : 'viewed'}
+                                label={label}
+                            />
+                        }
                         value={route}
                     />
                 ))}
