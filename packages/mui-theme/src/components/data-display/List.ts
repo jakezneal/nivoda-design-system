@@ -25,10 +25,6 @@ const MuiListStyles = {
                 textTransform: 'uppercase',
             },
 
-            [`&. ${listItemButtonClasses.root}`]: {
-                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
-            },
-
             [`& .${listItemClasses.root}`]: {
                 padding: 0,
             },
@@ -45,13 +41,24 @@ const MuiListStyles = {
 
             [`& .${buttonBaseClasses.root}.${listItemButtonClasses.root}`]: {
                 borderRadius: tokens.components.list.border.radius.item,
+                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
+                gap: '12px',
 
                 svg: {
                     color: tokens.components.list.icon.end.default,
                 },
 
+                [`& .${listItemIconClasses.root}`]: {
+                    minWidth: '16px',
+
+                    svg: {
+                        width: '16px',
+                        height: '16px',
+                    },
+                },
+
                 ':hover': {
-                    backgroundColor: tokens.components.list.background.hover,
+                    backgroundColor: tokens.components.list.background.item.hover,
 
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.hover,
@@ -63,7 +70,7 @@ const MuiListStyles = {
                 },
 
                 ':active': {
-                    backgroundColor: tokens.components.list.background.active,
+                    backgroundColor: tokens.components.list.background.item.active,
 
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.active,
@@ -102,11 +109,11 @@ const MuiListStyles = {
                     },
 
                     ':hover': {
-                        backgroundColor: tokens.components.list.background.hover,
+                        backgroundColor: tokens.components.list.background.item.hover,
                     },
 
                     '&:active': {
-                        backgroundColor: tokens.components.list.background.active,
+                        backgroundColor: tokens.components.list.background.item.active,
                     },
                 },
             },

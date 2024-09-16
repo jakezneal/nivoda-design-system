@@ -6,12 +6,11 @@ import {
     ListItemButton as MuiListItemButton,
     ListItemIcon as MuiListItemIcon,
     Box as MuiBox,
-    Paper as MuiPaper,
+    Checkbox as MuiCheckbox,
     type ListProps as MuiListProps,
 } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import { useState } from 'react';
-import { IconCheck } from '@tabler/icons-react';
 
 export interface ListItemProps {
     id: string;
@@ -20,7 +19,7 @@ export interface ListItemProps {
     startIcon?: React.ReactNode;
     endIcon?: React.ReactNode;
     disabled?: boolean;
-    secondaryAction?: React.ReactNode;
+    secondaryAction?: boolean;
 }
 
 export interface ListGroupProps {
@@ -53,15 +52,29 @@ export const List = ({ items, ...rest }: ListProps) => {
                             {subheader && <MuiListSubheader>{subheader}</MuiListSubheader>}
                             {menuItems.map(
                                 ({ id: itemId, primary, secondary, startIcon, endIcon, disabled, secondaryAction }) => (
-                                    <MuiListItem key={itemId} secondaryAction={secondaryAction}>
+                                    <MuiListItem
+                                        key={itemId}
+                                        secondaryAction={
+                                            secondaryAction ? (
+                                                <MuiCheckbox
+                                                    edge="end"
+                                                    onChange={() => toggleItemSelection(itemId)}
+                                                    checked={selectedItem === itemId}
+                                                />
+                                            ) : undefined
+                                        }
+                                    >
                                         <MuiListItemButton
-                                            selected={selectedItem === itemId}
+                                            selected={secondaryAction ? selectedItem === itemId : false}
                                             disabled={disabled}
-                                            onClick={() => toggleItemSelection(itemId)}
+                                            onClick={secondaryAction ? () => toggleItemSelection(itemId) : undefined}
                                         >
                                             {startIcon && <MuiListItemIcon>{startIcon}</MuiListItemIcon>}
-                                            <MuiListItemText primary={primary} secondary={secondary} />
-                                            {selectedItem === itemId && !secondaryAction && <IconCheck />}
+                                            <MuiListItemText
+                                                primary={primary}
+                                                secondary={secondary}
+                                                secondaryTypographyProps={{ variant: 'caption' }}
+                                            />
                                             {endIcon && selectedItem !== itemId && endIcon}
                                         </MuiListItemButton>
                                     </MuiListItem>

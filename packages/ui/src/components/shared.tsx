@@ -1,6 +1,5 @@
 import { ListGroupProps } from './data-display/List/List';
 import { IconChevronRight, IconExternalLink } from '@tabler/icons-react';
-import Switch from './inputs/Switch/Switch';
 
 export const listItems: ListGroupProps[] = [
     {
@@ -97,7 +96,7 @@ const kitchenSinkItems: ListGroupProps[] = Array.from({ length: groupLength }).m
         disabled: itemIndex === itemLength - 1,
         endIcon: groupIndex > 0 && groupIndex !== groupLength - 1 ? <IconChevronRight /> : undefined,
         startIcon: groupIndex === 3 ? <IconExternalLink /> : undefined,
-        secondaryAction: groupIndex === groupLength - 1 ? <Switch /> : undefined,
+        secondaryAction: groupIndex === groupLength - 1 ? true : false,
     })),
 }));
 
