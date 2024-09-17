@@ -109,11 +109,11 @@ const MuiListStyles = {
                     },
 
                     ':hover': {
-                        backgroundColor: tokens.components.list.background.item.hover,
+                        backgroundColor: tokens.components.list.background.item.selectedhover,
                     },
 
                     '&:active': {
-                        backgroundColor: tokens.components.list.background.item.active,
+                        backgroundColor: tokens.components.list.background.item.selectedactive,
                     },
                 },
             },
