@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import { useState } from 'react';
+import Checkbox from '@/components/inputs/Checkbox/Checkbox';
 
 export interface ListItemProps {
     id: string;
@@ -56,7 +57,7 @@ export const List = ({ items, ...rest }: ListProps) => {
                                         key={itemId}
                                         secondaryAction={
                                             secondaryAction ? (
-                                                <MuiCheckbox
+                                                <Checkbox
                                                     edge="end"
                                                     onChange={() => toggleItemSelection(itemId)}
                                                     checked={selectedItem === itemId}
