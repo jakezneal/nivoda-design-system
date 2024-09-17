@@ -8,12 +8,13 @@ import { alertTitleClasses } from '@mui/material/AlertTitle';
 const MuiAlertStyles = {
     styleOverrides: {
         root: {
-            borderStyle: 'solid',
-            borderWidth: tokens.components.alert.border.width,
-            borderRadius: tokens.components.alert.border.radius,
-            padding: `${tokens.components.alert.paddingvertical} ${tokens.components.alert.paddinghorizontal}`,
-            gap: tokens.components.alert.gap,
-            position: 'relative',
+            [`&.${alertClasses.root}`]: {
+                borderWidth: tokens.components.alert.border.width,
+                borderRadius: tokens.components.alert.border.radius,
+                padding: `${tokens.components.alert.paddingvertical} ${tokens.components.alert.paddinghorizontal}`,
+                gap: tokens.components.alert.gap,
+                position: 'relative',
+            },
 
             [`& .${alertClasses.icon}`]: {
                 marginRight: 0,
