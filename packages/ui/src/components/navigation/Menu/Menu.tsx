@@ -9,8 +9,8 @@ import {
 } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import { useState } from 'react';
-import { IconCheck } from '@tabler/icons-react';
 import { ListItemProps } from '@/components/data-display/List/List';
+import Checkbox from '@/components/inputs/Checkbox/Checkbox';
 
 export interface MenuGroupProps {
     id: string;
@@ -49,9 +49,14 @@ export const Menu = ({ items, ...rest }: MenuProps) => {
                                 >
                                     {startIcon && <MuiListItemIcon>{startIcon}</MuiListItemIcon>}
                                     <MuiListItemText primary={primary} secondary={secondary} />
-                                    {selectedItem === itemId && !secondaryAction && <IconCheck />}
                                     {endIcon && selectedItem !== itemId && endIcon}
-                                    {secondaryAction && secondaryAction}
+                                    {secondaryAction && (
+                                        <Checkbox
+                                            edge="end"
+                                            onChange={() => toggleItemSelection(itemId)}
+                                            checked={selectedItem === itemId}
+                                        />
+                                    )}
                                 </MuiMenuItem>
                             ),
                         )}

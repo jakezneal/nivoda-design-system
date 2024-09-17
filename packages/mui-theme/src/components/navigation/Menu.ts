@@ -28,7 +28,7 @@ const MuiMenuStyles = {
                 },
 
                 ':hover': {
-                    backgroundColor: tokens.components.list.background.hover,
+                    backgroundColor: tokens.components.list.background.item.hover,
 
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.hover,
@@ -40,7 +40,7 @@ const MuiMenuStyles = {
                 },
 
                 ':active': {
-                    backgroundColor: tokens.components.list.background.active,
+                    backgroundColor: tokens.components.list.background.item.active,
                 },
 
                 '&.Mui-disabled': {
@@ -68,6 +68,14 @@ const MuiMenuStyles = {
 
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.selected,
+                    },
+
+                    ':hover': {
+                        backgroundColor: tokens.components.list.background.item.selectedhover,
+                    },
+
+                    '&:active': {
+                        backgroundColor: tokens.components.list.background.item.selectedactive,
                     },
                 },
             },
