@@ -13,8 +13,8 @@ const MuiLinkStyles = {
             textUnderlineOffset: '3px',
 
             svg: {
-                width: '1.25em',
-                height: '1.25em',
+                width: '1em',
+                height: '1em',
             },
 
             ':hover, :focus': {
