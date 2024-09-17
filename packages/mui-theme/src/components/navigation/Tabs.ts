@@ -5,8 +5,8 @@ import { badgeClasses } from '@mui/material/Badge';
 const MuiTabsStyles = {
     styleOverrides: {
         root: {
-            [`& .${tabsClasses.flexContainer}`]: {
-                borderBottom: '1px solid #E7E5E4',
+            [`& .${tabsClasses.scroller}`]: {
+                boxShadow: 'inset 0 -1px 0 0 #E7E5E4',
             },
 
             [`& .${tabsClasses.indicator}`]: {
