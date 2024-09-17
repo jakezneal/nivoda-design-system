@@ -10,6 +10,7 @@ import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { boxClasses } from '@mui/material/Box';
 import { paperClasses } from '@mui/material/Paper';
 import { menuClasses } from '@mui/material/Menu';
+import { listItemSecondaryActionClasses } from '@mui/material/ListItemSecondaryAction';
 
 const MuiListStyles = {
     styleOverrides: {
@@ -27,6 +28,18 @@ const MuiListStyles = {
 
             [`& .${listItemClasses.root}`]: {
                 padding: 0,
+
+                // When there's not a secondary action, the container should have a hover state.
+                [`&:not(:has(.${listItemSecondaryActionClasses.root})) .${buttonBaseClasses.root}.${listItemButtonClasses.root}:hover`]:
+                    {
+                        backgroundColor: tokens.components.list.background.item.hover,
+                    },
+
+                // Override the default hover colour when there's a secondary action.
+                [`&:has(.${listItemSecondaryActionClasses.root}) .${buttonBaseClasses.root}.${listItemButtonClasses.root}:hover`]:
+                    {
+                        backgroundColor: 'transparent',
+                    },
             },
 
             [`& .${listItemTextClasses.root}`]: {
@@ -58,8 +71,6 @@ const MuiListStyles = {
                 },
 
                 ':hover': {
-                    backgroundColor: tokens.components.list.background.item.hover,
-
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.hover,
                     },

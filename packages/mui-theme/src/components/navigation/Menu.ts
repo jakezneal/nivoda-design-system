@@ -7,6 +7,7 @@ import { listItemTextClasses } from '@mui/material/ListItemText';
 import { menuClasses } from '@mui/material/Menu';
 import { menuItemClasses } from '@mui/material/MenuItem';
 import { boxClasses } from '@mui/material/Box';
+import { formControlLabelClasses } from '@mui/material/FormControlLabel';
 
 const MuiMenuStyles = {
     styleOverrides: {
@@ -27,9 +28,17 @@ const MuiMenuStyles = {
                     color: tokens.components.list.icon.end.default,
                 },
 
-                ':hover': {
+                // When there's not a secondary action, the container should have a hover state.
+                [`&:not(:has(.${formControlLabelClasses.root})):hover`]: {
                     backgroundColor: tokens.components.list.background.item.hover,
+                },
 
+                // Override the default hover colour when there's a secondary action.
+                [`&:has(.${formControlLabelClasses.root}):hover`]: {
+                    backgroundColor: 'transparent',
+                },
+
+                ':hover': {
                     [`& .${listItemTextClasses.primary}`]: {
                         color: tokens.components.list.title.hover,
                     },
