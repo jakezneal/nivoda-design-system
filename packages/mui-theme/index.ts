@@ -12,6 +12,7 @@ import MuiToggleButtonGroup from './src/components/inputs/ToggleButtonGroup';
 import MuiToggleButton from './src/components/inputs/ToggleButton';
 import MuiAutocomplete from './src/components/inputs/Autocomplete';
 import MuiRadio from './src/components/inputs/Radio';
+import MuiSelect from './src/components/inputs/Select';
 
 import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
@@ -50,6 +51,7 @@ const nivodaTheme = createTheme({
         MuiTooltip,
         MuiLink,
         MuiRadio,
+        MuiSelect,
     },
     typography: {
         fontFamily: 'Inter',
