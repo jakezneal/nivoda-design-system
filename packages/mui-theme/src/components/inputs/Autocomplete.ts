@@ -41,10 +41,6 @@ const MuiAutocompleteStyles = {
                     },
                 },
 
-                [`& .${buttonBaseClasses.root} svg path`]: {
-                    stroke: tokens.components.autocomplete.text.input,
-                },
-
                 '&.Mui-disabled': {
                     [`& .${outlinedInputClasses.notchedOutline}`]: {
                         backgroundColor: tokens.components.autocomplete.background.disabled,
@@ -58,19 +54,25 @@ const MuiAutocompleteStyles = {
                     },
                 },
             },
-            [`& .${outlinedInputClasses.notchedOutline}`]: {
-                borderColor: tokens.components.autocomplete.border.default,
-            },
-            [`& .${autocompleteClasses.popupIndicator}`]: {
-                transition: 'none',
 
-                '&:hover': {
-                    backgroundColor: 'transparent',
-                },
-            },
             [`& .${autocompleteClasses.endAdornment}`]: {
                 zIndex: 1,
+
+                [`& .${autocompleteClasses.popupIndicator}`]: {
+                    transition: 'none',
+
+                    svg: {
+                        width: '16px',
+                        height: '16px',
+                        color: tokens.components.autocomplete.text.input,
+                    },
+
+                    '&:hover': {
+                        backgroundColor: 'transparent',
+                    },
+                },
             },
+
             [`& .${chipClasses.root}`]: {
                 '&:hover': {
                     backgroundColor: tokens.components.chip.background.hover,

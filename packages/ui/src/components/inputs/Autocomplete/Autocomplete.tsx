@@ -7,6 +7,7 @@ import {
     AutocompleteChangeDetails,
 } from '@mui/material';
 import { SyntheticEvent } from 'react';
+import { IconSelector } from '@tabler/icons-react';
 
 type Option = { label: string; id: string };
 
@@ -55,20 +56,6 @@ export const Autocomplete = ({
         }
     };
 
-    function DropdownIcon() {
-        return (
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M5.33325 6.00004L7.99992 3.33337L10.6666 6.00004M10.6666 10L7.99992 12.6667L5.33325 10"
-                    stroke="#44403C"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                />
-            </svg>
-        );
-    }
-
     return (
         <MuiBox sx={{ display: 'flex', flexDirection: 'column' }}>
             {label && <MuiInputLabel htmlFor={id}>{label}</MuiInputLabel>}
@@ -89,7 +76,7 @@ export const Autocomplete = ({
                 ChipProps={{
                     size: 'small',
                 }}
-                popupIcon={<DropdownIcon />}
+                popupIcon={<IconSelector />}
                 disabled={disabled}
             />
             {helpText && <MuiFormHelperText>{helpText}</MuiFormHelperText>}
