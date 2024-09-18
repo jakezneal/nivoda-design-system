@@ -22,6 +22,11 @@ const preview: Preview = {
                 date: /Date$/i,
             },
         },
+        options: {
+            storySort: {
+                method: 'alphabetical',
+            },
+        },
     },
     decorators: [
         withThemeFromJSXProvider({
