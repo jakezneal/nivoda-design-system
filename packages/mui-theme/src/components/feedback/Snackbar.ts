@@ -1,45 +1,52 @@
+import type { Components } from '@mui/material';
 import { paperClasses } from '@mui/material/Paper';
-import { alertClasses } from '@mui/material/Alert';
-import { alertTitleClasses } from '@mui/material/AlertTitle';
-import { buttonBaseClasses } from '@mui/material/ButtonBase';
-import { buttonClasses } from '@mui/material/Button';
-import { snackbarContentClasses } from '@mui/material/SnackbarContent';
 
-const MuiSnackbarStyles = {
+const MuiSnackbarStyles: Components['MuiSnackbar'] = {
     styleOverrides: {
         root: {
+            maxWidth: '450px',
+            width: '100%',
+
+            svg: {
+                width: '32px',
+                height: '32px',
+            },
+
             [`& .${paperClasses.root}`]: {
-                alignItems: 'center',
-                width: '100%',
+                borderColor: '#f1f1f1',
+                boxShadow: '#0000000d 0px 1px 2px',
+                color: '#78716c',
+                display: 'flex',
+                flexDirection: 'row',
+                gap: '16px',
             },
 
-            [`& .${alertClasses.icon}`]: {
-                alignSelf: 'flex-start',
+            '&.MuiSnackbar-colourSuccess .MuiSnackbar-icon': {
+                color: '#479570',
             },
 
-            [`& .${alertClasses.action}`]: {
-                [`& .${buttonBaseClasses.root}:not(.${buttonClasses.text})`]: {
-                    cursor: 'pointer',
-                    position: 'absolute',
-                    right: '10px',
-                    top: '10px',
-                },
+            '&.MuiSnackbar-colourInfo .MuiSnackbar-icon': {
+                color: '#326cff',
             },
 
-            [`& .${alertTitleClasses.root}`]: {
-                margin: 0,
+            '&.MuiSnackbar-colourWarning .MuiSnackbar-icon': {
+                color: '#f59e0b',
             },
 
-            [`& .${snackbarContentClasses.root}`]: {
-                backgroundColor: 'transparent',
-                border: 'none',
-                boxShadow: 'none',
-                color: 'inherit',
-                padding: 0,
+            '&.MuiSnackbar-colourError .MuiSnackbar-icon': {
+                color: '#dc2626',
             },
 
-            [`& .${snackbarContentClasses.message}`]: {
-                padding: '0',
+            '.MuiSnackbar-content': {
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '16px',
+            },
+
+            '.MuiSnackbar-message': {
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '4px',
             },
         },
     },

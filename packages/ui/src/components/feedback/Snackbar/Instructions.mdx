@@ -1,0 +1,118 @@
+import { Meta, IconGallery, IconItem } from '@storybook/blocks';
+import * as SnackbarStories from './Snackbar.stories';
+import { IconCircleCheckFilled, IconAlertTriangleFilled, IconCircleXFilled } from '@tabler/icons-react';
+import { Snackbar } from './Snackbar';
+
+<Meta of={SnackbarStories} />
+
+# Introduction
+
+Snackbars are used to display short-term messages at the bottom of the screen.
+The built-in `Snackbar` component lacks the functionality we need to convey severity.
+The MUI docs suggests using the `Alert` component as the child of the `Snackbar`
+for this, but as the `Alert` is used in a different context it doesn't work for
+our use case.
+
+For this reason we've created a custom `Snackbar` component that builds on top of
+the MUI `Snackbar` component to add severity along with other features. Below is
+an outline of the markup required when implementing our custom `Snackbar` component.
+
+# Usage
+
+We start with the standard `Snackbar` component from MUI, but we add a custom
+class to it to convey the severity:
+
+```tsx
+<Snackbar className="MuiSnackbar-colourSuccess"></Snackbar>
+```
+
+The first child of the `Snackbar` is the `Paper` component, which is used to
+provide the background and elevation (note this is using a custom variant that
+exists within our custom MUI theme):
+
+```tsx
+<Paper elevation={0} variant="loose"></Paper>
+```
+
+Next we add the `Icon` component, passing in the severity as a prop:
+
+```tsx
+<div className="MuiSnackbar-icon">
+    <Icon severity="success" />
+</div>
+```
+
+Then we wrap the main content of the `Snackbar` in a `div`:
+
+```tsx
+<div className="MuiSnackbar-content"></div>
+```
+
+And separate out the content into the `message` and `action` sections:
+
+```tsx
+<div className="MuiSnackbar-message"></div>
+<div className="MuiSnackbar-action"></div>
+```
+
+Finally we add the `title` and `description` content using the `Typography` component:
+
+```tsx
+<Typography variant="body2" className="MuiSnackbar-title"></Typography>
+<Typography variant="body2" className="MuiSnackbar-description"></Typography>
+```
+
+And chuck a button in the `action` section:
+
+```tsx
+<Button variant="outlined" color="secondary" size="small">
+    Review changes
+</Button>
+```
+
+Our finished `Snackbar` component looks something like this:
+
+```tsx
+<Snackbar className="MuiSnackbar-colourSuccess">
+    <Paper elevation={0} variant="loose">
+        <div className="MuiSnackbar-icon">
+            <Icon severity="success" />
+        </div>
+        <div className="MuiSnackbar-content">
+            <div className="MuiSnackbar-message">
+                <Typography variant="body2" className="MuiSnackbar-title">
+                    Updates have been made to your profile
+                </Typography>
+                <Typography variant="body2" className="MuiSnackbar-description">
+                    Your team has made changes to your company profile since you last logged in.
+                </Typography>
+            </div>
+            <div className="MuiSnackbar-action">
+                <Button variant="outlined" color="secondary" size="small">
+                    Review changes
+                </Button>
+            </div>
+        </div>
+    </Paper>
+</Snackbar>
+```
+
+# Iconography
+
+Within the `Snackbar` component the following Tabler icons should be used in
+conjunction with the severity:
+
+<IconGallery style={{ gap: '20px' }}>
+    <IconItem name="IconCircleCheckFilled">
+        <IconCircleCheckFilled color="#479570" />
+    </IconItem>
+    <IconItem name="IconAlertTriangleFilled">
+        <IconAlertTriangleFilled color="#f59e0b" />
+    </IconItem>
+    <IconItem name="IconCircleXFilled">
+        <IconCircleXFilled color="#dc2626" />
+    </IconItem>
+    <IconItem name="IconCircleCheckFilled">
+        <IconCircleCheckFilled color="#326cff" />
+    </IconItem>
+</IconGallery>
