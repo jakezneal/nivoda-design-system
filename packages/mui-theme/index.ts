@@ -28,6 +28,7 @@ import MuiPaper from './src/components/surfaces/Paper';
 import MuiMenu from './src/components/navigation/Menu';
 import MuiTabs from './src/components/navigation/Tabs';
 import MuiLink from './src/components/navigation/Link';
+import MuiDrawer from './src/components/navigation/Drawer';
 
 const nivodaTheme = createTheme({
     components: {
@@ -54,6 +55,7 @@ const nivodaTheme = createTheme({
         MuiRadio,
         MuiSelect,
         MuiSlider,
+        MuiDrawer,
     },
     typography: {
         fontFamily: 'Inter',
