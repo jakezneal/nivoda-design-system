@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { listSubheaderClasses } from '@mui/material/ListSubheader';
 import { listItemClasses } from '@mui/material/ListItem';
@@ -20,7 +18,7 @@ const MuiListStyles = {
             },
 
             [`& .${listSubheaderClasses.root}`]: {
-                color: tokens.components.list.subheader.default,
+                color: tokens.components.list.subheader,
                 lineHeight: 1,
                 padding: `${tokens.components.list.padding.subheader.vertical} ${tokens.components.list.padding.subheader.horizontal}`,
                 textTransform: 'uppercase',
@@ -96,7 +94,7 @@ const MuiListStyles = {
                     opacity: 1,
 
                     svg: {
-                        color: tokens.components.list.icon.end.disabled,
+                        color: tokens.components.list.icon.end.default,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {

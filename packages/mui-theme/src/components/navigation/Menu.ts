@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { listItemIconClasses } from '@mui/material/ListItemIcon';
@@ -56,7 +54,7 @@ const MuiMenuStyles = {
                     opacity: 1,
 
                     svg: {
-                        color: tokens.components.list.icon.end.disabled,
+                        color: tokens.components.list.icon.end.default,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {

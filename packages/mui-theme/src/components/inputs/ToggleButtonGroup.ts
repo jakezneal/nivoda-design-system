@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { toggleButtonGroupClasses } from '@mui/material/ToggleButtonGroup';
 

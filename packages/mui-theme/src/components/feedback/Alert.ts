@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { alertClasses } from '@mui/material/Alert';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';

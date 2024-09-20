@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
@@ -25,7 +23,7 @@ const MuiSelectStyles = {
             [`& .${inputBaseClasses.input}`]: {
                 paddingTop: '12px',
                 paddingBottom: '12px',
-                paddingLeft: tokens.components.autocomplete.paddingHorizontal,
+                paddingLeft: tokens.components.autocomplete.paddinghorizontal,
 
                 [`&:hover ~ .${outlinedInputClasses.notchedOutline}`]: {
                     borderColor: tokens.components.autocomplete.border.hover,

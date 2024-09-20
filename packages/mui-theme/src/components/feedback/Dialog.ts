@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { dialogClasses } from '@mui/material/Dialog';
 import { dialogContentClasses } from '@mui/material/DialogContent';

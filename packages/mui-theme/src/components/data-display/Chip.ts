@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { chipClasses } from '@mui/material/Chip';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';

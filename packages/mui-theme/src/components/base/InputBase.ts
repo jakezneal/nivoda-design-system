@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { inputBaseClasses } from '@mui/material/InputBase';

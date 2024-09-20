@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
@@ -13,9 +11,9 @@ const MuiAutocompleteStyles = {
             [`& .${inputBaseClasses.root}`]: {
                 borderRadius: tokens.components.autocomplete.borderradius,
                 color: tokens.components.autocomplete.text.input,
-                paddingTop: tokens.components.autocomplete.paddingVertical,
-                paddingBottom: tokens.components.autocomplete.paddingVertical,
-                paddingLeft: tokens.components.autocomplete.paddingHorizontal,
+                paddingTop: tokens.components.autocomplete.paddingvertical,
+                paddingBottom: tokens.components.autocomplete.paddingvertical,
+                paddingLeft: tokens.components.autocomplete.paddinghorizontal,
 
                 [`& .${inputBaseClasses.input}`]: {
                     height: '30px',
@@ -32,9 +30,9 @@ const MuiAutocompleteStyles = {
                 },
 
                 [`&.${inputBaseClasses.sizeSmall}`]: {
-                    paddingTop: tokens.components.autocomplete.small.paddingVertical,
-                    paddingBottom: tokens.components.autocomplete.small.paddingVertical,
-                    paddingLeft: tokens.components.autocomplete.small.paddingHorizontal,
+                    paddingTop: tokens.components.autocomplete.small.paddingvertical,
+                    paddingBottom: tokens.components.autocomplete.small.paddingvertical,
+                    paddingLeft: tokens.components.autocomplete.small.paddinghorizontal,
 
                     [`& .${inputBaseClasses.input}`]: {
                         padding: 0,

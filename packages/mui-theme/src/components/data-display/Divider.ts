@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import type { Components } from '@mui/material';
 import { dividerClasses } from '@mui/material/Divider';
 import tokens from '@nivoda/design-tokens';
