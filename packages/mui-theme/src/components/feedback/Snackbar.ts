@@ -48,6 +48,14 @@ const MuiSnackbarStyles: Components['MuiSnackbar'] = {
                 flexDirection: 'column',
                 gap: '4px',
             },
+
+            '.MuiSnackbar-title': {
+                color: '#0c0a09',
+            },
+
+            '.MuiSnackbar-description': {
+                color: '#78716c',
+            },
         },
     },
 };
