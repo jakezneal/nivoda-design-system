@@ -13,9 +13,9 @@ export const typescriptEsmDeclarations: FormatFn = async ({
     const { prefix } = platform;
     const tokens = prefix ? { [prefix]: dictionary.tokens } : dictionary.tokens;
 
-    const rootName = file.options?.rootName || 'DesignToken';
+    const rootName = file.options?.rootName || 'DesignTokens';
     const values = jsonToTypes(jsonToNestedValue(tokens), '  ', rootName, true);
-    const output = (await fileHeader({ file })) + `${values}\n`;
+    const output = (await fileHeader({ file })) + `${values}\n const tokens: DesignTokens; export default tokens;\n`;
 
     return format(output, { parser: 'typescript', printWidth: 80, ...options?.prettier });
 };
