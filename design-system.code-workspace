@@ -21,6 +21,10 @@
             "path": "packages/ui",
         },
         {
+            "name": "💎 Caret (Package)",
+            "path": "packages/caret",
+        },
+        {
             "name": "📖 Storybook (App)",
             "path": "apps/storybook",
         },
