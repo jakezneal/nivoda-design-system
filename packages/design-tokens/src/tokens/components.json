@@ -4929,6 +4929,23 @@
           }
         }
       }
+    },
+    "divider": {
+      "colour": {
+        "type": "color",
+        "value": "{base.default.color.surface.border.default}",
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "mode": "Default",
+            "collection": "components",
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "variableId": "VariableID:13182:2787",
+            "exportKey": "variables"
+          }
+        }
+      }
     }
   }
 }

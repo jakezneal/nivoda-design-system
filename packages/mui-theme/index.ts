@@ -22,6 +22,7 @@ import MuiSnackbar from './src/components/feedback/Snackbar';
 import MuiChip from './src/components/data-display/Chip';
 import MuiList from './src/components/data-display/List';
 import MuiTooltip from './src/components/data-display/Tooltip';
+import MuiDivider from './src/components/data-display/Divider';
 
 import MuiPaper from './src/components/surfaces/Paper';
 
@@ -56,6 +57,7 @@ const nivodaTheme = createTheme({
         MuiSelect,
         MuiSlider,
         MuiDrawer,
+        MuiDivider,
     },
     typography: {
         fontFamily: 'Inter',
