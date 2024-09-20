@@ -1,3 +1,4 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { listItemIconClasses } from '@mui/material/ListItemIcon';
@@ -7,11 +8,8 @@ import { menuItemClasses } from '@mui/material/MenuItem';
 import { boxClasses } from '@mui/material/Box';
 import { formControlLabelClasses } from '@mui/material/FormControlLabel';
 
-const MuiMenuStyles = {
+const MuiMenuStyles: Components['MuiMenu'] = {
     styleOverrides: {
-        defaultProps: {
-            variant: 'tight',
-        },
         root: {
             [`& .${menuClasses.paper}`]: {
                 boxShadow: 'none',

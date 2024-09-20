@@ -1,7 +1,8 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { toggleButtonGroupClasses } from '@mui/material/ToggleButtonGroup';
 
-const MuiToggleButtonGroupStyles = {
+const MuiToggleButtonGroupStyles: Components['MuiToggleButtonGroup'] = {
     styleOverrides: {
         root: {
             [`& .${toggleButtonGroupClasses.grouped}`]: {

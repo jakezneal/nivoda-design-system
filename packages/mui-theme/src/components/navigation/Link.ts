@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiLinkStyles = {
+const MuiLinkStyles: Components['MuiLink'] = {
     styleOverrides: {
         root: {
             alignItems: 'center',

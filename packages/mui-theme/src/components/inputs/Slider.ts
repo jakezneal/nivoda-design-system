@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import { sliderClasses } from '@mui/material/Slider';
 
-const MuiSliderStyles = {
+const MuiSliderStyles: Components['MuiSlider'] = {
     styleOverrides: {
         root: {
             [`& .${sliderClasses.rail}`]: {

@@ -1,9 +1,10 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { alertClasses } from '@mui/material/Alert';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { alertTitleClasses } from '@mui/material/AlertTitle';
 
-const MuiAlertStyles = {
+const MuiAlertStyles: Components['MuiAlert'] = {
     styleOverrides: {
         root: {
             [`&.${alertClasses.root}`]: {

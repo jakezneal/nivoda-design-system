@@ -1,9 +1,10 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { selectClasses } from '@mui/material/Select';
 
-const MuiSelectStyles = {
+const MuiSelectStyles: Components['MuiSelect'] = {
     styleOverrides: {
         root: {
             borderRadius: tokens.components.autocomplete.borderradius,

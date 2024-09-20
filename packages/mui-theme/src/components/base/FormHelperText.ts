@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiFormHelperTextStyles = {
+const MuiFormHelperTextStyles: Components['MuiFormHelperText'] = {
     styleOverrides: {
         root: {
             marginTop: tokens.base.default.spacing['2'],

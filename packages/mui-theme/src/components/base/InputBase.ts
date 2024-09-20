@@ -1,8 +1,9 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { inputBaseClasses } from '@mui/material/InputBase';
 
-const MuiInputBaseStyles = {
+const MuiInputBaseStyles: Components['MuiInputBase'] = {
     styleOverrides: {
         root: {
             [`&:not(.${outlinedInputClasses.root})`]: {

@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiPaperStyles = {
+const MuiPaperStyles: Components['MuiPaper'] = {
     defaultProps: {
         elevation: 0,
     },

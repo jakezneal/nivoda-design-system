@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiRadioStyles = {
+const MuiRadioStyles: Components['MuiRadio'] = {
     defaultProps: {
         disableFocusRipple: true,
         disableRipple: true,

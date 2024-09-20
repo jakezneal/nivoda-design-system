@@ -1,3 +1,4 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
@@ -5,7 +6,7 @@ import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { autocompleteClasses } from '@mui/material/Autocomplete';
 import { chipClasses } from '@mui/material/Chip';
 
-const MuiAutocompleteStyles = {
+const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
     styleOverrides: {
         root: {
             [`& .${inputBaseClasses.root}`]: {

@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiInputLabelStyles = {
+const MuiInputLabelStyles: Components['MuiInputLabel'] = {
     styleOverrides: {
         root: {
             color: tokens.components.textfield.text.label,

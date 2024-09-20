@@ -1,3 +1,4 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { dialogClasses } from '@mui/material/Dialog';
 import { dialogContentClasses } from '@mui/material/DialogContent';
@@ -6,7 +7,7 @@ import { dialogTitleClasses } from '@mui/material/DialogTitle';
 import { boxClasses } from '@mui/material/Box';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 
-const MuiDialogStyles = {
+const MuiDialogStyles: Components['MuiDialog'] = {
     styleOverrides: {
         root: {
             [`& .${dialogClasses.paper}`]: {

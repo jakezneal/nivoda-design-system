@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiSwitchStyles = {
+const MuiSwitchStyles: Components['MuiSwitch'] = {
     defaultProps: {
         disableFocusRipple: true,
         disableRipple: true,

@@ -1,8 +1,9 @@
+import type { Components } from '@mui/material';
 import { tabsClasses } from '@mui/material/Tabs';
 import { tabClasses } from '@mui/material/Tab';
 import { badgeClasses } from '@mui/material/Badge';
 
-const MuiTabsStyles = {
+const MuiTabsStyles: Components['MuiTabs'] = {
     styleOverrides: {
         root: {
             [`& .${tabsClasses.scroller}`]: {

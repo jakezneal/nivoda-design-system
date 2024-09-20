@@ -1,6 +1,7 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
-const MuiCheckboxStyles = {
+const MuiCheckboxStyles: Components['MuiCheckbox'] = {
     defaultProps: {
         disableFocusRipple: true,
         disableRipple: true,

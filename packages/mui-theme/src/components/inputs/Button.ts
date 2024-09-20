@@ -1,3 +1,4 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 
 const unusedButtonVariant = {
@@ -11,7 +12,7 @@ const unusedButtonVariant = {
     },
 };
 
-const MuiButtonStyles = {
+const MuiButtonStyles: Components['MuiButton'] = {
     styleOverrides: {
         root: {
             variants: [],

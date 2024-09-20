@@ -1,3 +1,4 @@
+import type { Components } from '@mui/material';
 import tokens from '@nivoda/design-tokens';
 import { listSubheaderClasses } from '@mui/material/ListSubheader';
 import { listItemClasses } from '@mui/material/ListItem';
@@ -10,7 +11,7 @@ import { paperClasses } from '@mui/material/Paper';
 import { menuClasses } from '@mui/material/Menu';
 import { listItemSecondaryActionClasses } from '@mui/material/ListItemSecondaryAction';
 
-const MuiListStyles = {
+const MuiListStyles: Components['MuiList'] = {
     styleOverrides: {
         root: {
             [`& .${paperClasses.root}`]: {
