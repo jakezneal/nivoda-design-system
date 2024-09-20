@@ -6,7 +6,6 @@ import {
     ListItemButton as MuiListItemButton,
     ListItemIcon as MuiListItemIcon,
     Box as MuiBox,
-    Checkbox as MuiCheckbox,
     type ListProps as MuiListProps,
 } from '@mui/material';
 import Divider from '@mui/material/Divider';
