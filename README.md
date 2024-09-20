@@ -29,5 +29,10 @@ This Turborepo includes the following packages and applications:
 
 -   `packages/typescript-config`: Shared `tsconfig.json`s used throughout the Turborepo
 -   `packages/eslint-config`: ESLint preset
+-   `packages/design-tokens`: Design tokens for the design system. Style Dictionary is used to generate the tokens
+-   `packages/mui-theme`: MUI custom theme that uses the design tokens to style the MUI components
+-   `pacakges/ui`: React components that use the MUI theme and stories to showcase the components in Storybook
+-   `apps/storybook`: Storybook app that uses the UI package to showcase the components
+-   `apps/react`: React app playground for testing the components
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-w` workspaces flag with `pnpm add`.
