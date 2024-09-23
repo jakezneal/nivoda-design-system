@@ -14,6 +14,7 @@ import MuiAutocomplete from './src/components/inputs/Autocomplete';
 import MuiRadio from './src/components/inputs/Radio';
 import MuiSelect from './src/components/inputs/Select';
 import MuiSlider from './src/components/inputs/Slider';
+import MuiIconButton from './src/components/inputs/IconButton';
 
 import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
@@ -58,6 +59,7 @@ const nivodaTheme = createTheme({
         MuiSlider,
         MuiDrawer,
         MuiDivider,
+        MuiIconButton,
     },
     typography: {
         fontFamily: 'Inter',
