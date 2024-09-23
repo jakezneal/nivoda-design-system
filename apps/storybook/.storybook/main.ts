@@ -20,9 +20,37 @@ const config: StorybookConfig = {
         getAbsolutePath('@storybook/addon-themes'),
         getAbsolutePath('storybook-addon-remix-react-router'),
     ],
+    core: {
+        disableTelemetry: true,
+    },
+    docs: {
+        //👇 See the table below for the list of supported options
+        autodocs: 'tag',
+        defaultName: 'Documentation',
+    },
     framework: {
         name: getAbsolutePath('@storybook/react-vite'),
-        options: {},
+        options: {
+            builder: {
+                viteConfigPath: join(__dirname, '../vite.config.ts'),
+            },
+        },
+    },
+    typescript: {
+        reactDocgen: 'react-docgen-typescript',
+        reactDocgenTypescriptOptions: {
+            // Speeds up Storybook build time
+            compilerOptions: {
+                allowSyntheticDefaultImports: false,
+                esModuleInterop: false,
+            },
+            // Makes union prop types like variant and size appear as select controls
+            shouldExtractLiteralValuesFromEnum: true,
+            // Makes string and boolean types that can be undefined appear as inputs and switches
+            shouldRemoveUndefinedFromOptional: true,
+            // Filter out third-party props from node_modules except @mui packages
+            propFilter: (prop) => (prop.parent ? !/node_modules\/(?!@mui)/.test(prop.parent.fileName) : true),
+        },
     },
     viteFinal: async (config) => {
         return {

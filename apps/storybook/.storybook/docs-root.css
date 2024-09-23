@@ -1,0 +1,11 @@
+#storybook-docs .large p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+#storybook-explorer-tree .sidebar-subheading button,
+[id^='downshift-'][id$='-menu'] [class^='search-result-recently'] {
+    letter-spacing: normal !important;
+    font-weight: 700;
+    color: #868aa5;
+}
