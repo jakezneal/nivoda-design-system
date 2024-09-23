@@ -63,6 +63,7 @@ const preview: Preview = {
             GlobalStyles: CssBaseline,
         }),
     ],
+    tags: ['autodocs'],
 };
 
 export default preview;
