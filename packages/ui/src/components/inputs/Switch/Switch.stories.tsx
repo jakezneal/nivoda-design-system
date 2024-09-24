@@ -15,6 +15,7 @@ export const switchDefault: Story = {
     name: 'Switch',
     args: {
         disabled: false,
+        label: 'Switch',
     },
 };
 
