@@ -27,6 +27,7 @@ import MuiTooltip from './src/components/data-display/Tooltip';
 import MuiDivider from './src/components/data-display/Divider';
 
 import MuiPaper from './src/components/surfaces/Paper';
+import MuiCard from './src/components/surfaces/Card';
 
 import MuiMenu from './src/components/navigation/Menu';
 import MuiTabs from './src/components/navigation/Tabs';
@@ -62,6 +63,7 @@ const nivodaTheme = createTheme({
         MuiDivider,
         MuiIconButton,
         MuiFormControlLabel,
+        MuiCard,
     },
     typography: {
         fontFamily: 'Inter',
