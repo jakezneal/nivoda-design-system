@@ -36,6 +36,8 @@ import MuiLink from './src/components/navigation/Link';
 import MuiDrawer from './src/components/navigation/Drawer';
 import MuiBreadcrumbs from './src/components/navigation/Breadcrumbs';
 
+import MuiBox from './src/components/layout/Box';
+
 const nivodaTheme = createTheme({
     components: {
         MuiButton,
@@ -68,6 +70,7 @@ const nivodaTheme = createTheme({
         MuiCard,
         MuiAccordion,
         MuiBreadcrumbs,
+        MuiBox,
     },
     typography: {
         fontFamily: 'Inter',
