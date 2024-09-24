@@ -9,7 +9,8 @@ const MuiCheckboxStyles: Components['MuiCheckbox'] = {
     },
     styleOverrides: {
         root: {
-            padding: tokens.components.checkbox.padding,
+            // padding: tokens.components.checkbox.padding,
+            padding: 0,
             svg: {
                 width: tokens.components.checkbox.size,
                 height: tokens.components.checkbox.size,

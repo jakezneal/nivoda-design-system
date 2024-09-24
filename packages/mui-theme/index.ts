@@ -4,6 +4,7 @@ import MuiInputBase from './src/components/base/InputBase';
 import MuiFormHelperText from './src/components/base/FormHelperText';
 import MuiInputLabel from './src/components/base/InputLabel';
 import MuiButtonBase from './src/components/base/ButtonBase';
+import MuiFormControlLabel from './src/components/base/FormControlLabel';
 
 import MuiButton from './src/components/inputs/Button';
 import MuiCheckbox from './src/components/inputs/Checkbox';
@@ -60,6 +61,7 @@ const nivodaTheme = createTheme({
         MuiDrawer,
         MuiDivider,
         MuiIconButton,
+        MuiFormControlLabel,
     },
     typography: {
         fontFamily: 'Inter',

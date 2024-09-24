@@ -9,7 +9,8 @@ const MuiRadioStyles: Components['MuiRadio'] = {
     },
     styleOverrides: {
         root: {
-            padding: tokens.components.radio.padding,
+            // padding: tokens.components.radio.padding,
+            padding: 0,
             svg: {
                 width: tokens.components.radio.size,
                 height: tokens.components.radio.size,
