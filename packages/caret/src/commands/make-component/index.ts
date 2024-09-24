@@ -47,7 +47,7 @@ export default defineCommand({
 
         if (!category || !componentCategories.includes(category)) {
             componentCategory = await select({
-                message: 'Component name:',
+                message: 'Component category:',
                 options: componentCategories.map((category) => ({ label: category, value: category })),
             });
         }
