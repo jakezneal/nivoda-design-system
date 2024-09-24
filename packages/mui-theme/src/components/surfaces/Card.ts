@@ -1,5 +1,4 @@
 import type { Components } from '@mui/material';
-import { cardClasses } from '@mui/material/Card';
 import { cardActionsClasses } from '@mui/material/CardActions';
 import { cardContentClasses } from '@mui/material/CardContent';
 
