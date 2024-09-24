@@ -35,6 +35,7 @@ const config: StorybookConfig = {
         },
     },
     typescript: {
+        reactDocgen: 'react-docgen-typescript',
         reactDocgenTypescriptOptions: {
             // Speeds up Storybook build time
             compilerOptions: {
