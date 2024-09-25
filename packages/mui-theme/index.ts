@@ -21,6 +21,7 @@ import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
 import MuiSnackbar from './src/components/feedback/Snackbar';
 import MuiLinearProgress from './src/components/feedback/LinearProgress';
+import MuiCircularProgress from './src/components/feedback/CircularProgress';
 
 import MuiChip from './src/components/data-display/Chip';
 import MuiList from './src/components/data-display/List';
@@ -70,6 +71,7 @@ const nivodaTheme = createTheme({
         MuiAccordion,
         MuiBreadcrumbs,
         MuiLinearProgress,
+        MuiCircularProgress,
     },
     typography: {
         fontFamily: 'Inter',
