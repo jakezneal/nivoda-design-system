@@ -13,9 +13,7 @@ const meta = {
         layout: 'centered',
     },
     render: (args) => {
-        return <${value.component.name.pascal} 
-            {...args} 
-        />
+        return <${value.component.name.pascal} {...args} />
     },
 } satisfies Meta<${value.component.name.pascal}PropsAndCustomArgs>;
 
