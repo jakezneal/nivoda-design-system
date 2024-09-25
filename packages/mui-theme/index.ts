@@ -20,6 +20,7 @@ import MuiIconButton from './src/components/inputs/IconButton';
 import MuiAlert from './src/components/feedback/Alert';
 import MuiDialog from './src/components/feedback/Dialog';
 import MuiSnackbar from './src/components/feedback/Snackbar';
+import MuiLinearProgress from './src/components/feedback/LinearProgress';
 
 import MuiChip from './src/components/data-display/Chip';
 import MuiList from './src/components/data-display/List';
@@ -68,6 +69,7 @@ const nivodaTheme = createTheme({
         MuiCard,
         MuiAccordion,
         MuiBreadcrumbs,
+        MuiLinearProgress,
     },
     typography: {
         fontFamily: 'Inter',
