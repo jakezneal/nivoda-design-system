@@ -40,6 +40,8 @@ import MuiLink from './src/components/navigation/Link';
 import MuiDrawer from './src/components/navigation/Drawer';
 import MuiBreadcrumbs from './src/components/navigation/Breadcrumbs';
 
+import MuiStack from './src/components/layout/Stack';
+
 const nivodaTheme = createTheme({
     components: {
         MuiButton,
@@ -76,6 +78,7 @@ const nivodaTheme = createTheme({
         MuiCircularProgress,
         MuiSkeleton,
         MuiAvatar,
+        MuiStack,
     },
     typography: {
         fontFamily: 'Inter',
