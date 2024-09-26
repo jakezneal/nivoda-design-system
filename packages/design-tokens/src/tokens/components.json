@@ -4946,6 +4946,38 @@
           }
         }
       }
+    },
+    "avatar": {
+      "background": {
+        "type": "color",
+        "value": "{base.default.color.base.neutral.300}",
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "mode": "Default",
+            "collection": "components",
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "variableId": "VariableID:13226:3157",
+            "exportKey": "variables"
+          }
+        }
+      },
+      "colour": {
+        "type": "color",
+        "value": "{base.default.color.base.neutral.700}",
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "mode": "Default",
+            "collection": "components",
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "variableId": "VariableID:13226:3158",
+            "exportKey": "variables"
+          }
+        }
+      }
     }
   }
 }

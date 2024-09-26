@@ -28,6 +28,7 @@ import MuiChip from './src/components/data-display/Chip';
 import MuiList from './src/components/data-display/List';
 import MuiTooltip from './src/components/data-display/Tooltip';
 import MuiDivider from './src/components/data-display/Divider';
+import MuiAvatar from './src/components/data-display/Avatar';
 
 import MuiPaper from './src/components/surfaces/Paper';
 import MuiCard from './src/components/surfaces/Card';
@@ -74,6 +75,7 @@ const nivodaTheme = createTheme({
         MuiLinearProgress,
         MuiCircularProgress,
         MuiSkeleton,
+        MuiAvatar,
     },
     typography: {
         fontFamily: 'Inter',
