@@ -1,5 +1,23 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsTextfieldBackgroundDefault,
+    ComponentsTextfieldBackgroundHover,
+    ComponentsTextfieldBackgroundActive,
+    ComponentsTextfieldBackgroundDisabled,
+    ComponentsTextfieldBackgroundError,
+    ComponentsTextfieldBorderDefault,
+    ComponentsTextfieldBorderHover,
+    ComponentsTextfieldBorderActive,
+    ComponentsTextfieldBorderDisabled,
+    ComponentsTextfieldBorderError,
+    ComponentsTextfieldBorderradius,
+    ComponentsTextfieldTextInput,
+    ComponentsTextfieldPaddinghorizontal,
+    ComponentsTextfieldPaddingvertical,
+    ComponentsTextfieldSmallPaddinghorizontal,
+    ComponentsTextfieldSmallPaddingvertical,
+    ComponentsTextfieldGap,
+} from '@nivoda/design-tokens';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { inputBaseClasses } from '@mui/material/InputBase';
 
@@ -7,38 +25,38 @@ const MuiInputBaseStyles: Components['MuiInputBase'] = {
     styleOverrides: {
         root: {
             [`&:not(.${outlinedInputClasses.root})`]: {
-                backgroundColor: tokens.components.textfield.background.default,
-                border: `1px solid ${tokens.components.textfield.border.default}`,
-                borderRadius: tokens.components.textfield.borderradius,
-                color: tokens.components.textfield.text.input,
-                padding: `${tokens.components.textfield.paddingvertical} ${tokens.components.textfield.paddinghorizontal}`,
+                backgroundColor: ComponentsTextfieldBackgroundDefault,
+                border: `1px solid ${ComponentsTextfieldBorderDefault}`,
+                borderRadius: ComponentsTextfieldBorderradius,
+                color: ComponentsTextfieldTextInput,
+                padding: `${ComponentsTextfieldPaddingvertical} ${ComponentsTextfieldPaddinghorizontal}`,
                 width: '100%',
-                gap: tokens.components.textfield.gap,
+                gap: ComponentsTextfieldGap,
                 input: {
                     padding: '0px',
                     height: '1.5rem',
                 },
                 ':hover': {
-                    backgroundColor: tokens.components.textfield.background.hover,
-                    borderColor: tokens.components.textfield.border.hover,
+                    backgroundColor: ComponentsTextfieldBackgroundHover,
+                    borderColor: ComponentsTextfieldBorderHover,
                 },
                 ':focus-within': {
-                    backgroundColor: tokens.components.textfield.background.active,
-                    borderColor: tokens.components.textfield.border.active,
+                    backgroundColor: ComponentsTextfieldBackgroundActive,
+                    borderColor: ComponentsTextfieldBorderActive,
                     borderSize: '1px',
                     borderStyle: 'solid',
                 },
                 '&.Mui-disabled': {
-                    backgroundColor: tokens.components.textfield.background.disabled,
-                    borderColor: tokens.components.textfield.border.disabled,
-                    color: tokens.components.textfield.text.input,
+                    backgroundColor: ComponentsTextfieldBackgroundDisabled,
+                    borderColor: ComponentsTextfieldBorderDisabled,
+                    color: ComponentsTextfieldTextInput,
                 },
                 '&.Mui-error': {
-                    backgroundColor: tokens.components.textfield.background.error,
-                    borderColor: tokens.components.textfield.border.error,
+                    backgroundColor: ComponentsTextfieldBackgroundError,
+                    borderColor: ComponentsTextfieldBorderError,
                 },
                 [`&.${inputBaseClasses.sizeSmall}`]: {
-                    padding: `${tokens.components.textfield.small.paddingvertical} ${tokens.components.textfield.small.paddinghorizontal}`,
+                    padding: `${ComponentsTextfieldSmallPaddingvertical} ${ComponentsTextfieldSmallPaddinghorizontal}`,
                 },
             },
         },

@@ -1,5 +1,15 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsRadioBackgroundDisabled,
+    ComponentsRadioBorderColourChecked,
+    ComponentsRadioBorderColourDefault,
+    ComponentsRadioBorderColourDisabled,
+    ComponentsRadioBorderColourHover,
+    ComponentsRadioBorderRadius,
+    ComponentsRadioLabelDisabled,
+    ComponentsRadioSize,
+    ComponentsRadioSmallSize,
+} from '@nivoda/design-tokens';
 
 const MuiRadioStyles: Components['MuiRadio'] = {
     defaultProps: {
@@ -9,59 +19,58 @@ const MuiRadioStyles: Components['MuiRadio'] = {
     },
     styleOverrides: {
         root: {
-            // padding: tokens.components.radio.padding,
             padding: 0,
             svg: {
-                width: tokens.components.radio.size,
-                height: tokens.components.radio.size,
+                width: ComponentsRadioSize,
+                height: ComponentsRadioSize,
 
                 rect: {
-                    stroke: tokens.components.radio.border.colour.default,
-                    rx: tokens.components.radio.border.radius,
+                    stroke: ComponentsRadioBorderColourDefault,
+                    rx: ComponentsRadioBorderRadius,
                 },
             },
             'input:hover ~ svg > rect': {
-                stroke: tokens.components.radio.border.colour.hover,
+                stroke: ComponentsRadioBorderColourHover,
             },
             '&.Mui-disabled': {
                 '& ~ .MuiTypography-root': {
-                    color: tokens.components.radio.label.disabled,
+                    color: ComponentsRadioLabelDisabled,
                 },
 
                 'svg > rect': {
-                    fill: tokens.components.radio.background.disabled,
-                    stroke: tokens.components.radio.border.colour.disabled,
+                    fill: ComponentsRadioBackgroundDisabled,
+                    stroke: ComponentsRadioBorderColourDisabled,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.radio.border.colour.disabled,
+                    stroke: ComponentsRadioBorderColourDisabled,
                 },
             },
             '&.Mui-checked': {
                 'svg > rect': {
-                    stroke: tokens.components.radio.border.colour.checked,
+                    stroke: ComponentsRadioBorderColourChecked,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.radio.border.colour.checked,
+                    stroke: ComponentsRadioBorderColourChecked,
                 },
 
                 '&.Mui-disabled': {
                     'svg > rect': {
-                        stroke: tokens.components.radio.border.colour.disabled,
-                        fill: tokens.components.radio.background.disabled,
+                        stroke: ComponentsRadioBorderColourDisabled,
+                        fill: ComponentsRadioBackgroundDisabled,
                     },
 
                     'input:hover ~ svg > rect': {
-                        stroke: tokens.components.radio.border.colour.disabled,
+                        stroke: ComponentsRadioBorderColourDisabled,
                     },
                 },
             },
         },
         sizeSmall: {
             svg: {
-                width: tokens.components.radio.small.size,
-                height: tokens.components.radio.small.size,
+                width: ComponentsRadioSmallSize,
+                height: ComponentsRadioSmallSize,
             },
             '& ~ .MuiTypography-root': {
                 fontSize: '0.875rem',

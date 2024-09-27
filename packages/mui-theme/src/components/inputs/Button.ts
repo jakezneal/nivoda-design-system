@@ -1,5 +1,91 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsButtonBorderradius,
+    ComponentsButtonContainedErrorBackgroundActive,
+    ComponentsButtonContainedErrorBackgroundDefault,
+    ComponentsButtonContainedErrorBackgroundDisabled,
+    ComponentsButtonContainedErrorBackgroundHover,
+    ComponentsButtonContainedErrorTextActive,
+    ComponentsButtonContainedErrorTextDefault,
+    ComponentsButtonContainedErrorTextDisabled,
+    ComponentsButtonContainedErrorTextHover,
+    ComponentsButtonContainedPrimaryBackgroundActive,
+    ComponentsButtonContainedPrimaryBackgroundDefault,
+    ComponentsButtonContainedPrimaryBackgroundDisabled,
+    ComponentsButtonContainedPrimaryBackgroundHover,
+    ComponentsButtonContainedPrimaryTextActive,
+    ComponentsButtonContainedPrimaryTextDefault,
+    ComponentsButtonContainedPrimaryTextDisabled,
+    ComponentsButtonContainedPrimaryTextHover,
+    ComponentsButtonContainedSuccessBackgroundActive,
+    ComponentsButtonContainedSuccessBackgroundDefault,
+    ComponentsButtonContainedSuccessBackgroundDisabled,
+    ComponentsButtonContainedSuccessBackgroundHover,
+    ComponentsButtonContainedSuccessTextActive,
+    ComponentsButtonContainedSuccessTextDefault,
+    ComponentsButtonContainedSuccessTextDisabled,
+    ComponentsButtonContainedSuccessTextHover,
+    ComponentsButtonLargePaddinghorizontal,
+    ComponentsButtonLargePaddingvertical,
+    ComponentsButtonMediumPaddinghorizontal,
+    ComponentsButtonMediumPaddingvertical,
+    ComponentsButtonOutlinedErrorBackgroundActive,
+    ComponentsButtonOutlinedErrorBackgroundDefault,
+    ComponentsButtonOutlinedErrorBackgroundDisabled,
+    ComponentsButtonOutlinedErrorBackgroundHover,
+    ComponentsButtonOutlinedErrorBorderActive,
+    ComponentsButtonOutlinedErrorBorderDefault,
+    ComponentsButtonOutlinedErrorBorderDisabled,
+    ComponentsButtonOutlinedErrorBorderHover,
+    ComponentsButtonOutlinedErrorTextActive,
+    ComponentsButtonOutlinedErrorTextDefault,
+    ComponentsButtonOutlinedErrorTextDisabled,
+    ComponentsButtonOutlinedErrorTextHover,
+    ComponentsButtonOutlinedPrimaryBackgroundActive,
+    ComponentsButtonOutlinedPrimaryBackgroundDefault,
+    ComponentsButtonOutlinedPrimaryBackgroundDisabled,
+    ComponentsButtonOutlinedPrimaryBackgroundHover,
+    ComponentsButtonOutlinedPrimaryBorderActive,
+    ComponentsButtonOutlinedPrimaryBorderDefault,
+    ComponentsButtonOutlinedPrimaryBorderDisabled,
+    ComponentsButtonOutlinedPrimaryBorderHover,
+    ComponentsButtonOutlinedPrimaryTextActive,
+    ComponentsButtonOutlinedPrimaryTextDefault,
+    ComponentsButtonOutlinedPrimaryTextDisabled,
+    ComponentsButtonOutlinedPrimaryTextHover,
+    ComponentsButtonOutlinedSuccessBackgroundActive,
+    ComponentsButtonOutlinedSuccessBackgroundDefault,
+    ComponentsButtonOutlinedSuccessBackgroundDisabled,
+    ComponentsButtonOutlinedSuccessBackgroundHover,
+    ComponentsButtonOutlinedSuccessBorderActive,
+    ComponentsButtonOutlinedSuccessBorderDefault,
+    ComponentsButtonOutlinedSuccessBorderDisabled,
+    ComponentsButtonOutlinedSuccessBorderHover,
+    ComponentsButtonOutlinedSuccessTextActive,
+    ComponentsButtonOutlinedSuccessTextDefault,
+    ComponentsButtonOutlinedSuccessTextDisabled,
+    ComponentsButtonOutlinedSuccessTextHover,
+    ComponentsButtonSmallPaddinghorizontal,
+    ComponentsButtonSmallPaddingvertical,
+    ComponentsButtonTextErrorBackgroundActive,
+    ComponentsButtonTextErrorBackgroundHover,
+    ComponentsButtonTextErrorTextActive,
+    ComponentsButtonTextErrorTextDefault,
+    ComponentsButtonTextErrorTextDisabled,
+    ComponentsButtonTextErrorTextHover,
+    ComponentsButtonTextPrimaryBackgroundActive,
+    ComponentsButtonTextPrimaryBackgroundHover,
+    ComponentsButtonTextPrimaryTextActive,
+    ComponentsButtonTextPrimaryTextDefault,
+    ComponentsButtonTextPrimaryTextDisabled,
+    ComponentsButtonTextPrimaryTextHover,
+    ComponentsButtonTextSuccessBackgroundActive,
+    ComponentsButtonTextSuccessBackgroundHover,
+    ComponentsButtonTextSuccessTextActive,
+    ComponentsButtonTextSuccessTextDefault,
+    ComponentsButtonTextSuccessTextDisabled,
+    ComponentsButtonTextSuccessTextHover,
+} from '@nivoda/design-tokens';
 
 const unusedButtonVariant = {
     backgroundColor: 'pink',
@@ -16,170 +102,197 @@ const MuiButtonStyles: Components['MuiButton'] = {
     styleOverrides: {
         root: {
             variants: [],
-            borderRadius: tokens.components.button.borderradius,
+            borderRadius: ComponentsButtonBorderradius,
             textTransform: 'none',
             transition: 'none',
         },
         sizeLarge: {
-            padding: `${tokens.components.button.large.paddingvertical} ${tokens.components.button.large.paddinghorizontal}`,
+            padding: `${ComponentsButtonLargePaddingvertical} ${ComponentsButtonLargePaddinghorizontal}`,
         },
         sizeMedium: {
-            padding: `${tokens.components.button.medium.paddingvertical} ${tokens.components.button.medium.paddinghorizontal}`,
+            padding: `${ComponentsButtonMediumPaddingvertical} ${ComponentsButtonMediumPaddinghorizontal}`,
         },
         sizeSmall: {
-            padding: `${tokens.components.button.small.paddingvertical} ${tokens.components.button.small.paddinghorizontal}`,
+            padding: `${ComponentsButtonSmallPaddingvertical} ${ComponentsButtonSmallPaddinghorizontal}`,
         },
         containedPrimary: {
-            backgroundColor: tokens.components.button.contained.primary.background.default,
-            color: tokens.components.button.contained.primary.text.default,
+            backgroundColor: ComponentsButtonContainedPrimaryBackgroundDefault,
+            color: ComponentsButtonContainedPrimaryTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.contained.primary.background.hover,
-                color: tokens.components.button.contained.primary.text.hover,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundHover,
+                color: ComponentsButtonContainedPrimaryTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.contained.primary.background.active,
-                color: tokens.components.button.contained.primary.text.active,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundActive,
+                color: ComponentsButtonContainedPrimaryTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.primary.background.disabled,
-                color: tokens.components.button.contained.primary.text.disabled,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundDisabled,
+                color: ComponentsButtonContainedPrimaryTextDisabled,
             },
         },
         containedSecondary: unusedButtonVariant,
         containedError: {
-            backgroundColor: tokens.components.button.contained.error.background.default,
-            color: tokens.components.button.contained.error.text.default,
+            backgroundColor: ComponentsButtonContainedErrorBackgroundDefault,
+            color: ComponentsButtonContainedErrorTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.contained.error.background.hover,
-                color: tokens.components.button.contained.error.text.hover,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundHover,
+                color: ComponentsButtonContainedErrorTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.contained.error.background.active,
-                color: tokens.components.button.contained.error.text.active,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundActive,
+                color: ComponentsButtonContainedErrorTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.error.background.disabled,
-                color: tokens.components.button.contained.error.text.disabled,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundDisabled,
+                color: ComponentsButtonContainedErrorTextDisabled,
             },
         },
         containedSuccess: {
-            backgroundColor: tokens.components.button.contained.success.background.default,
-            color: tokens.components.button.contained.success.text.default,
+            backgroundColor: ComponentsButtonContainedSuccessBackgroundDefault,
+            color: ComponentsButtonContainedSuccessTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.contained.success.background.hover,
-                color: tokens.components.button.contained.success.text.hover,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundHover,
+                color: ComponentsButtonContainedSuccessTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.contained.success.background.active,
-                color: tokens.components.button.contained.success.text.active,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundActive,
+                color: ComponentsButtonContainedSuccessTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.success.background.disabled,
-                color: tokens.components.button.contained.success.text.disabled,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundDisabled,
+                color: ComponentsButtonContainedSuccessTextDisabled,
             },
         },
         outlinedPrimary: unusedButtonVariant,
         outlinedSecondary: {
-            backgroundColor: tokens.components.button.outlined.primary.background.default,
-            borderColor: tokens.components.button.outlined.primary.border.default,
-            color: tokens.components.button.outlined.primary.text.default,
+            backgroundColor: ComponentsButtonOutlinedPrimaryBackgroundDefault,
+            borderColor: ComponentsButtonOutlinedPrimaryBorderDefault,
+            color: ComponentsButtonOutlinedPrimaryTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.outlined.primary.background.hover,
-                borderColor: tokens.components.button.outlined.primary.border.hover,
-                color: tokens.components.button.outlined.primary.text.hover,
+                backgroundColor: ComponentsButtonOutlinedPrimaryBackgroundHover,
+                borderColor: ComponentsButtonOutlinedPrimaryBorderHover,
+                color: ComponentsButtonOutlinedPrimaryTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.outlined.primary.background.active,
-                borderColor: tokens.components.button.outlined.primary.border.active,
-                color: tokens.components.button.outlined.primary.text.active,
+                backgroundColor: ComponentsButtonOutlinedPrimaryBackgroundActive,
+                borderColor: ComponentsButtonOutlinedPrimaryBorderActive,
+                color: ComponentsButtonOutlinedPrimaryTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.outlined.primary.background.disabled,
-                borderColor: tokens.components.button.outlined.primary.border.disabled,
-                color: tokens.components.button.outlined.primary.text.disabled,
+                backgroundColor: ComponentsButtonOutlinedPrimaryBackgroundDisabled,
+                borderColor: ComponentsButtonOutlinedPrimaryBorderDisabled,
+                color: ComponentsButtonOutlinedPrimaryTextDisabled,
             },
         },
         outlinedError: {
-            backgroundColor: tokens.components.button.outlined.error.background.default,
-            borderColor: tokens.components.button.outlined.error.border.default,
-            color: tokens.components.button.outlined.error.text.default,
+            backgroundColor: ComponentsButtonOutlinedErrorBackgroundDefault,
+            borderColor: ComponentsButtonOutlinedErrorBorderDefault,
+            color: ComponentsButtonOutlinedErrorTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.outlined.error.background.hover,
-                borderColor: tokens.components.button.outlined.error.border.hover,
-                color: tokens.components.button.outlined.error.text.hover,
+                backgroundColor: ComponentsButtonOutlinedErrorBackgroundHover,
+                borderColor: ComponentsButtonOutlinedErrorBorderHover,
+                color: ComponentsButtonOutlinedErrorTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.outlined.error.background.active,
-                borderColor: tokens.components.button.outlined.error.border.active,
-                color: tokens.components.button.outlined.error.text.active,
+                backgroundColor: ComponentsButtonOutlinedErrorBackgroundActive,
+                borderColor: ComponentsButtonOutlinedErrorBorderActive,
+                color: ComponentsButtonOutlinedErrorTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.outlined.error.background.disabled,
-                borderColor: tokens.components.button.outlined.error.border.disabled,
-                color: tokens.components.button.outlined.error.text.disabled,
+                backgroundColor: ComponentsButtonOutlinedErrorBackgroundDisabled,
+                borderColor: ComponentsButtonOutlinedErrorBorderDisabled,
+                color: ComponentsButtonOutlinedErrorTextDisabled,
             },
         },
         outlinedSuccess: {
-            backgroundColor: tokens.components.button.outlined.success.background.default,
-            borderColor: tokens.components.button.outlined.success.border.default,
-            color: tokens.components.button.outlined.success.text.default,
+            backgroundColor: ComponentsButtonOutlinedSuccessBackgroundDefault,
+            borderColor: ComponentsButtonOutlinedSuccessBorderDefault,
+            color: ComponentsButtonOutlinedSuccessTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.outlined.success.background.hover,
-                borderColor: tokens.components.button.outlined.success.border.hover,
-                color: tokens.components.button.outlined.success.text.hover,
+                backgroundColor: ComponentsButtonOutlinedSuccessBackgroundHover,
+                borderColor: ComponentsButtonOutlinedSuccessBorderHover,
+                color: ComponentsButtonOutlinedSuccessTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.outlined.success.background.active,
-                borderColor: tokens.components.button.outlined.success.border.active,
-                color: tokens.components.button.outlined.success.text.active,
+                backgroundColor: ComponentsButtonOutlinedSuccessBackgroundActive,
+                borderColor: ComponentsButtonOutlinedSuccessBorderActive,
+                color: ComponentsButtonOutlinedSuccessTextActive,
             },
+
             ':disabled': {
-                backgroundColor: tokens.components.button.outlined.success.background.disabled,
-                borderColor: tokens.components.button.outlined.success.border.disabled,
-                color: tokens.components.button.outlined.success.text.disabled,
+                backgroundColor: ComponentsButtonOutlinedSuccessBackgroundDisabled,
+                borderColor: ComponentsButtonOutlinedSuccessBorderDisabled,
+                color: ComponentsButtonOutlinedSuccessTextDisabled,
             },
         },
         textPrimary: {
-            color: tokens.components.button.text.primary.text.default,
+            color: ComponentsButtonTextPrimaryTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.text.primary.background.hover,
-                color: tokens.components.button.text.primary.text.hover,
+                backgroundColor: ComponentsButtonTextPrimaryBackgroundHover,
+                color: ComponentsButtonTextPrimaryTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.text.primary.background.active,
-                color: tokens.components.button.text.primary.text.active,
+                backgroundColor: ComponentsButtonTextPrimaryBackgroundActive,
+                color: ComponentsButtonTextPrimaryTextActive,
             },
+
             ':disabled': {
-                color: tokens.components.button.text.primary.text.disabled,
+                color: ComponentsButtonTextPrimaryTextDisabled,
             },
         },
         textSecondary: unusedButtonVariant,
         textError: {
-            color: tokens.components.button.text.error.text.default,
+            color: ComponentsButtonTextErrorTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.text.error.background.hover,
-                color: tokens.components.button.text.error.text.hover,
+                backgroundColor: ComponentsButtonTextErrorBackgroundHover,
+                color: ComponentsButtonTextErrorTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.text.error.background.active,
-                color: tokens.components.button.text.error.text.active,
+                backgroundColor: ComponentsButtonTextErrorBackgroundActive,
+                color: ComponentsButtonTextErrorTextActive,
             },
+
             ':disabled': {
-                color: tokens.components.button.text.error.text.disabled,
+                color: ComponentsButtonTextErrorTextDisabled,
             },
         },
         textSuccess: {
-            color: tokens.components.button.text.success.text.default,
+            color: ComponentsButtonTextSuccessTextDefault,
+
             ':hover': {
-                backgroundColor: tokens.components.button.text.success.background.hover,
-                color: tokens.components.button.text.success.text.hover,
+                backgroundColor: ComponentsButtonTextSuccessBackgroundHover,
+                color: ComponentsButtonTextSuccessTextHover,
             },
+
             ':active': {
-                backgroundColor: tokens.components.button.text.success.background.active,
-                color: tokens.components.button.text.success.text.active,
+                backgroundColor: ComponentsButtonTextSuccessBackgroundActive,
+                color: ComponentsButtonTextSuccessTextActive,
             },
+
             ':disabled': {
-                color: tokens.components.button.text.success.text.disabled,
+                color: ComponentsButtonTextSuccessTextDisabled,
             },
         },
     },

@@ -1,5 +1,9 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsPaperBackground,
+    ComponentsPaperBorderColour,
+    ComponentsPaperBorderRadius,
+} from '@nivoda/design-tokens';
 
 const MuiPaperStyles: Components['MuiPaper'] = {
     defaultProps: {
@@ -7,9 +11,9 @@ const MuiPaperStyles: Components['MuiPaper'] = {
     },
     styleOverrides: {
         root: {
-            backgroundColor: tokens.components.paper.background,
-            borderRadius: tokens.components.paper.border.radius,
-            borderColor: tokens.components.paper.border.colour,
+            backgroundColor: ComponentsPaperBackground,
+            borderRadius: ComponentsPaperBorderRadius,
+            borderColor: ComponentsPaperBorderColour,
             borderStyle: 'solid',
             borderWidth: '1px',
             padding: '8px',

@@ -1,5 +1,4 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { listItemIconClasses } from '@mui/material/ListItemIcon';
 import { listItemTextClasses } from '@mui/material/ListItemText';
@@ -7,6 +6,26 @@ import { menuClasses } from '@mui/material/Menu';
 import { menuItemClasses } from '@mui/material/MenuItem';
 import { boxClasses } from '@mui/material/Box';
 import { formControlLabelClasses } from '@mui/material/FormControlLabel';
+import {
+    ComponentsListBackgroundItemActive,
+    ComponentsListBackgroundItemHover,
+    ComponentsListBackgroundItemSelectedactive,
+    ComponentsListBackgroundItemSelectedhover,
+    ComponentsListBorderRadiusItem,
+    ComponentsListDescriptionDefault,
+    ComponentsListDescriptionDisabled,
+    ComponentsListIconEndDefault,
+    ComponentsListIconEndSelected,
+    ComponentsListIconStartHover,
+    ComponentsListPaddingGroupHorizontal,
+    ComponentsListPaddingGroupVertical,
+    ComponentsListPaddingItemHorizontal,
+    ComponentsListPaddingItemVertical,
+    ComponentsListTitleDefault,
+    ComponentsListTitleDisabled,
+    ComponentsListTitleHover,
+    ComponentsListTitleSelected,
+} from '@nivoda/design-tokens';
 
 const MuiMenuStyles: Components['MuiMenu'] = {
     styleOverrides: {
@@ -17,16 +36,16 @@ const MuiMenuStyles: Components['MuiMenu'] = {
             },
 
             [`& .${buttonBaseClasses.root}.${menuItemClasses.root}`]: {
-                borderRadius: tokens.components.list.border.radius.item,
-                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
+                borderRadius: ComponentsListBorderRadiusItem,
+                padding: `${ComponentsListPaddingItemVertical} ${ComponentsListPaddingItemHorizontal}`,
 
                 svg: {
-                    color: tokens.components.list.icon.end.default,
+                    color: ComponentsListIconEndDefault,
                 },
 
                 // When there's not a secondary action, the container should have a hover state.
                 [`&:not(:has(.${formControlLabelClasses.root})):hover`]: {
-                    backgroundColor: tokens.components.list.background.item.hover,
+                    backgroundColor: ComponentsListBackgroundItemHover,
                 },
 
                 // Override the default hover colour when there's a secondary action.
@@ -36,31 +55,31 @@ const MuiMenuStyles: Components['MuiMenu'] = {
 
                 ':hover': {
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.hover,
+                        color: ComponentsListTitleHover,
                     },
 
                     [`& .${listItemIconClasses.root} svg`]: {
-                        color: tokens.components.list.icon.start.hover,
+                        color: ComponentsListIconStartHover,
                     },
                 },
 
                 ':active': {
-                    backgroundColor: tokens.components.list.background.item.active,
+                    backgroundColor: ComponentsListBackgroundItemActive,
                 },
 
                 '&.Mui-disabled': {
                     opacity: 1,
 
                     svg: {
-                        color: tokens.components.list.icon.end.default,
+                        color: ComponentsListIconEndDefault,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.disabled,
+                        color: ComponentsListTitleDisabled,
                     },
 
                     [`& .${listItemTextClasses.secondary}`]: {
-                        color: tokens.components.list.description.disabled,
+                        color: ComponentsListDescriptionDisabled,
                     },
                 },
 
@@ -68,33 +87,33 @@ const MuiMenuStyles: Components['MuiMenu'] = {
                     backgroundColor: 'transparent',
 
                     svg: {
-                        color: tokens.components.list.icon.end.selected,
+                        color: ComponentsListIconEndSelected,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.selected,
+                        color: ComponentsListTitleSelected,
                     },
 
                     ':hover': {
-                        backgroundColor: tokens.components.list.background.item.selectedhover,
+                        backgroundColor: ComponentsListBackgroundItemSelectedhover,
                     },
 
                     '&:active': {
-                        backgroundColor: tokens.components.list.background.item.selectedactive,
+                        backgroundColor: ComponentsListBackgroundItemSelectedactive,
                     },
                 },
             },
 
             [`& .${listItemTextClasses.primary}`]: {
-                color: tokens.components.list.title.default,
+                color: ComponentsListTitleDefault,
             },
 
             [`& .${listItemTextClasses.secondary}`]: {
-                color: tokens.components.list.description.default,
+                color: ComponentsListDescriptionDefault,
             },
 
             [`& .${boxClasses.root} > .${boxClasses.root}`]: {
-                padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
+                padding: `${ComponentsListPaddingGroupVertical} ${ComponentsListPaddingGroupHorizontal}`,
             },
         },
     },

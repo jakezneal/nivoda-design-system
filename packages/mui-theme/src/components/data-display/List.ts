@@ -1,5 +1,29 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsListSubheader,
+    ComponentsListPaddingSubheaderVertical,
+    ComponentsListPaddingSubheaderHorizontal,
+    ComponentsListBackgroundItemHover,
+    ComponentsListPaddingGroupVertical,
+    ComponentsListPaddingGroupHorizontal,
+    ComponentsListBorderRadiusItem,
+    ComponentsListPaddingItemVertical,
+    ComponentsListPaddingItemHorizontal,
+    ComponentsListIconEndDefault,
+    ComponentsListTitleHover,
+    ComponentsListIconStartHover,
+    ComponentsListBackgroundItemActive,
+    ComponentsListTitleActive,
+    ComponentsListIconStartActive,
+    ComponentsListTitleDisabled,
+    ComponentsListDescriptionDisabled,
+    ComponentsListIconEndSelected,
+    ComponentsListTitleSelected,
+    ComponentsListBackgroundItemSelectedhover,
+    ComponentsListBackgroundItemSelectedactive,
+    ComponentsListTitleDefault,
+    ComponentsListDescriptionDefault,
+} from '@nivoda/design-tokens';
 import { listSubheaderClasses } from '@mui/material/ListSubheader';
 import { listItemClasses } from '@mui/material/ListItem';
 import { listItemButtonClasses } from '@mui/material/ListItemButton';
@@ -19,9 +43,9 @@ const MuiListStyles: Components['MuiList'] = {
             },
 
             [`& .${listSubheaderClasses.root}`]: {
-                color: tokens.components.list.subheader,
+                color: ComponentsListSubheader,
                 lineHeight: 1,
-                padding: `${tokens.components.list.padding.subheader.vertical} ${tokens.components.list.padding.subheader.horizontal}`,
+                padding: `${ComponentsListPaddingSubheaderVertical} ${ComponentsListPaddingSubheaderHorizontal}`,
                 textTransform: 'uppercase',
             },
 
@@ -31,7 +55,7 @@ const MuiListStyles: Components['MuiList'] = {
                 // When there's not a secondary action, the container should have a hover state.
                 [`&:not(:has(.${listItemSecondaryActionClasses.root})) .${buttonBaseClasses.root}.${listItemButtonClasses.root}:hover`]:
                     {
-                        backgroundColor: tokens.components.list.background.item.hover,
+                        backgroundColor: ComponentsListBackgroundItemHover,
                     },
 
                 // Override the default hover colour when there's a secondary action.
@@ -47,17 +71,17 @@ const MuiListStyles: Components['MuiList'] = {
 
             [`&:not(.${menuClasses.list})`]: {
                 [`& .${boxClasses.root}`]: {
-                    padding: `${tokens.components.list.padding.group.vertical} ${tokens.components.list.padding.group.horizontal}`,
+                    padding: `${ComponentsListPaddingGroupVertical} ${ComponentsListPaddingGroupHorizontal}`,
                 },
             },
 
             [`& .${buttonBaseClasses.root}.${listItemButtonClasses.root}`]: {
-                borderRadius: tokens.components.list.border.radius.item,
-                padding: `${tokens.components.list.padding.item.vertical} ${tokens.components.list.padding.item.horizontal}`,
+                borderRadius: ComponentsListBorderRadiusItem,
+                padding: `${ComponentsListPaddingItemVertical} ${ComponentsListPaddingItemHorizontal}`,
                 gap: '12px',
 
                 svg: {
-                    color: tokens.components.list.icon.end.default,
+                    color: ComponentsListIconEndDefault,
                 },
 
                 [`& .${listItemIconClasses.root}`]: {
@@ -71,23 +95,23 @@ const MuiListStyles: Components['MuiList'] = {
 
                 ':hover': {
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.hover,
+                        color: ComponentsListTitleHover,
                     },
 
                     [`& .${listItemIconClasses.root} svg`]: {
-                        color: tokens.components.list.icon.start.hover,
+                        color: ComponentsListIconStartHover,
                     },
                 },
 
                 ':active': {
-                    backgroundColor: tokens.components.list.background.item.active,
+                    backgroundColor: ComponentsListBackgroundItemActive,
 
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.active,
+                        color: ComponentsListTitleActive,
                     },
 
                     [`& .${listItemIconClasses.root} svg`]: {
-                        color: tokens.components.list.icon.start.active,
+                        color: ComponentsListIconStartActive,
                     },
                 },
 
@@ -95,15 +119,15 @@ const MuiListStyles: Components['MuiList'] = {
                     opacity: 1,
 
                     svg: {
-                        color: tokens.components.list.icon.end.default,
+                        color: ComponentsListIconEndDefault,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.disabled,
+                        color: ComponentsListTitleDisabled,
                     },
 
                     [`& .${listItemTextClasses.secondary}`]: {
-                        color: tokens.components.list.description.disabled,
+                        color: ComponentsListDescriptionDisabled,
                     },
                 },
 
@@ -111,29 +135,29 @@ const MuiListStyles: Components['MuiList'] = {
                     backgroundColor: 'transparent',
 
                     svg: {
-                        color: tokens.components.list.icon.end.selected,
+                        color: ComponentsListIconEndSelected,
                     },
 
                     [`& .${listItemTextClasses.primary}`]: {
-                        color: tokens.components.list.title.selected,
+                        color: ComponentsListTitleSelected,
                     },
 
                     ':hover': {
-                        backgroundColor: tokens.components.list.background.item.selectedhover,
+                        backgroundColor: ComponentsListBackgroundItemSelectedhover,
                     },
 
                     '&:active': {
-                        backgroundColor: tokens.components.list.background.item.selectedactive,
+                        backgroundColor: ComponentsListBackgroundItemSelectedactive,
                     },
                 },
             },
 
             [`& .${listItemTextClasses.primary}`]: {
-                color: tokens.components.list.title.default,
+                color: ComponentsListTitleDefault,
             },
 
             [`& .${listItemTextClasses.secondary}`]: {
-                color: tokens.components.list.description.default,
+                color: ComponentsListDescriptionDefault,
             },
         },
     },

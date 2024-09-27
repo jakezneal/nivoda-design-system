@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming/create';
-import tokens from '@nivoda/design-tokens';
+import { BaseDefaultColorBaseNeutral950, BaseDefaultColorBaseViolet700 } from '@nivoda/design-tokens';
 
 const brand = {
     brandImage: 'https://app.nivoda.net/static/media/logo-blue.0be08b00.svg',
@@ -18,8 +18,8 @@ export default create({
     fontCode: 'monospace',
 
     // Color
-    colorPrimary: tokens.base.default.color.base.neutral[950],
-    colorSecondary: tokens.base.default.color.base.violet[700],
+    colorPrimary: BaseDefaultColorBaseNeutral950,
+    colorSecondary: BaseDefaultColorBaseViolet700,
 
     // UI
     appBg: '#ffffff',
@@ -39,7 +39,7 @@ export default create({
 
     // Form colors
     // inputBg: '#ffffff',
-    inputBorder: tokens.base.default.color.base.violet[700],
+    inputBorder: BaseDefaultColorBaseViolet700,
     // inputTextColor: '#10162F',
     // inputBorderRadius: 2,
 });

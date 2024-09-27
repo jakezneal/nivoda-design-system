@@ -1,45 +1,54 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { selectClasses } from '@mui/material/Select';
+import {
+    ComponentsAutocompleteBackgroundDisabled,
+    ComponentsAutocompleteBorderActive,
+    ComponentsAutocompleteBorderDisabled,
+    ComponentsAutocompleteBorderError,
+    ComponentsAutocompleteBorderHover,
+    ComponentsAutocompleteBorderradius,
+    ComponentsAutocompletePaddinghorizontal,
+    ComponentsAutocompleteTextInput,
+} from '@nivoda/design-tokens';
 
 const MuiSelectStyles: Components['MuiSelect'] = {
     styleOverrides: {
         root: {
-            borderRadius: tokens.components.autocomplete.borderradius,
-            color: tokens.components.autocomplete.text.input,
+            borderRadius: ComponentsAutocompleteBorderradius,
+            color: ComponentsAutocompleteTextInput,
 
             [`& .${selectClasses.icon}`]: {
                 width: '16px',
                 height: '16px',
-                color: tokens.components.autocomplete.text.input,
+                color: ComponentsAutocompleteTextInput,
             },
 
             [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
-                borderColor: tokens.components.autocomplete.border.active,
+                borderColor: ComponentsAutocompleteBorderActive,
                 borderWidth: '1px',
             },
 
             [`& .${inputBaseClasses.input}`]: {
                 paddingTop: '12px',
                 paddingBottom: '12px',
-                paddingLeft: tokens.components.autocomplete.paddinghorizontal,
+                paddingLeft: ComponentsAutocompletePaddinghorizontal,
 
                 [`&:hover ~ .${outlinedInputClasses.notchedOutline}`]: {
-                    borderColor: tokens.components.autocomplete.border.hover,
+                    borderColor: ComponentsAutocompleteBorderHover,
                 },
 
                 '&.Mui-error': {
                     [`& ~ .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: tokens.components.autocomplete.border.error,
+                        borderColor: ComponentsAutocompleteBorderError,
                     },
                 },
 
                 '&.Mui-disabled': {
                     [`& ~ .${outlinedInputClasses.notchedOutline}`]: {
-                        backgroundColor: tokens.components.autocomplete.background.disabled,
-                        borderColor: tokens.components.autocomplete.border.disabled,
+                        backgroundColor: ComponentsAutocompleteBackgroundDisabled,
+                        borderColor: ComponentsAutocompleteBorderDisabled,
                     },
                 },
             },

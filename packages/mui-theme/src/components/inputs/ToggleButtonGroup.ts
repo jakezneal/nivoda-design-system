@@ -1,55 +1,77 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { toggleButtonGroupClasses } from '@mui/material/ToggleButtonGroup';
+import {
+    ComponentsTogglebuttongroupBackgroundDefault,
+    ComponentsTogglebuttongroupBackgroundHover,
+    ComponentsTogglebuttongroupBackgroundSelected,
+    ComponentsTogglebuttongroupBackgroundSelectedhover,
+    ComponentsTogglebuttongroupBorderColourDefault,
+    ComponentsTogglebuttongroupBorderColourDisabled,
+    ComponentsTogglebuttongroupBorderColourHover,
+    ComponentsTogglebuttongroupBorderColourSelected,
+    ComponentsTogglebuttongroupBorderColourSelecteddisabled,
+    ComponentsTogglebuttongroupBorderColourSelectedhover,
+    ComponentsTogglebuttongroupBorderradius,
+    ComponentsTogglebuttongroupBorderWidthDefault,
+    ComponentsTogglebuttongroupBorderWidthSelected,
+    ComponentsTogglebuttongroupPaddinghorizontal,
+    ComponentsTogglebuttongroupPaddingvertical,
+    ComponentsTogglebuttongroupSmallPaddinghorizontal,
+    ComponentsTogglebuttongroupSmallPaddingvertical,
+    ComponentsTogglebuttongroupTextDefault,
+    ComponentsTogglebuttongroupTextDisabled,
+    ComponentsTogglebuttongroupTextSelected,
+    ComponentsTogglebuttongroupTextSelecteddisabled,
+} from '@nivoda/design-tokens';
 
 const MuiToggleButtonGroupStyles: Components['MuiToggleButtonGroup'] = {
     styleOverrides: {
         root: {
             [`& .${toggleButtonGroupClasses.grouped}`]: {
-                backgroundColor: tokens.components.togglebuttongroup.background.default,
-                borderColor: tokens.components.togglebuttongroup.border.colour.default,
-                borderWidth: tokens.components.togglebuttongroup.border.width.default,
+                backgroundColor: ComponentsTogglebuttongroupBackgroundDefault,
+                borderColor: ComponentsTogglebuttongroupBorderColourDefault,
+                borderWidth: ComponentsTogglebuttongroupBorderWidthDefault,
                 textTransform: 'none',
-                color: tokens.components.togglebuttongroup.text.default,
-                padding: `${tokens.components.togglebuttongroup.paddingvertical} ${tokens.components.togglebuttongroup.paddinghorizontal}`,
+                color: ComponentsTogglebuttongroupTextDefault,
+                padding: `${ComponentsTogglebuttongroupPaddingvertical} ${ComponentsTogglebuttongroupPaddinghorizontal}`,
 
                 ':hover': {
-                    backgroundColor: tokens.components.togglebuttongroup.background.hover,
-                    borderColor: tokens.components.togglebuttongroup.border.colour.hover,
+                    backgroundColor: ComponentsTogglebuttongroupBackgroundHover,
+                    borderColor: ComponentsTogglebuttongroupBorderColourHover,
                 },
 
                 ':disabled': {
-                    borderColor: tokens.components.togglebuttongroup.border.colour.disabled,
-                    color: tokens.components.togglebuttongroup.text.disabled,
+                    borderColor: ComponentsTogglebuttongroupBorderColourDisabled,
+                    color: ComponentsTogglebuttongroupTextDisabled,
                 },
 
                 '&.MuiToggleButton-sizeSmall': {
-                    padding: `${tokens.components.togglebuttongroup.small.paddingvertical} ${tokens.components.togglebuttongroup.small.paddinghorizontal}`,
+                    padding: `${ComponentsTogglebuttongroupSmallPaddingvertical} ${ComponentsTogglebuttongroupSmallPaddinghorizontal}`,
                 },
             },
             [`& .${toggleButtonGroupClasses.selected}`]: {
-                backgroundColor: `${tokens.components.togglebuttongroup.background.selected} !important`,
-                color: `${tokens.components.togglebuttongroup.text.selected} !important`,
-                borderColor: tokens.components.togglebuttongroup.border.colour.selected,
-                borderWidth: tokens.components.togglebuttongroup.border.width.selected,
+                backgroundColor: `${ComponentsTogglebuttongroupBackgroundSelected} !important`,
+                color: `${ComponentsTogglebuttongroupTextSelected} !important`,
+                borderColor: ComponentsTogglebuttongroupBorderColourSelected,
+                borderWidth: ComponentsTogglebuttongroupBorderWidthSelected,
 
                 '&:hover': {
-                    backgroundColor: tokens.components.togglebuttongroup.background.selectedhover,
-                    borderColor: tokens.components.togglebuttongroup.border.colour.selectedhover,
+                    backgroundColor: ComponentsTogglebuttongroupBackgroundSelectedhover,
+                    borderColor: ComponentsTogglebuttongroupBorderColourSelectedhover,
                 },
 
                 ':disabled': {
-                    borderColor: tokens.components.togglebuttongroup.border.colour.selecteddisabled,
-                    color: `${tokens.components.togglebuttongroup.text.selecteddisabled} !important`,
+                    borderColor: ComponentsTogglebuttongroupBorderColourSelecteddisabled,
+                    color: `${ComponentsTogglebuttongroupTextSelecteddisabled} !important`,
                 },
             },
             [`& .${toggleButtonGroupClasses.firstButton}`]: {
-                borderTopLeftRadius: tokens.components.togglebuttongroup.borderradius,
-                borderBottomLeftRadius: tokens.components.togglebuttongroup.borderradius,
+                borderTopLeftRadius: ComponentsTogglebuttongroupBorderradius,
+                borderBottomLeftRadius: ComponentsTogglebuttongroupBorderradius,
             },
             [`& .${toggleButtonGroupClasses.lastButton}`]: {
-                borderTopRightRadius: tokens.components.togglebuttongroup.borderradius,
-                borderBottomRightRadius: tokens.components.togglebuttongroup.borderradius,
+                borderTopRightRadius: ComponentsTogglebuttongroupBorderradius,
+                borderBottomRightRadius: ComponentsTogglebuttongroupBorderradius,
             },
         },
     },

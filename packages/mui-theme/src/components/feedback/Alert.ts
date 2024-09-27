@@ -1,17 +1,40 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { alertClasses } from '@mui/material/Alert';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { alertTitleClasses } from '@mui/material/AlertTitle';
+import {
+    ComponentsAlertBackgroundError,
+    ComponentsAlertBackgroundInfo,
+    ComponentsAlertBackgroundSuccess,
+    ComponentsAlertBackgroundWarning,
+    ComponentsAlertBorderColourError,
+    ComponentsAlertBorderColourInfo,
+    ComponentsAlertBorderColourSuccess,
+    ComponentsAlertBorderColourWarning,
+    ComponentsAlertBorderRadius,
+    ComponentsAlertBorderWidth,
+    ComponentsAlertGap,
+    ComponentsAlertIconColourError,
+    ComponentsAlertIconColourInfo,
+    ComponentsAlertIconColourSuccess,
+    ComponentsAlertIconColourWarning,
+    ComponentsAlertIconSize,
+    ComponentsAlertPaddinghorizontal,
+    ComponentsAlertPaddingvertical,
+    ComponentsAlertTextError,
+    ComponentsAlertTextInfo,
+    ComponentsAlertTextSuccess,
+    ComponentsAlertTextWarning,
+} from '@nivoda/design-tokens';
 
 const MuiAlertStyles: Components['MuiAlert'] = {
     styleOverrides: {
         root: {
             [`&.${alertClasses.root}`]: {
-                borderWidth: tokens.components.alert.border.width,
-                borderRadius: tokens.components.alert.border.radius,
-                padding: `${tokens.components.alert.paddingvertical} ${tokens.components.alert.paddinghorizontal}`,
-                gap: tokens.components.alert.gap,
+                borderWidth: ComponentsAlertBorderWidth,
+                borderRadius: ComponentsAlertBorderRadius,
+                padding: `${ComponentsAlertPaddingvertical} ${ComponentsAlertPaddinghorizontal}`,
+                gap: ComponentsAlertGap,
                 position: 'relative',
             },
 
@@ -39,7 +62,7 @@ const MuiAlertStyles: Components['MuiAlert'] = {
                 top: '13px',
 
                 svg: {
-                    fontSize: `calc(${tokens.components.alert.icon.size} * 2)`,
+                    fontSize: `calc(${ComponentsAlertIconSize} * 2)`,
                 },
             },
 
@@ -53,42 +76,42 @@ const MuiAlertStyles: Components['MuiAlert'] = {
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorSuccess}`]: {
-                backgroundColor: tokens.components.alert.background.success,
-                borderColor: tokens.components.alert.border.colour.success,
-                color: tokens.components.alert.text.success,
+                backgroundColor: ComponentsAlertBackgroundSuccess,
+                borderColor: ComponentsAlertBorderColourSuccess,
+                color: ComponentsAlertTextSuccess,
 
                 [`& .${alertClasses.action}`]: {
-                    color: tokens.components.alert.icon.colour.success,
+                    color: ComponentsAlertIconColourSuccess,
                 },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorInfo}`]: {
-                backgroundColor: tokens.components.alert.background.info,
-                borderColor: tokens.components.alert.border.colour.info,
-                color: tokens.components.alert.text.info,
+                backgroundColor: ComponentsAlertBackgroundInfo,
+                borderColor: ComponentsAlertBorderColourInfo,
+                color: ComponentsAlertTextInfo,
 
                 [`& .${alertClasses.action}`]: {
-                    color: tokens.components.alert.icon.colour.info,
+                    color: ComponentsAlertIconColourInfo,
                 },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorWarning}`]: {
-                backgroundColor: tokens.components.alert.background.warning,
-                borderColor: tokens.components.alert.border.colour.warning,
-                color: tokens.components.alert.text.warning,
+                backgroundColor: ComponentsAlertBackgroundWarning,
+                borderColor: ComponentsAlertBorderColourWarning,
+                color: ComponentsAlertTextWarning,
 
                 [`& .${alertClasses.action}`]: {
-                    color: tokens.components.alert.icon.colour.warning,
+                    color: ComponentsAlertIconColourWarning,
                 },
             },
 
             [`&.${alertClasses.standard}.${alertClasses.colorError}`]: {
-                backgroundColor: tokens.components.alert.background.error,
-                borderColor: tokens.components.alert.border.colour.error,
-                color: tokens.components.alert.text.error,
+                backgroundColor: ComponentsAlertBackgroundError,
+                borderColor: ComponentsAlertBorderColourError,
+                color: ComponentsAlertTextError,
 
                 [`& .${alertClasses.action}`]: {
-                    color: tokens.components.alert.icon.colour.error,
+                    color: ComponentsAlertIconColourError,
                 },
             },
         },

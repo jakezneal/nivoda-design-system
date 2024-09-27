@@ -1,19 +1,33 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { autocompleteClasses } from '@mui/material/Autocomplete';
 import { chipClasses } from '@mui/material/Chip';
+import {
+    ComponentsAutocompleteBackgroundDisabled,
+    ComponentsAutocompleteBorderActive,
+    ComponentsAutocompleteBorderDisabled,
+    ComponentsAutocompleteBorderError,
+    ComponentsAutocompleteBorderHover,
+    ComponentsAutocompleteBorderradius,
+    ComponentsAutocompletePaddinghorizontal,
+    ComponentsAutocompletePaddingvertical,
+    ComponentsAutocompleteSmallPaddinghorizontal,
+    ComponentsAutocompleteSmallPaddingvertical,
+    ComponentsAutocompleteTextInput,
+    ComponentsChipBackgroundActive,
+    ComponentsChipBackgroundHover,
+} from '@nivoda/design-tokens';
 
 const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
     styleOverrides: {
         root: {
             [`& .${inputBaseClasses.root}`]: {
-                borderRadius: tokens.components.autocomplete.borderradius,
-                color: tokens.components.autocomplete.text.input,
-                paddingTop: tokens.components.autocomplete.paddingvertical,
-                paddingBottom: tokens.components.autocomplete.paddingvertical,
-                paddingLeft: tokens.components.autocomplete.paddinghorizontal,
+                borderRadius: ComponentsAutocompleteBorderradius,
+                color: ComponentsAutocompleteTextInput,
+                paddingTop: ComponentsAutocompletePaddingvertical,
+                paddingBottom: ComponentsAutocompletePaddingvertical,
+                paddingLeft: ComponentsAutocompletePaddinghorizontal,
 
                 [`& .${inputBaseClasses.input}`]: {
                     height: '30px',
@@ -21,18 +35,18 @@ const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
                 },
 
                 [`&:hover .${outlinedInputClasses.notchedOutline}`]: {
-                    borderColor: tokens.components.autocomplete.border.hover,
+                    borderColor: ComponentsAutocompleteBorderHover,
                 },
 
                 [`&:focus-within .${outlinedInputClasses.notchedOutline}`]: {
-                    borderColor: tokens.components.autocomplete.border.active,
+                    borderColor: ComponentsAutocompleteBorderActive,
                     borderWidth: '1px',
                 },
 
                 [`&.${inputBaseClasses.sizeSmall}`]: {
-                    paddingTop: tokens.components.autocomplete.small.paddingvertical,
-                    paddingBottom: tokens.components.autocomplete.small.paddingvertical,
-                    paddingLeft: tokens.components.autocomplete.small.paddinghorizontal,
+                    paddingTop: ComponentsAutocompleteSmallPaddingvertical,
+                    paddingBottom: ComponentsAutocompleteSmallPaddingvertical,
+                    paddingLeft: ComponentsAutocompleteSmallPaddinghorizontal,
 
                     [`& .${inputBaseClasses.input}`]: {
                         padding: 0,
@@ -41,14 +55,14 @@ const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
 
                 '&.Mui-disabled': {
                     [`& .${outlinedInputClasses.notchedOutline}`]: {
-                        backgroundColor: tokens.components.autocomplete.background.disabled,
-                        borderColor: tokens.components.autocomplete.border.disabled,
+                        backgroundColor: ComponentsAutocompleteBackgroundDisabled,
+                        borderColor: ComponentsAutocompleteBorderDisabled,
                     },
                 },
 
                 '&.Mui-error': {
                     [`& .${outlinedInputClasses.notchedOutline}`]: {
-                        borderColor: tokens.components.autocomplete.border.error,
+                        borderColor: ComponentsAutocompleteBorderError,
                     },
                 },
             },
@@ -62,7 +76,7 @@ const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
                     svg: {
                         width: '16px',
                         height: '16px',
-                        color: tokens.components.autocomplete.text.input,
+                        color: ComponentsAutocompleteTextInput,
                     },
 
                     '&:hover': {
@@ -73,11 +87,11 @@ const MuiAutocompleteStyles: Components['MuiAutocomplete'] = {
 
             [`& .${chipClasses.root}`]: {
                 '&:hover': {
-                    backgroundColor: tokens.components.chip.background.hover,
+                    backgroundColor: ComponentsChipBackgroundHover,
                 },
 
                 '&:active': {
-                    backgroundColor: tokens.components.chip.background.active,
+                    backgroundColor: ComponentsChipBackgroundActive,
                     boxShadow: 'none',
                 },
             },

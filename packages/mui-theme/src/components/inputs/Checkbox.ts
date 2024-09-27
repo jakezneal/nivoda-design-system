@@ -1,5 +1,17 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsCheckboxBackgroundCheckeddisabled,
+    ComponentsCheckboxBackgroundDisabled,
+    ComponentsCheckboxBorderColourChecked,
+    ComponentsCheckboxBorderColourCheckeddisabled,
+    ComponentsCheckboxBorderColourDefault,
+    ComponentsCheckboxBorderColourDisabled,
+    ComponentsCheckboxBorderColourHover,
+    ComponentsCheckboxBorderRadius,
+    ComponentsCheckboxLabelDisabled,
+    ComponentsCheckboxSize,
+    ComponentsCheckboxSmallSize,
+} from '@nivoda/design-tokens';
 
 const MuiCheckboxStyles: Components['MuiCheckbox'] = {
     defaultProps: {
@@ -9,59 +21,58 @@ const MuiCheckboxStyles: Components['MuiCheckbox'] = {
     },
     styleOverrides: {
         root: {
-            // padding: tokens.components.checkbox.padding,
             padding: 0,
             svg: {
-                width: tokens.components.checkbox.size,
-                height: tokens.components.checkbox.size,
+                width: ComponentsCheckboxSize,
+                height: ComponentsCheckboxSize,
 
                 rect: {
-                    stroke: tokens.components.checkbox.border.colour.default,
-                    rx: tokens.components.checkbox.border.radius,
+                    stroke: ComponentsCheckboxBorderColourDefault,
+                    rx: ComponentsCheckboxBorderRadius,
                 },
             },
             'input:hover ~ svg > rect': {
-                stroke: tokens.components.checkbox.border.colour.hover,
+                stroke: ComponentsCheckboxBorderColourHover,
             },
             '&.Mui-disabled': {
                 '& ~ .MuiTypography-root': {
-                    color: tokens.components.checkbox.label.disabled,
+                    color: ComponentsCheckboxLabelDisabled,
                 },
 
                 'svg > rect': {
-                    fill: tokens.components.checkbox.background.disabled,
-                    stroke: tokens.components.checkbox.border.colour.disabled,
+                    fill: ComponentsCheckboxBackgroundDisabled,
+                    stroke: ComponentsCheckboxBorderColourDisabled,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.checkbox.border.colour.disabled,
+                    stroke: ComponentsCheckboxBorderColourDisabled,
                 },
             },
             '&.Mui-checked, &.MuiCheckbox-indeterminate': {
                 'svg > rect': {
-                    stroke: tokens.components.checkbox.border.colour.checked,
+                    stroke: ComponentsCheckboxBorderColourChecked,
                 },
 
                 'input:hover ~ svg > rect': {
-                    stroke: tokens.components.checkbox.border.colour.checked,
+                    stroke: ComponentsCheckboxBorderColourChecked,
                 },
 
                 '&.Mui-disabled': {
                     'svg > rect': {
-                        stroke: tokens.components.checkbox.border.colour.checkeddisabled,
-                        fill: tokens.components.checkbox.background.checkeddisabled,
+                        stroke: ComponentsCheckboxBorderColourCheckeddisabled,
+                        fill: ComponentsCheckboxBackgroundCheckeddisabled,
                     },
 
                     'input:hover ~ svg > rect': {
-                        stroke: tokens.components.checkbox.border.colour.checkeddisabled,
+                        stroke: ComponentsCheckboxBorderColourCheckeddisabled,
                     },
                 },
             },
         },
         sizeSmall: {
             svg: {
-                width: tokens.components.checkbox.small.size,
-                height: tokens.components.checkbox.small.size,
+                width: ComponentsCheckboxSmallSize,
+                height: ComponentsCheckboxSmallSize,
             },
             '& ~ .MuiTypography-root': {
                 fontSize: '0.875rem',

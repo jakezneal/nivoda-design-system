@@ -1,14 +1,20 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsLinkSpacingGap,
+    ComponentsLinkTextDefault,
+    ComponentsLinkTextHover,
+    ComponentsLinkUnderlineDefault,
+    ComponentsLinkUnderlineHover,
+} from '@nivoda/design-tokens';
 
 const MuiLinkStyles: Components['MuiLink'] = {
     styleOverrides: {
         root: {
             alignItems: 'center',
-            color: tokens.components.link.text.default,
+            color: ComponentsLinkTextDefault,
             display: 'inline-flex',
-            gap: tokens.components.link.spacing.gap,
-            textDecorationColor: tokens.components.link.underline.default,
+            gap: ComponentsLinkSpacingGap,
+            textDecorationColor: ComponentsLinkUnderlineDefault,
             textUnderlineOffset: '3px',
 
             svg: {
@@ -17,8 +23,8 @@ const MuiLinkStyles: Components['MuiLink'] = {
             },
 
             ':hover, :focus': {
-                color: tokens.components.link.text.hover,
-                textDecorationColor: tokens.components.link.underline.hover,
+                color: ComponentsLinkTextHover,
+                textDecorationColor: ComponentsLinkUnderlineHover,
             },
         },
     },

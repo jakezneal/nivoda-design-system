@@ -1,6 +1,32 @@
 import type { Components } from '@mui/material';
 import { iconButtonClasses } from '@mui/material/IconButton';
-import tokens from '@nivoda/design-tokens';
+import {
+    ComponentsButtonContainedErrorBackgroundActive,
+    ComponentsButtonContainedErrorBackgroundDefault,
+    ComponentsButtonContainedErrorBackgroundDisabled,
+    ComponentsButtonContainedErrorBackgroundHover,
+    ComponentsButtonContainedErrorTextActive,
+    ComponentsButtonContainedErrorTextDefault,
+    ComponentsButtonContainedErrorTextDisabled,
+    ComponentsButtonContainedErrorTextHover,
+    ComponentsButtonContainedPrimaryBackgroundActive,
+    ComponentsButtonContainedPrimaryBackgroundDefault,
+    ComponentsButtonContainedPrimaryBackgroundDisabled,
+    ComponentsButtonContainedPrimaryBackgroundHover,
+    ComponentsButtonContainedPrimaryTextActive,
+    ComponentsButtonContainedPrimaryTextDefault,
+    ComponentsButtonContainedPrimaryTextDisabled,
+    ComponentsButtonContainedPrimaryTextHover,
+    ComponentsButtonContainedSuccessBackgroundActive,
+    ComponentsButtonContainedSuccessBackgroundDefault,
+    ComponentsButtonContainedSuccessBackgroundDisabled,
+    ComponentsButtonContainedSuccessBackgroundHover,
+    ComponentsButtonContainedSuccessTextActive,
+    ComponentsButtonContainedSuccessTextDefault,
+    ComponentsButtonContainedSuccessTextDisabled,
+    ComponentsButtonContainedSuccessTextHover,
+    ComponentsButtonTextPrimaryTextHover,
+} from '@nivoda/design-tokens';
 
 const MuiIconButtonStyles: Components['MuiIconButton'] = {
     defaultProps: {
@@ -16,22 +42,22 @@ const MuiIconButtonStyles: Components['MuiIconButton'] = {
             },
         },
         colorPrimary: {
-            backgroundColor: tokens.components.button.contained.primary.background.default,
-            color: tokens.components.button.contained.primary.text.default,
+            backgroundColor: ComponentsButtonContainedPrimaryBackgroundDefault,
+            color: ComponentsButtonContainedPrimaryTextDefault,
 
             ':hover': {
-                backgroundColor: tokens.components.button.contained.primary.background.hover,
-                color: tokens.components.button.contained.primary.text.hover,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundHover,
+                color: ComponentsButtonContainedPrimaryTextHover,
             },
 
             ':active': {
-                backgroundColor: tokens.components.button.contained.primary.background.active,
-                color: tokens.components.button.contained.primary.text.active,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundActive,
+                color: ComponentsButtonContainedPrimaryTextActive,
             },
 
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.primary.background.disabled,
-                color: tokens.components.button.contained.primary.text.disabled,
+                backgroundColor: ComponentsButtonContainedPrimaryBackgroundDisabled,
+                color: ComponentsButtonContainedPrimaryTextDisabled,
             },
         },
         colorSecondary: {
@@ -60,41 +86,41 @@ const MuiIconButtonStyles: Components['MuiIconButton'] = {
             },
         },
         colorError: {
-            backgroundColor: tokens.components.button.contained.error.background.default,
-            color: tokens.components.button.contained.error.text.default,
+            backgroundColor: ComponentsButtonContainedErrorBackgroundDefault,
+            color: ComponentsButtonContainedErrorTextDefault,
 
             ':hover': {
-                backgroundColor: tokens.components.button.contained.error.background.hover,
-                color: tokens.components.button.contained.error.text.hover,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundHover,
+                color: ComponentsButtonContainedErrorTextHover,
             },
 
             ':active': {
-                backgroundColor: tokens.components.button.contained.error.background.active,
-                color: tokens.components.button.contained.error.text.active,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundActive,
+                color: ComponentsButtonContainedErrorTextActive,
             },
 
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.error.background.disabled,
-                color: tokens.components.button.contained.error.text.disabled,
+                backgroundColor: ComponentsButtonContainedErrorBackgroundDisabled,
+                color: ComponentsButtonContainedErrorTextDisabled,
             },
         },
         colorSuccess: {
-            backgroundColor: tokens.components.button.contained.success.background.default,
-            color: tokens.components.button.contained.success.text.default,
+            backgroundColor: ComponentsButtonContainedSuccessBackgroundDefault,
+            color: ComponentsButtonContainedSuccessTextDefault,
 
             ':hover': {
-                backgroundColor: tokens.components.button.contained.success.background.hover,
-                color: tokens.components.button.contained.success.text.hover,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundHover,
+                color: ComponentsButtonContainedSuccessTextHover,
             },
 
             ':active': {
-                backgroundColor: tokens.components.button.contained.success.background.active,
-                color: tokens.components.button.contained.success.text.active,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundActive,
+                color: ComponentsButtonContainedSuccessTextActive,
             },
 
             ':disabled': {
-                backgroundColor: tokens.components.button.contained.success.background.disabled,
-                color: tokens.components.button.contained.success.text.disabled,
+                backgroundColor: ComponentsButtonContainedSuccessBackgroundDisabled,
+                color: ComponentsButtonContainedSuccessTextDisabled,
             },
         },
         sizeLarge: {

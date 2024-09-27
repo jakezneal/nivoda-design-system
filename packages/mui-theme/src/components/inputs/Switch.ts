@@ -1,6 +1,18 @@
 import type { Components } from '@mui/material';
-import tokens from '@nivoda/design-tokens';
 import { switchClasses } from '@mui/material/Switch';
+import {
+    ComponentsSwitchThumbColourChecked,
+    ComponentsSwitchThumbColourDefault,
+    ComponentsSwitchThumbColourDisabled,
+    ComponentsSwitchThumbSize,
+    ComponentsSwitchTrackBorderradius,
+    ComponentsSwitchTrackColourChecked,
+    ComponentsSwitchTrackColourCheckeddisabled,
+    ComponentsSwitchTrackColourDefault,
+    ComponentsSwitchTrackColourDisabled,
+    ComponentsSwitchTrackHeight,
+    ComponentsSwitchTrackWidth,
+} from '@nivoda/design-tokens';
 
 const MuiSwitchStyles: Components['MuiSwitch'] = {
     defaultProps: {
@@ -10,56 +22,54 @@ const MuiSwitchStyles: Components['MuiSwitch'] = {
     },
     styleOverrides: {
         root: {
-            width: tokens.components.switch.track.width,
-            height: tokens.components.switch.track.height,
+            width: ComponentsSwitchTrackWidth,
+            height: ComponentsSwitchTrackHeight,
             padding: 0,
 
             [`& .${switchClasses.switchBase}`]: {
                 padding: 0,
-                marginTop: `calc((${tokens.components.switch.track.height} - ${tokens.components.switch.thumb.size}) / 2)`,
-                marginBottom: `calc((${tokens.components.switch.track.height} - ${tokens.components.switch.thumb.size}) / 2)`,
-                marginLeft: `calc((${tokens.components.switch.track.height} - ${tokens.components.switch.thumb.size}) / 2)`,
+                marginTop: `calc((${ComponentsSwitchTrackHeight} - ${ComponentsSwitchThumbSize}) / 2)`,
+                marginBottom: `calc((${ComponentsSwitchTrackHeight} - ${ComponentsSwitchThumbSize}) / 2)`,
+                marginLeft: `calc((${ComponentsSwitchTrackHeight} - ${ComponentsSwitchThumbSize}) / 2)`,
 
                 '&.Mui-checked': {
-                    color: tokens.components.switch.thumb.colour.checked,
+                    color: ComponentsSwitchThumbColourChecked,
                     marginLeft: 0,
 
                     [`& + .${switchClasses.track}`]: {
-                        backgroundColor: tokens.components.switch.track.colour.checked,
-                        // Opacity isn't exporting incorrectly.
-                        // opacity: tokens.components.switch.track.opacity.checked,
+                        backgroundColor: ComponentsSwitchTrackColourChecked,
+                        // TODO: Needs hooking up to design tokens
                         opacity: 1,
                     },
 
                     [`&.Mui-disabled + .${switchClasses.track}`]: {
-                        backgroundColor: tokens.components.switch.track.colour.checkeddisabled,
-                        // Opacity isn't exporting incorrectly.
-                        // opacity: tokens.components.switch.track.opacity.checkeddisabled,
+                        backgroundColor: ComponentsSwitchTrackColourCheckeddisabled,
+                        // TODO: Needs hooking up to design tokens
                         opacity: 0.5,
                     },
                 },
 
                 [`&.Mui-disabled .${switchClasses.thumb}`]: {
-                    color: tokens.components.switch.thumb.colour.disabled,
+                    color: ComponentsSwitchThumbColourDisabled,
                 },
 
                 [`&.Mui-disabled + .${switchClasses.track}`]: {
-                    backgroundColor: tokens.components.switch.track.colour.disabled,
+                    backgroundColor: ComponentsSwitchTrackColourDisabled,
                     opacity: 1,
                 },
             },
 
             [`& .${switchClasses.thumb}`]: {
                 boxSizing: 'border-box',
-                width: tokens.components.switch.thumb.size,
-                height: tokens.components.switch.thumb.size,
+                width: ComponentsSwitchThumbSize,
+                height: ComponentsSwitchThumbSize,
                 boxShadow: 'none',
-                color: tokens.components.switch.thumb.colour.default,
+                color: ComponentsSwitchThumbColourDefault,
             },
 
             [`& .${switchClasses.track}`]: {
-                borderRadius: tokens.components.switch.track.borderradius,
-                backgroundColor: tokens.components.switch.track.colour.default,
+                borderRadius: ComponentsSwitchTrackBorderradius,
+                backgroundColor: ComponentsSwitchTrackColourDefault,
                 // TODO: Add opacity for default state.
                 opacity: 1,
             },
