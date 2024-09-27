@@ -1,35 +1,26 @@
 import StyleDictionary from 'style-dictionary';
-import { javascriptEsm } from './src/format/javascript-esm';
-import { typescriptEsmDeclarations } from './src/format/typescript-esm-declarations';
+import { Config } from 'style-dictionary';
 
-const config = new StyleDictionary({
-    source: ['./src/tokens/**/*.json'],
+export const config: Config | Config[] = {
+    source: ['./src/lib/tokens/**/*.json'],
     platforms: {
         js: {
-            transforms: ['name/camel', 'size/px', 'color/hex'],
+            transformGroup: 'js',
+            transforms: ['size/px', 'name/pascal'],
             buildPath: 'dist/tokens/js/',
             files: [
                 {
-                    format: 'javascript/esm',
+                    format: 'javascript/es6',
                     destination: 'index.js',
                 },
                 {
-                    format: 'typescript/esm-declarations',
+                    format: 'typescript/es6-declarations',
                     destination: 'index.d.ts',
                 },
             ],
         },
     },
-});
+};
 
-StyleDictionary.registerFormat({
-    name: 'javascript/esm',
-    format: javascriptEsm,
-});
-
-StyleDictionary.registerFormat({
-    name: 'typescript/esm-declarations',
-    format: typescriptEsmDeclarations,
-});
-
-config.buildAllPlatforms();
+const SD = new StyleDictionary(config);
+SD.buildAllPlatforms();

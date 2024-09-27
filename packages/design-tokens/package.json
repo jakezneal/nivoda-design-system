@@ -21,8 +21,7 @@
         "@nivoda/typescript-config": "workspace:*",
         "chokidar-cli": "^3.0.0",
         "prettier": "^3.2.5",
-        "style-dictionary": "^4.0.1",
-        "style-dictionary-utils": "^3.1.1",
+        "style-dictionary": "^4.1.2",
         "tsx": "^4.17.0"
     }
 }
