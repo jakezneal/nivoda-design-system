@@ -25,7 +25,6 @@ import {
     ComponentsButtonContainedSuccessTextDefault,
     ComponentsButtonContainedSuccessTextDisabled,
     ComponentsButtonContainedSuccessTextHover,
-    ComponentsButtonTextPrimaryTextHover,
 } from '@nivoda/design-tokens';
 
 const MuiIconButtonStyles: Components['MuiIconButton'] = {
